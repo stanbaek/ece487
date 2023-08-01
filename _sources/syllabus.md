@@ -45,15 +45,14 @@ All communication and course materials will be provided through a course and sec
 (syllabus:Textbooks)=
 ## Textbooks
 **Required**
-<br>
-[Probabilistic Machine Learning: An Introduction](https://mitpress.mit.edu/9780262046824/), Kevin P. Murphy, MIT Press, 2022. 
+
+<a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022. 
 
 **Optional**
 <br>
-[Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/), Christopher M. Bishop, Springer, 2006. 
+<a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. 
 <br>
-[Machine Learning](http://www.cs.cmu.edu/~tom/mlbook.html), Tom Mitchell, McGraw Hill, 1997.
-
+<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997.
 
 ## Collaboration Policy
 
