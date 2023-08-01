@@ -396,6 +396,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#late-work-policy">Late Work Policy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exams-and-quizzes">Exams and Quizzes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laboratories">Laboratories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project">Final Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellaneous">Miscellaneous</a></li>
 </ul>
             </nav>
         </div>
@@ -411,11 +413,11 @@ document.write(`
 <h1>📌 Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this heading">#</a></h1>
 <section id="course-goals">
 <h2>Course Goals<a class="headerlink" href="#course-goals" title="Permalink to this heading">#</a></h2>
-<p>Provide cadets with fundamental knowledge and skills to design and control robotic systems.</p>
+<p>Provide cadets with fundamental knowledge and skills to design and develop machine learning algorithms to solve robotic problems.</p>
 </section>
 <section id="course-prerequisites">
 <h2>Course Prerequisites<a class="headerlink" href="#course-prerequisites" title="Permalink to this heading">#</a></h2>
-<p>ECE 382, ECE346, Math344/346 or instructor approval</p>
+<p>ECE 346 and Math 356/377 or department approval</p>
 </section>
 <section id="course-schedule">
 <h2>Course Schedule<a class="headerlink" href="#course-schedule" title="Permalink to this heading">#</a></h2>
@@ -501,41 +503,49 @@ document.write(`
 <p>All communication and course materials will be provided through a course and section Team. Additionally, videos will be uploaded to a YouTube channel for your convenience. Lastly, Bitbucket will be used for cadets to provide their source code for homework and laboratory assignments.</p>
 </section>
 <section id="textbooks">
-<h2>Textbooks<a class="headerlink" href="#textbooks" title="Permalink to this heading">#</a></h2>
-<p>There is no required textbook for ECE 387.  Reading materials/labs are posted on the Teams site.</p>
+<span id="syllabus-textbooks"></span><h2>Textbooks<a class="headerlink" href="#textbooks" title="Permalink to this heading">#</a></h2>
+<p><strong>Required</strong>
+<a class="reference external" href="https://mitpress.mit.edu/9780262046824/">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022.</p>
+<p><strong>Optional</strong>
+<a class="reference external" href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006.</p>
+<p><a class="reference external" href="http://www.cs.cmu.edu/~tom/mlbook.html">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997.</p>
 </section>
 <section id="collaboration-policy">
 <h2>Collaboration Policy<a class="headerlink" href="#collaboration-policy" title="Permalink to this heading">#</a></h2>
 <p>Unless  specifically directed otherwise, the collaboration policy for this course is:</p>
 <ul class="simple">
-<li><p>For all assignments in this course, unless otherwise noted on the assignment, you may collaborate with any other cadets currently enrolled in ECE 382. We expect all graded work to be in your own work. Copying another person’s work, with or without documentation, will result in NO academic credit. Furthermore, copying without attribution is dishonorable and will be dealt with as an honor code violation.</p></li>
+<li><p>For all assignments in this course, unless otherwise noted on the assignment, you may collaborate with any other cadets currently enrolled in ECE 487. We expect all graded work to be in your own work. Copying another person’s work, with or without documentation, will result in NO academic credit. Furthermore, copying without attribution is dishonorable and will be dealt with as an honor code violation.</p></li>
 <li><p>GRs are individual efforts. No collaboration is allowed while taking these exams. All electronic devices (phones, smartwatches, computers, tablets, etc.) must be placed out of sight for the duration of the event. If any electronic device is seen during the event, the student will receive a zero for that effort.</p></li>
-<li><p>Authorized resources include any material from the ECE 382 course site and online sources regarding C programming syntax only. This does not include any solutions or solution stubs for challenges similar to those asked in any assignments.</p></li>
+<li><p>Authorized resources include any material from the ECE 487 course site and online sources regarding C programming syntax only. This does not include any solutions or solution stubs for challenges similar to those asked in any assignments.</p></li>
 </ul>
 </section>
 <section id="documentation-requirements">
 <h2>Documentation Requirements<a class="headerlink" href="#documentation-requirements" title="Permalink to this heading">#</a></h2>
+<p><strong>Documentation Requirements</strong>: You must document all help received from any sources other than your instructor or instructor-provided course materials (including your textbook).</p>
 <ul class="simple">
-<li><p>All help received on work submitted for grading must be documented in accordance with the course documentation policy.</p></li>
-<li><p>Each documentation statement must be specific enough that it explicitly describes what assistance was provided, how it was used in completing the assignment, and who provided the assistance.</p></li>
+<li><p>Each documentation statement must be specific enough to explicitly describe what assistance was provided, how it was used to complete the assignment, and who provided the assistance.</p></li>
 <li><p>If no help was received on this assignment, the documentation statement must state “None.”</p></li>
 <li><p>If you checked answers with anyone, you must document with whom on which problems. You must document whether you made any changes or not.  If you did make changes, you must document the problems you changed and the reasons why.</p></li>
 <li><p>Vague documentation statements will result in a 5% deduction on the assignment.</p></li>
 </ul>
 <section id="sample-documentation">
 <h3>Sample Documentation<a class="headerlink" href="#sample-documentation" title="Permalink to this heading">#</a></h3>
-<p>Consider the following examples when writing your own detailed documentation
-statements:</p>
-<p><strong>Bad Example</strong>: Cadet McFly explained how the flux capacitor worked. </br>
-<strong>Good Example</strong>: Cadet McFly explained how the flux capacitor worked conceptually, using diagrams and the assignment materials. He did not look at my code nor did I look at his code during this discussion.</p>
-<p><strong>Bad Example</strong>: Cadet McFly helped fix my get_flux() method. </br>
-<strong>Good Example</strong>: Cadet McFly helped fix my get_flux() method by looking at my code and finding that I had current_flux &lt; max_flux instead of current_flux &lt;= max_flux on line 85. Note: A situation such as this may result in less than full credit for the get_flux() method, but due to the documentation statement there is no violation of the honor code.</p>
-<p><strong>Bad Example</strong>: Cadet McFly and I worked together on the get_flux() method. </br>
-<strong>Good Example</strong>: Cadet McFly and I worked together on the get_flux() method, each contributing equally to its development. Prior to this help, neither of our own get_flux() methods were working. My get_flux() method is now nearly identical to Cadet McFly’s get_flux() method. Note: In a situation such as this, at most half credit would be earned for the get_flux() method, but due to the documentation statement there is no violation of the honor code.</p>
-<p><strong>Bad Example</strong>: Cadet McFly showed me how the get_flux() method works. </br>
-<strong>Good Example</strong>: Cadet McFly showed me how the get_flux() method works by letting me look at his code. Prior to this help my own get_flux() method was not working.  My get_flux() method is now nearly identical to Cadet McFly’s get_flux() method. Note: In a situation such as this, points would not be earned for the get_flux() method, but due to the documentation statement there is no violation of the honor code.</p>
-<p><strong>Bad Example</strong>: Cadet McFly showed me how the get_flux() method works.  </br>
-<strong>Good Example</strong>:: Cadet McFly showed me how the get_flux() method works by looking at my code and talking me through each line as I wrote it.  Prior to this help my own get_flux() method was wrong.  My get_flux() method is now nearly identical to Cadet McFly’s get_flux() method. Note: In a situation such as this, points would not be earned for the get_flux() method, but due to the documentation statement there is no violation of the honor code.</p>
+<p>Consider the following examples when writing your own detailed documentation statements:</p>
+<p><strong>Bad Example</strong>:  Cadet McFly explained how the factorial worked.
+<br></p>
+<p><strong>Good Example</strong>: Cadet McFly explained how a recursive function worked conceptually, using diagrams and the assignment materials. He did not look at my code nor did I look at his code during this discussion.</p>
+<p><strong>Bad Example</strong>: Cadet McFly helped fix my factorial() method.
+<br></p>
+<p><strong>Good Example</strong>: Cadet McFly helped fix my factorial() method by looking at my code** and finding that I had n &gt; 0 instead of n &gt;= 0 on line 85. <em>Note: A situation such as this may result in **less than full credit for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
+<p><strong>Bad Example</strong>: Cadet McFly and I worked together on the factorial() method.
+<br></p>
+<p><strong>Good Example</strong>: Cadet McFly and I worked together on the factorial() method, each contributing equally to its development. Prior to this help, neither of our factorial() methods was working. My factorial() method is now nearly identical to Cadet McFly’s factorial() method. <em>Note: In a situation such as this, at most half-credit would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
+<p><strong>Bad Example</strong>: Cadet McFly showed me how the factorial() method works.
+<br></p>
+<p><strong>Good Example</strong>: Cadet McFly showed me how the factorial() method works by letting me look at his code. Prior to this help, my own factorial() method was not working.  My factorial() method is now nearly identical to Cadet McFly’s factorial() method. <em>Note: In a situation such as this, no points would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
+<p><strong>Bad Example</strong>: Cadet McFly showed me how the factorial() method works.
+<br></p>
+<p><strong>Good Example</strong>: Cadet McFly showed me how the factorial() method works by looking at my code and talking me through each line as I wrote it. Prior to this help my own factorial() method was wrong.  My factorial() method is now nearly identical to Cadet McFly’s factorial() method. <em>Note: In a situation such as this, no points would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
 </section>
 </section>
 <section id="extra-instruction-ei">
@@ -564,7 +574,7 @@ statements:</p>
 <li><p>Late days are counted in 24-hour periods. Submitting between 07:00:01 on the due date and 07:00:00 the next day is one day late, and so on.</p></li>
 <li><p>You are given 5 grace days (self-granted extensions) which you can use to give yourself extra time without penalty. No more than 2 grace days can be used for each assignment.</p></li>
 <li><p>Instructor-granted extensions are only considered after all grace days are used and only given in exceptional situations. Computer problems such as hard-drive reimaging are not considered exceptional situations and you must use grace days.</p></li>
-<li><p>Late work handed in when you have run out of grace is discounted 30% for the first day late and 10% per day late thereafter.</p></li>
+<li><p>Late work handed in when you have run out of grace is discounted 25% for the first day late and 10% per day late thereafter.</p></li>
 <li><p>Every assignment has a hard deadline; 4 calendar days past the original due date.</p></li>
 <li><p>Late submissions (penalty or not) are not accepted after the hard deadline or after the solution to the assignment is published. No late submissions (penalty or not) will be accepted for the assignments right before GRs.</p></li>
 </ul>
@@ -580,7 +590,15 @@ For missed GRs, the following policies are outlined in USAFA FOI 537-3:</p>
 </section>
 <section id="laboratories">
 <h2>Laboratories<a class="headerlink" href="#laboratories" title="Permalink to this heading">#</a></h2>
-<p>Labs are held in 2E48, but may include a prelab assignment that must be done before coming to class. The labs tend to be very hardware/software intensive and will probably require debugging to isolate and fix problems. In-class time is your primary chance to get active help for these problems so the more you prepare outside of class, the more successful you’ll be. The 53 minutes go by extremely fast - don’t waste them!</p>
+<p>Labs may include a prelab assignment that must be done before coming to class. The labs tend to be very hardware/software intensive and will probably require debugging to isolate and fix problems. In-class time is your primary chance to get active help for these problems so the more you prepare outside of class, the more successful you’ll be. The 53 minutes go by extremely fast - don’t waste them!</p>
+</section>
+<section id="final-project">
+<h2>Final Project<a class="headerlink" href="#final-project" title="Permalink to this heading">#</a></h2>
+<p>The final project will be a culmination of the learned material and will include a robot maze and competition. The final project will include a formal laboratory write-up and seven-minute presentation describing your design, solution, and results. The final project is worth 25% of your final grade.</p>
+</section>
+<section id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this heading">#</a></h2>
+<p>This course is designed to help in your development as an engineer.  Feel free to provide feedback on the lessons and labs at any time.  If you have ideas to improve or enhance the course, please let me know.  The class builds on concepts from the prerequisites, so it is important for you to seek help as soon as you need it.  Procrastination is truly the enemy in a design course.  A little foresight and planning and a lot of effort will result in an extremely rewarding experience serving as the basis for future engineering design work.</p>
 </section>
 </section>
 
@@ -668,6 +686,8 @@ For missed GRs, the following policies are outlined in USAFA FOI 537-3:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#late-work-policy">Late Work Policy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exams-and-quizzes">Exams and Quizzes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laboratories">Laboratories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project">Final Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellaneous">Miscellaneous</a></li>
 </ul>
   </nav></div>
 
