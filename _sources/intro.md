@@ -8,7 +8,7 @@
 ## 📝 Course information
 - **Course Goal**: Provide cadets with fundamental knowledge and skills to design and develop machine learning algorithms to solve robotic problems.
 - **Prerequisites**: ECE 346 and Math 356/377 or department approval
-- **Course Text**:  All [textbooks](syllabus:Textbooks) have free pdf versions. Reading materials/labs are posted here on [Schedule](schedule.md).
+- **Course Text**:  All [textbooks](syllabus:Textbooks) have free pdf versions. Reading materials/labs are posted on [Schedule](schedule.md).
 - **Syllabus**: Posted [here](syllabus.md).
 - **Course Schedule**: Posted [here](schedule.md) and subject to change.
 
