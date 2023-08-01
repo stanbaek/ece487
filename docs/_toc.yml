@@ -8,26 +8,17 @@ parts:
   chapters:
   - file: syllabus.md
   - file: schedule.md
-  - file: resources.md
-  - file: python.md
+  - file: python.ipynb
   - file: robots.md
+  - file: NoPointer.ipynb
 
 - caption: Labs 
   chapters:
   - file: Labs/SoftwareConfiguration
   - file: Labs/ICE1_PythonIntro.ipynb
   - file: Labs/ICE2_PythonContainers.ipynb
-  - file: Labs/Lab1_ExtractingEulerAngles
   - file: Labs/ICE3_OOP.ipynb
   - file: Labs/ICE4_SpatialMath.md
   - file: Labs/ICE5_RoboticsToolbox.ipynb
-  - file: Labs/Lab2_ForwardKinematics.md
-  - file: Labs/P1_InverseKinematics
   - file: Labs/ICE6_LSE.ipynb
-  - file: Labs/Lab3_CameraCalibration.ipynb
-  - file: Labs/P2_VisionBasedManipulator.md
 
-- caption: Supplementary 
-  chapters:
-  - file: Labs/NoPointer.ipynb
-  - file: Labs/Extra.ipynb
