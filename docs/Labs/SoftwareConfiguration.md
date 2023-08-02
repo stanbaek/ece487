@@ -11,6 +11,51 @@ Don’t worry if it doesn’t work right. If everything did, you’d be out of a
 
 ## 💻 Procedure
 
+### Create Bitbucket Repository
+
+- Create a <a href="https://bitbucket.org/" target="_blank">Bitbucket</a> account if you don't have one.
+- Log in <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>.
+- Browse to <a href="https://bitbucket.org/stanbaek2/ece487_wksp/src/master/" target="_blank">https://bitbucket.org/stanbaek2/ece487_wksp/src/master/</a>.
+- Click on the three dots ($\cdots$) on the top of the right-hand navigation for more options. 
+- Select `Fork this repository`. 
+- Enter "ECE487" for `Project`.
+- Name this new repository ECE487\_LastName\_FirstName.
+- Ensure the access level is `Private repository`.
+- Give your instructor (Dr. Baek) read access: Click `Invite` and then click `Add members`. Provide him **read access**. Dr. Baek's email address ![baek](https://img.shields.io/badge/stanley.baek@afafacademy.af.edu-red)    
+    
+<br>
+
+```{image} ./figures/HW1_GitFork.gif
+:width: 720
+:align: center
+```
+<br>
+
+```{important}
+Please name your repository as ECE487_LastName_FirstName. This will help instructors find your repository easily.
+```
+
+- You may need to create a Bitbucket `app password` as follows.
+- Click `Your Profile` on the top of the right-hand navigation and then click `Personal Settings`. 
+- Click `App Passwords` and then click `Create app password`. 
+- Write your preferred label and select permissions as needed.
+- Click `Create`.
+- Save the password as you cannot view it after you create it.
+
+```{image} ./figures/HW1_BitbucketAppPassword.gif 
+:width: 720
+:align: center
+```
+<br>
+
+
+
+
+
+
+
+
+
 ### Create a Bitbucket Repository
 
 - Create a <a href="https://bitbucket.org/" target="_blank">Bitbucket</a> account if you do not already have one.
