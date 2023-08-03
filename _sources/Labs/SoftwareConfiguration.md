@@ -22,8 +22,9 @@ Don’t worry if it doesn’t work right. If everything did, you’d be out of a
 - Name this new repository ECE487\_LastName\_FirstName.
 - Ensure the access level is `Private repository`.
 - Give your instructor (Dr. Baek) read access: Click `Invite` and then click `Add members`. Provide him **read access**. Dr. Baek's email address ![baek](https://img.shields.io/badge/stanley.baek@afafacademy.af.edu-red)    
-    
+- Note: The gif animation below has been adpated from ECE382. You must use ECE487 in place of ECE382.
 <br>
+
 
 ```{image} ./figures/HW1_GitFork.gif
 :width: 720
