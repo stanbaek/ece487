@@ -63,6 +63,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Labs/SoftwareConfiguration';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -174,7 +176,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="ICE2_PythonContainers.html">❄️ ICE2: Containers &amp; Numpy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ICE3_OOP.html">❄️ ICE3: Classes and Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ICE4_SpatialMath.html">❄️ ICE4: Spatial Math for Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ICE5_RoboticsToolbox.html">❄️ ICE5: Robotics Toolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ICE6_LSE.html">❄️ ICE6: Least Squares</a></li>
 </ul>
 
@@ -371,6 +372,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agenda">📜 Agenda</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure">💻 Procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-bitbucket-repository">Create Bitbucket Repository</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-bitbucket-repository">Create a Bitbucket Repository</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-git">Install Git</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-and-configure-pycharm">Install and Configure PyCharm</a></li>
@@ -408,6 +410,37 @@ document.write(`
 </section>
 <section id="procedure">
 <h2>💻 Procedure<a class="headerlink" href="#procedure" title="Permalink to this heading">#</a></h2>
+<section id="create-bitbucket-repository">
+<h3>Create Bitbucket Repository<a class="headerlink" href="#create-bitbucket-repository" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a <a href="https://bitbucket.org/" target="_blank">Bitbucket</a> account if you don’t have one.</p></li>
+<li><p>Log in <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>.</p></li>
+<li><p>Browse to <a href="https://bitbucket.org/stanbaek2/ece487_wksp/src/master/" target="_blank">https://bitbucket.org/stanbaek2/ece487_wksp/src/master/</a>.</p></li>
+<li><p>Click on the three dots (<span class="math notranslate nohighlight">\(\cdots\)</span>) on the top of the right-hand navigation for more options.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Fork</span> <span class="pre">this</span> <span class="pre">repository</span></code>.</p></li>
+<li><p>Enter “ECE487” for <code class="docutils literal notranslate"><span class="pre">Project</span></code>.</p></li>
+<li><p>Name this new repository ECE487_LastName_FirstName.</p></li>
+<li><p>Ensure the access level is <code class="docutils literal notranslate"><span class="pre">Private</span> <span class="pre">repository</span></code>.</p></li>
+<li><p>Give your instructor (Dr. Baek) read access: Click <code class="docutils literal notranslate"><span class="pre">Invite</span></code> and then click <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">members</span></code>. Provide him <strong>read access</strong>. Dr. Baek’s email address <img alt="baek" src="https://img.shields.io/badge/stanley.baek&#64;afafacademy.af.edu-red" /></p></li>
+</ul>
+<br>
+<a class="reference internal image-reference" href="../_images/HW1_GitFork.gif"><img alt="../_images/HW1_GitFork.gif" class="align-center" src="../_images/HW1_GitFork.gif" style="width: 720px;" /></a>
+<br>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please name your repository as ECE487_LastName_FirstName. This will help instructors find your repository easily.</p>
+</div>
+<ul class="simple">
+<li><p>You may need to create a Bitbucket <code class="docutils literal notranslate"><span class="pre">app</span> <span class="pre">password</span></code> as follows.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">Profile</span></code> on the top of the right-hand navigation and then click <code class="docutils literal notranslate"><span class="pre">Personal</span> <span class="pre">Settings</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">App</span> <span class="pre">Passwords</span></code> and then click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">app</span> <span class="pre">password</span></code>.</p></li>
+<li><p>Write your preferred label and select permissions as needed.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Create</span></code>.</p></li>
+<li><p>Save the password as you cannot view it after you create it.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/BitbucketAppPassword.gif"><img alt="../_images/BitbucketAppPassword.gif" class="align-center" src="../_images/BitbucketAppPassword.gif" style="width: 720px;" /></a>
+<br>
+</section>
 <section id="create-a-bitbucket-repository">
 <h3>Create a Bitbucket Repository<a class="headerlink" href="#create-a-bitbucket-repository" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
@@ -452,7 +485,6 @@ document.write(`
 <ul class="simple">
 <li><p>Go to Teams &gt; General &gt; Files &gt; Class Materials. Download the <code class="docutils literal notranslate"><span class="pre">PycharmProjects_XXXX</span></code> folder and copy everything into the <code class="docutils literal notranslate"><span class="pre">PycharmProject</span></code> folder in your home directory. Do not copy the <code class="docutils literal notranslate"><span class="pre">PycharmProjects_XXXX</span></code> folder itself into the <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code> folder.  The figure below shows an example of a local <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code> folder on your computer.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/PycharmProjectsFolder.png"><img alt="../_images/PycharmProjectsFolder.png" class="align-center" src="../_images/PycharmProjectsFolder.png" style="width: 580px;" /></a>
 <br>
 </section>
 <section id="install-and-configure-pycharm">
@@ -461,14 +493,12 @@ document.write(`
 <li><p>Download the latest version of <a class="reference external" href="https://www.jetbrains.com/edu-products/download/#section=pycharm-edu">PyCharm Edu</a> and install it on your computer.</p></li>
 <li><p>Ensure you have the installation options checked as shown below.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/PyCharmInstallationOptions.png"><img alt="../_images/PyCharmInstallationOptions.png" class="align-center" src="../_images/PyCharmInstallationOptions.png" style="width: 440px;" /></a>
 <br>
 <ul class="simple">
 <li><p>Start PyCharm and create a new project.</p></li>
 <li><p>Ensure the project location is <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code> under your home folder, e.g., C:\Users\stanley.baek\PycharmProjects.</p></li>
 <li><p>The location of virtual environment should be <code class="docutils literal notranslate"><span class="pre">env</span></code> under <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code>, e.g., C:\Users\stanley.baek\PycharmProjects\env.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/PycharmNewProject.gif"><img alt="../_images/PycharmNewProject.gif" class="align-center" src="../_images/PycharmNewProject.gif" style="width: 720px;" /></a>
 <br>
 <ul class="simple">
 <li><p>Open <code class="docutils literal notranslate"><span class="pre">Settings</span></code> under the <code class="docutils literal notranslate"><span class="pre">File</span></code> menu and browse to <code class="docutils literal notranslate"><span class="pre">Project:</span> <span class="pre">PycharmProjects</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">Interpreter</span></code>.</p></li>
@@ -532,7 +562,7 @@ you are not qualified for bachelor’s degree in ECE. You will lose 30 points ev
 <ul class="simple">
 <li><p>Take a screenshot of your PyCharm settings as shown below</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/PyCharmSettings.png"><img alt="../_images/PyCharmSettings.png" class="align-center" src="../_images/PyCharmSettings.png" style="width: 640px;" /></a>
+<a class="reference internal image-reference" href="Labs/figures/PyCharmSettings.png"><img alt="Labs/figures/PyCharmSettings.png" class="align-center" src="Labs/figures/PyCharmSettings.png" style="width: 640px;" /></a>
 <br>
 </section>
 </section>
@@ -607,6 +637,7 @@ you are not qualified for bachelor’s degree in ECE. You will lose 30 points ev
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agenda">📜 Agenda</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure">💻 Procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-bitbucket-repository">Create Bitbucket Repository</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-bitbucket-repository">Create a Bitbucket Repository</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-git">Install Git</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-and-configure-pycharm">Install and Configure PyCharm</a></li>
