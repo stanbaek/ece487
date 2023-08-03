@@ -443,20 +443,40 @@ document.write(`
 <section id="install-git">
 <h3>Install Git<a class="headerlink" href="#install-git" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Go to <a class="reference external" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> to download <code class="docutils literal notranslate"><span class="pre">64-bit</span> <span class="pre">Git</span> <span class="pre">for</span> <span class="pre">Windows</span> <span class="pre">setup</span></code></p></li>
+<li><p>Browse to  <a href="https://git-scm.com/download/win" target="_blank">git-scm.com</a> to download <code class="docutils literal notranslate"><span class="pre">64-bit</span> <span class="pre">Git</span> <span class="pre">for</span> <span class="pre">Windows</span> <span class="pre">setup</span></code></p></li>
 <li><p>Install Git with the default settings. Git is already installed on Mac.</p></li>
-<li><p>Create a folder named <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code> under your home folder, e.g., C:\Users\stanley.baek\PycharmProjects.</p></li>
-<li><p>Right-click the <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code> folder and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> as shown below.</p></li>
+<li><p>Create a folder named <code class="docutils literal notranslate"><span class="pre">workspace</span></code> under your home folder, e.g., C:\Users\stanley.baek\workspace.</p></li>
+<li><p>Right-click the <code class="docutils literal notranslate"><span class="pre">workspace</span></code> folder and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> as shown below.</p></li>
 <li><p>From your repository in Bitbucket, click Clone and copy the command that begins with <em>git clone</em> by clicking on the copy button as shown below.</p></li>
-<li><p>Paste it within the Bash terminal (middle-click, right-click &gt; Paste, or <code class="docutils literal notranslate"><span class="pre">Shift+Ins</span></code> to paste) and add a space followed by a <em>period</em> as shown below. The <em>period</em> at the end means that the destination is the <em>current folder</em>. Hit Enter.</p></li>
+<li><p>Paste it within the Bash terminal (middle-click, right-click &gt; Paste, or <code class="docutils literal notranslate"><span class="pre">Shift+Ins</span></code> to paste) and add a space followed by a <strong><em>period</em></strong> as shown below. The <strong><em>period</em></strong> at the end means that the destination is the <strong><em>current folder</em></strong>. Hit Enter.</p></li>
 <li><p>If it asks for a password, enter the app password you saved in the previous step.</p></li>
-<li><p>Notice that you have <code class="docutils literal notranslate"><span class="pre">(master)</span></code> at the end of the folder name. If you type <code class="docutils literal notranslate"><span class="pre">ls</span></code>, it should return nothing.</p></li>
+<li><p>Notice that you have <code class="docutils literal notranslate"><span class="pre">(master)</span></code> at the end of the folder name.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/GitClone.gif"><img alt="../_images/GitClone.gif" class="align-center" src="../_images/GitClone.gif" style="width: 680px;" /></a>
+<a class="reference internal image-reference" href="../_images/GitClone.gif"><img alt="../_images/GitClone.gif" class="align-center" src="../_images/GitClone.gif" style="width: 720px;" /></a>
 <br>
 <ul class="simple">
-<li><p>Go to Teams &gt; General &gt; Files &gt; Class Materials. Download the <code class="docutils literal notranslate"><span class="pre">PycharmProjects_XXXX</span></code> folder and copy everything into the <code class="docutils literal notranslate"><span class="pre">PycharmProject</span></code> folder in your home directory. Do not copy the <code class="docutils literal notranslate"><span class="pre">PycharmProjects_XXXX</span></code> folder itself into the <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code> folder.  The figure below shows an example of a local <code class="docutils literal notranslate"><span class="pre">PycharmProjects</span></code> folder on your computer.</p></li>
+<li><p>The figure below shows an example of a local <code class="docutils literal notranslate"><span class="pre">workspace</span></code> folder on your computer.</p></li>
 </ul>
+<a class="reference internal image-reference" href="Labs/figures/HW1_Workspace.png"><img alt="Labs/figures/HW1_Workspace.png" class="align-center" src="Labs/figures/HW1_Workspace.png" style="width: 580px;" /></a>
+<br>
+<ul class="simple">
+<li><p>Go back to Git Bash. If you have already closed it, right-click on an empty space inside the <code class="docutils literal notranslate"><span class="pre">workspace</span></code> folder and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code>.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code>.  It will return two lines showing that <code class="docutils literal notranslate"><span class="pre">origin</span></code> is your remote repository at <a class="reference external" href="http://bitbucket.org">bitbucket.org</a> for both fetch and push.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">https://stanbaek2&#64;bitbucket.org/stanbaek2/ece382_wksp.git</span></code> (or copy &amp; paste) and hit <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code>.  It will now return four lines showing that <code class="docutils literal notranslate"><span class="pre">upstream</span></code>
+is the original instructor’s repository that you forked from.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/GitAddUpstream.gif"><img alt="../_images/GitAddUpstream.gif" class="align-center" src="../_images/GitAddUpstream.gif" style="width: 640px;" /></a>
+<br>
+<ul class="simple">
+<li><p>Whenever there are any updates on the original code, you will be asked to run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code> to update your local files.</p></li>
+<li><p>Your default push and pull repository is <code class="docutils literal notranslate"><span class="pre">origin</span></code>, which is your Bitbucket repository.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/FetchUpstream.png"><img alt="../_images/FetchUpstream.png" class="align-center" src="../_images/FetchUpstream.png" style="width: 320px;" /></a>
+<center>
+Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github/9257901#9257901" target="_blank">Stakeoverflow</a>
+</center>
+<br>
 <br>
 </section>
 <section id="install-and-configure-pycharm">
