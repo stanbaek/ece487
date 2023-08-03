@@ -22,8 +22,9 @@ Don’t worry if it doesn’t work right. If everything did, you’d be out of a
 - Name this new repository ECE487\_LastName\_FirstName.
 - Ensure the access level is `Private repository`.
 - Give your instructor (Dr. Baek) read access: Click `Invite` and then click `Add members`. Provide him **read access**. Dr. Baek's email address ![baek](https://img.shields.io/badge/stanley.baek@afafacademy.af.edu-red)    
-    
+- Note: The gif animation below has been adpated from ECE382. You must use ECE487 in place of ECE382.
 <br>
+
 
 ```{image} ./figures/HW1_GitFork.gif
 :width: 720
@@ -42,7 +43,7 @@ Please name your repository as ECE487_LastName_FirstName. This will help instruc
 - Click `Create`.
 - Save the password as you cannot view it after you create it.
 
-```{image} ./figures/HW1_BitbucketAppPassword.gif 
+```{image} ./figures/BitBucketAppPassword.gif 
 :width: 720
 :align: center
 ```
@@ -105,10 +106,7 @@ Your repository name must be ECE487\_LastName\_FirstName. Otherwise, the instruc
 - Go to Teams > General > Files > Class Materials. Download the `PycharmProjects_XXXX` folder and copy everything into the `PycharmProject` folder in your home directory. Do not copy the `PycharmProjects_XXXX` folder itself into the `PycharmProjects` folder.  The figure below shows an example of a local `PycharmProjects` folder on your computer.
 
 
-```{image} ./figures/PycharmProjectsFolder.png
-:width: 580
-:align: center
-```
+
 <br>
 
 
@@ -117,20 +115,14 @@ Your repository name must be ECE487\_LastName\_FirstName. Otherwise, the instruc
 - Download the latest version of [PyCharm Edu](https://www.jetbrains.com/edu-products/download/#section=pycharm-edu) and install it on your computer.
 - Ensure you have the installation options checked as shown below. 
 
-```{image} ./figures/PyCharmInstallationOptions.png
-:width: 440
-:align: center
-```
+
 <br>
 
 - Start PyCharm and create a new project.
 - Ensure the project location is `PycharmProjects` under your home folder, e.g., C:\Users\stanley.baek\PycharmProjects.
 - The location of virtual environment should be `env` under `PycharmProjects`, e.g., C:\Users\stanley.baek\PycharmProjects\env.
 
-```{image} ./figures/PycharmNewProject.gif
-:width: 720
-:align: center
-```
+
 <br>
 
 - Open `Settings` under the `File` menu and browse to `Project: PycharmProjects` > `Python Interpreter`.
@@ -199,10 +191,6 @@ you are not qualified for bachelor's degree in ECE. You will lose 30 points ever
 
 - Take a screenshot of your PyCharm settings as shown below
 
-```{image} ./figures/PyCharmSettings.png
-:width: 640
-:align: center
-```
 <br>
 
 

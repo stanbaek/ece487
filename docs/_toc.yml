@@ -18,7 +18,5 @@ parts:
   - file: Labs/ICE1_PythonIntro.ipynb
   - file: Labs/ICE2_PythonContainers.ipynb
   - file: Labs/ICE3_OOP.ipynb
-  - file: Labs/ICE4_SpatialMath.md
-  - file: Labs/ICE5_RoboticsToolbox.ipynb
   - file: Labs/ICE6_LSE.ipynb
 
