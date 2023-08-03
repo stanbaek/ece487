@@ -50,42 +50,6 @@ Please name your repository as ECE487_LastName_FirstName. This will help instruc
 <br>
 
 
-
-
-
-
-
-
-
-### Create a Bitbucket Repository
-
-- Create a <a href="https://bitbucket.org/" target="_blank">Bitbucket</a> account if you do not already have one.
-- Create a new repository in Bitbucket as shown below.
-- Name it ECE487\_LastName\_FirstName.
-- Give your instructor read access: Click `Invite` on the top of the right-hand navigation and then click `Add members`. Provide your instructor **read access**. 
-    - Dr. Baek: stanley.baek@afacademy.af.edu
-
-```{image} ./figures/BitBucketConfig.gif
-:scale: 60%
-:align: center
-```
-
-```{Note}
-Your repository name must be ECE487\_LastName\_FirstName. Otherwise, the instructor may not be able to find your repository.
-```
-
-- You may need to create a Bitbucket `app password` as shown below.
-- Click `Your Profile` on the top of the right-hand navigation and then click `Personal Settings`. 
-- Click `App Passwords` and then click `Create app password`. 
-- Write your preferred label and select permissions as shown below.
-- Click `Create`.
-- Save the password as you cannot view it after you create it.
-
-```{image} ./figures/BitBucketAppPassword.gif
-:scale: 60%
-:align: center
-```
-
 ### Install Git
 
 - Go to https://git-scm.com/download/win to download `64-bit Git for Windows setup`
