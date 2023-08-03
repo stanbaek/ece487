@@ -190,10 +190,6 @@ you are not qualified for bachelor's degree in ECE. You will lose 30 points ever
 
 - Take a screenshot of your PyCharm settings as shown below
 
-```{image} ./figures/PyCharmSettings.png
-:width: 640
-:align: center
-```
 <br>
 
 
