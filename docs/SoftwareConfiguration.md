@@ -68,10 +68,6 @@ Please name your repository as ECE487_LastName_FirstName. This will help instruc
 
 - The figure below shows an example of a local `workspace` folder on your computer.
 
-```{image} ./figures/HW1_Workspace.png
-:width: 580
-:align: center
-```
 
 <br>
 

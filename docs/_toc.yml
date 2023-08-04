@@ -8,15 +8,12 @@ parts:
   chapters:
   - file: syllabus.md
   - file: schedule.md
+
+- caption: Supplementary 
+  chapters:
+  - file: SoftwareConfiguration
+  - file: PythonIntro.ipynb
   - file: python.ipynb
   - file: robots.md
   - file: NoPointer.ipynb
-
-- caption: Labs 
-  chapters:
-  - file: Labs/SoftwareConfiguration
-  - file: Labs/ICE1_PythonIntro.ipynb
-  - file: Labs/ICE2_PythonContainers.ipynb
-  - file: Labs/ICE3_OOP.ipynb
-  - file: Labs/ICE6_LSE.ipynb
 
