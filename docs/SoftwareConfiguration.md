@@ -5,26 +5,30 @@
 - Configure git repository.
 - Install and Configure PyCharm
 
-:::{note}
+```{note}
 Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.
-:::
+```
 
 ## 💻 Procedure
 
 ### Create Bitbucket Repository
 
-- Create a <a href="https://bitbucket.org/" target="_blank">Bitbucket</a> account if you don't have one.
-- Log in <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>.
-- Browse to <a href="https://bitbucket.org/stanbaek2/ece487_wksp/src/master/" target="_blank">https://bitbucket.org/stanbaek2/ece487_wksp/src/master/</a>.
-- Click on the three dots ($\cdots$) on the top of the right-hand navigation for more options. 
-- Select `Fork this repository`. 
-- Enter "ECE487" for `Project`.
-- Name this new repository ECE487\_LastName\_FirstName.
-- Ensure the access level is `Private repository`.
-- Give your instructor (Dr. Baek) read access: Click `Invite` and then click `Add members`. Provide him **read access**. Dr. Baek's email address ![baek](https://img.shields.io/badge/stanley.baek@afafacademy.af.edu-red)    
-- Note: The gif animation below has been adpated from ECE382. You must use ECE487 in place of ECE382.
-<br>
+- If you don't already have a <a href="https://bitbucket.org/" target="_blank">Bitbucket</a> account, go ahead and create one.
+- Once you have your account, log in to <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>.
+- Next, navigate to the following URL: <a href="https://bitbucket.org/stanbaek2/ece487_wksp/src/master/" target="_blank">https://bitbucket.org/stanbaek2/ece487_wksp/src/master/</a>
+- At the top right-hand corner of the page, you'll see three dots ($\cdots$). Click on the icon to reveal more options.
+- From the dropdown menu, select `Fork this repository`. 
+- When prompted, enter "ECE487" for the project name.
+- Name the new repository as follows: ECE487_LastName_FirstName.
+- Ensure that the access level is set to `Private repository`.
+- Give your instructor (Dr. Baek) read access: Click `Invite` and then select `Add members`.
+- Enter Dr. Baek's email address, ![baek](https://img.shields.io/badge/stanley.baek@afafacademy.af.edu-red), to provide him with read access.
 
+  
+```{note}
+The gif animation below has been adpated from ECE382. You must use ECE487 in place of ECE382.
+```
+<br>
 
 ```{image} ./figures/HW1_GitFork.gif
 :width: 720
@@ -37,11 +41,11 @@ Please name your repository as ECE487_LastName_FirstName. This will help instruc
 ```
 
 - You may need to create a Bitbucket `app password` as follows.
-- Click `Your Profile` on the top of the right-hand navigation and then click `Personal Settings`. 
-- Click `App Passwords` and then click `Create app password`. 
+- Go to `Your Profile` at the top right corner and select `Personal Settings`. 
+- Find `App Passwords` and then click on `Create app password`. 
 - Write your preferred label and select permissions as needed.
-- Click `Create`.
-- Save the password as you cannot view it after you create it.
+- Click on `Create`.
+- Save the password somewhere safe.  You will not be able to see it again after this.
 
 ```{image} ./figures/BitBucketAppPassword.gif 
 :width: 720
@@ -51,31 +55,36 @@ Please name your repository as ECE487_LastName_FirstName. This will help instruc
 
 ### Install Git
 
-- Browse to  <a href="https://git-scm.com/download/win" target="_blank">git-scm.com</a> to download `64-bit Git for Windows setup`
-- Install Git with the default settings. Git is already installed on Mac. 
-- Create a folder named `workspace` under your home folder, e.g., C:\Users\stanley.baek\workspace. 
-- Right-click the `workspace` folder and select `Git Bash Here` as shown below.   
-- From your repository in Bitbucket, click Clone and copy the command that begins with _git clone_ by clicking on the copy button as shown below.  
-- Paste it within the Bash terminal (middle-click, right-click > Paste, or `Shift+Ins` to paste) and add a space followed by a **_period_** as shown below. The **_period_** at the end means that the destination is the **_current folder_**. Hit Enter.
-- If it asks for a password, enter the app password you saved in the previous step.
+- To download `Git for Windows`  go to <a href="https://git-scm.com/download/win" target="_blank">git-scm</a> and click on the link.
+- Run the setup file and install Git with the default settings. If you have a Mac, you don’t need to do this step because Git is already installed on your computer.
+- Make a new folder called `ece487_wksp` in your home folder, for example, C:\Users\stanley.baek\ece487_wksp.
+- Right-click on the `ece487_wksp` folder and choose `Git Bash Here` from the menu.   
+- In Bitbucket, open your repository and click on Clone. Copy the command that starts with _git clone_ by clicking on the copy button. 
+- Paste the command on the Bash terminal (you can use middle-click, right-click > Paste, or Shift+Ins to paste) and add a space and a **_dot_** at the end.  The **_dot_** means that you want to clone the repository into the **_current folder_**. Press Enter.
+- If it asks for a password, type in the app password that you saved before.
 - Notice that you have `(master)` at the end of the folder name. 
+- Note: The gif animation below is from ECE382. You should use ECE487 instead of ECE382.
 
 ```{image} ./figures/GitClone.gif
-:width: 720
+:width: 680
 :align: center
 ```
 <br>
 
-- The figure below shows an example of a local `workspace` folder on your computer.
+- The figure below shows an example of a local `ece487_wksp` folder on your computer.
 
+```{image} ./figures/workspace_folder.png
+:width: 740
+:align: center
+```
 
 <br>
 
-- Go back to Git Bash. If you have already closed it, right-click on an empty space inside the `workspace` folder and select `Git Bash Here`.
-- Type `git remote -v`.  It will return two lines showing that `origin` is your remote repository at bitbucket.org for both fetch and push. 
-- Type `git remote add upstream https://stanbaek2@bitbucket.org/stanbaek2/ece382_wksp.git` (or copy & paste) and hit `Enter`.
-- Type `git remote -v`.  It will now return four lines showing that `upstream`
-is the original instructor's repository that you forked from.
+- Go back to the Git Bash terminal. If you have already closed it, right-click on an empty area inside the `ece487_wksp` folder and pick `Git Bash Here` from the menu.
+- Type in `git remote -v` and press Enter.  You should see two lines that say `origin` is your remote repository on bitbucket.org for both fetching and pushing. 
+- Type in `git remote add upstream https://stanbaek2@bitbucket.org/stanbaek2/ece487_wksp.git` (or copy & paste) and press Enter.  This will add the instructor’s repository as another remote source.
+- Type in `git remote -v` and press Enter.  You should now see two more lines that say upstream is the original repository that you forked from.
+- Note: The gif animation below has been adpated from ECE382. You must use ECE487 in place of ECE382.
 
 ```{image} ./figures/GitAddUpstream.gif
 :width: 640
@@ -83,8 +92,9 @@ is the original instructor's repository that you forked from.
 ```
 <br>
 
-- Whenever there are any updates on the original code, you will be asked to run `git fetch upstream` to update your local files.  
-- Your default push and pull repository is `origin`, which is your Bitbucket repository. 
+- If the instructor’s code changes, you will be notified and you need to run `git fetch upstream` to get the latest updates on your local files.
+- When you push or pull your code, you will use origin, which is your own Bitbucket repository.
+
 
 ```{image} ./figures/FetchUpstream.png
 :width: 320
@@ -94,45 +104,38 @@ is the original instructor's repository that you forked from.
 Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github/9257901#9257901" target="_blank">Stakeoverflow</a>
 </center>
 
+
+### Install and Configure VS Code
+
+- To get Python 3.11, go to <a href="https://www.python.org/downloads/" target="_blank">python.org</a> and click on the download button. Run the file and follow the steps to install it on your computer.
+- To get VS Code, go to <a href="https://code.visualstudio.com/download" target="_blank">VS Code</a> and click on the download button for your operating system. Run the file and follow the steps to install it on your computer.
+- When you install VS Code, make sure you check the last four boxes as shown in the picture below. This will let you use VS Code with Python and Git more easily.
+
+```{image} ./figures/VSCode_Setup.png
+:width: 580
+:align: center
+```
 <br>
 
+- To open the `ece487_wksp` folder with VS Code, right-click on it and choose `Open with Code` from the menu.
+- To open the `Show All Commands` menu, go to Help and click on it, or press `Shift+Ctrl+P`. This is a useful menu that you will use a lot, so remember the shortcut `Shift+Ctrl+P`.
+- To create a virtual environment for Python, type in the first few letters of `Python: Create Environment` in the `Show All Commands` menu and select it.
+- Pick `Venv` to create a virtual environment.  
+- Select the Python path that you want to use.  
+- Select `requirements.txt` to install the Python packages that you need for this course.
+- Wait for a few minutes until all the packages are installed.
+- Click on the gear icon at the bottom left corner and select `Settings`. 
+- Selct the `workspace` tab and click on the turn page icon at the top right corner. This will open `settings.json` 
+- To copy the code for the virtual environment settings, open vscode.md and copy the code inside the curly brackets.
+- Paste the code into settings.json and save it. This will make sure that the virtual environment starts automatically when you open the workspace.
 
-
-<br>
-
-
-### Install and Configure PyCharm
-
-- Download the latest version of [PyCharm Edu](https://www.jetbrains.com/edu-products/download/#section=pycharm-edu) and install it on your computer.
-- Ensure you have the installation options checked as shown below. 
-
-
-<br>
-
-- Start PyCharm and create a new project.
-- Ensure the project location is `PycharmProjects` under your home folder, e.g., C:\Users\stanley.baek\PycharmProjects.
-- The location of virtual environment should be `env` under `PycharmProjects`, e.g., C:\Users\stanley.baek\PycharmProjects\env.
-
-
-<br>
-
-- Open `Settings` under the `File` menu and browse to `Project: PycharmProjects` > `Python Interpreter`.
-- Click `+` 
-- Search for `numpy` and click `Install Package`.
-- Install the following packages
-    - `matplotlib`
-    - `spatialmath-python`
-    - `sympy`
-    - `roboticstoolbox-python`
-    - `opencv-python`
-    - `serial`
-    
-
-```{image} ./figures/InstallNumpy.gif
+```{image} ./figures/VirtualEnvSetup.gif
 :width: 720
 :align: center
 ```
 <br>
+
+
 
 - Go back to Git Bash. If you have already closed it, right click on an empty space inside the `PycharmProjects` folder and select `Git Bash Here`.
 - Type `git add -A` or `git add -all` and hit `Enter`.
