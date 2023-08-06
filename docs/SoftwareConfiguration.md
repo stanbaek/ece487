@@ -30,7 +30,7 @@ The gif animation below has been adpated from ECE382. You must use ECE487 in pla
 ```
 <br>
 
-```{image} ./figures/HW1_GitFork.gif
+```{image} ./figures/GitFork.gif
 :width: 720
 :align: center
 ```
@@ -135,28 +135,25 @@ Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-
 ```
 <br>
 
+- Open `README.md` and type in your name for author.  To save the file, press `Ctrl+s`.
+- You should see the number 1 next to the `Source Control` icon.  Click on the `Source Control` icon and type in "initial commit".  
+- Click on the arrow next to the `Commit` button and pick `Commit & Push` on the drop down menu.  
 
-
-- Go back to Git Bash. If you have already closed it, right click on an empty space inside the `PycharmProjects` folder and select `Git Bash Here`.
-- Type `git add -A` or `git add -all` and hit `Enter`.
-- Type `git commit -m "Initial commit."` and hit `Enter`.
-- Type `git push` as shown below
-- Enter your username and password if prompted.
-
-
-- In the future you will repeat these three steps when committing your changes:
-    - git add -A
-    - git commit -m "Comment"
-    - git push
-
-- Refresh your Bitbucket repository to observe the new files as shown below
-
-
-```{image} ./figures/BitBucketPushed.png
-:width: 640
+```{image} ./figures/GitCommitPush.gif
+:width: 720
 :align: center
 ```
 <br>
+
+- You can accomplish the same thing in `Git Bash`. 
+- Open `Git Bash` and type in `git add -A` or `git add -all` and press `Enter`.
+- Type in `git commit -m "Initial commit."` and press `Enter`.
+- Type in `git push` and press `Enter`
+- Enter your username and password if prompted.
+
+```{tip}
+There are also many third-party graphic user interface (GUI) clients. Check out https://git-scm.com/downloads/guis.
+```
 
 ```{Attention} 
 It is your responsibility to check your files have been successfully pushed to your Bitbucket repository. Always visit your Bitbucket repository after you push your assignments to the repository.
@@ -166,10 +163,8 @@ It is your responsibility to check your files have been successfully pushed to y
 
 Take screenshots of the following and submit them via Gradescope.  Use `Snip & Sketch` (Win+Shift+S) in Windows 10 or Shift+CMD+4 in Mac to take a screenshot. Save it in `png` or `jpg`.  
 
-```{Warning}
-Take a picture of your screen with a mobile device or digital camera and upload it in
-Gradescope to show that you have no idea what sampling aliasing (you learned it in ECE215) is and
-you are not qualified for bachelor's degree in ECE. You will lose 30 points every time you submit a picture of a computer screen taken by your phone or mobile device. Yes, I am serious..., and it takes more time if you do.
+```{warning}
+Take a picture of your screen with a mobile device or digital camera and upload it in Gradescope to show that you have no idea what sampling aliasing (you learned it in ECE215) is and you are not qualified for bachelor's degree in ECE. You will lose 30 points every time you submit a picture of a computer screen taken by your phone or mobile device. Yes, I am serious.
 ```
 
 ### Deliverable 1
