@@ -169,17 +169,19 @@ Take a picture of your screen with a mobile device or digital camera and upload 
 
 ### Deliverable 1
 - Provide a screenshot of your Bitbucket repository as shown below 
-
-```{image} ./figures/BitBucketPushed.png
-:width: 640
+```{image} ./figures/BitbucketPushed.png
+:width: 400
 :align: center
 ```
+
 <br>
 
 ### Deliverable 2
-
-- Take a screenshot of your PyCharm settings as shown below
-
+- Provide a screenshot of your VS Code as shown below. Make sure you have the `.venv` and `.vscode` folders under the `EXPLORER` window.
+```{image} ./figures/VSCode_Configured.png
+:width: 620
+:align: center
+```
 <br>
 
 

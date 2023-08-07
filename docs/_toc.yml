@@ -11,9 +11,8 @@ parts:
 
 - caption: Supplementary 
   chapters:
-  - file: SoftwareConfiguration
-  - file: PythonIntro.ipynb
-  - file: python.ipynb
+  - file: SoftwareConfiguration.md
+  - file: PythonTutorial.md
   - file: robots.md
   - file: NoPointer.ipynb
 
