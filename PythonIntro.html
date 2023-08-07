@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>❄️ Introduction to Python &#8212; Advanced Robotics</title>
+    <title>🐍 Python Tutorial &#8212; Advanced Robotics</title>
   
   
   
@@ -69,8 +69,6 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="🐍 Python Tutorial" href="python.html" />
-    <link rel="prev" title="🔨 Software Setup" href="SoftwareConfiguration.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -167,10 +165,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="schedule.html">📆 Course Schedule</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supplementary</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="SoftwareConfiguration.html">🔨 Software Setup</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">❄️ Introduction to Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python.html">🐍 Python Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PythonTutorial.html">🐍 Python Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="robots.html">🤖 Robots, Robots, and Robots</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NoPointer.html">↗️ No Pointer in Python?</a></li>
 </ul>
@@ -387,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>❄️ Introduction to Python</h1>
+    <h1>🐍 Python Tutorial</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -433,11 +431,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><a target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/github/stanbaek/ece487/blob/main/docs/PythonIntro.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-<section class="tex2jax_ignore mathjax_ignore" id="introduction-to-python">
-<h1>❄️ Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="python-tutorial">
+<h1>🐍 Python Tutorial<a class="headerlink" href="#python-tutorial" title="Permalink to this heading">#</a></h1>
 <hr><p><strong>A note on this document</strong>
-This document is known as a Jupyter notebook; it is used in academia and industry to allow text and executable code to coexist in a very easy to read format. Blocks can contain text or executable code. To run this code in Colab, click on the rocket icon at the top of this page. <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg" />. For blocks containing code, press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>, <code class="docutils literal notranslate"><span class="pre">Ctrl+Enter</span></code>, or click the arrow on the block to run the code. Earlier blocks of code need to be executed for the later blocks of code to work.</p>
+This document is known as a Jupyter notebook; it is used in academia and industry to allow text and executable code to coexist in a very easy to read format. Blocks can contain text or Python code that can be executed in <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg" />.  Click on the rocket icon at the top of this page to open Colab.</p>
+<p>For blocks containing code in Colab, press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>, <code class="docutils literal notranslate"><span class="pre">Ctrl+Enter</span></code>, or click the arrow on the block to run the code. Earlier blocks of code need to be executed for the later blocks of code to work.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The only way to learn a new programming language is by writing programs in it. - Dennis Ritchie (inventor of C programming language)</p>
@@ -446,12 +444,8 @@ This document is known as a Jupyter notebook; it is used in academia and industr
 <h2>Running Python<a class="headerlink" href="#running-python" title="Permalink to this heading">#</a></h2>
 <section id="running-python-in-command-prompt-or-terminal-for-mac">
 <h3>Running Python in Command Prompt (or Terminal for Mac)<a class="headerlink" href="#running-python-in-command-prompt-or-terminal-for-mac" title="Permalink to this heading">#</a></h3>
-<p>Open Windows Terminal (or Terminal for Mac) and run <code class="docutils literal notranslate"><span class="pre">python</span></code> in Windows or <code class="docutils literal notranslate"><span class="pre">python3</span></code> in Mac.</p>
-<br>
-<center>
-<img src="https://github.com/stanbaek/ece487/blob/gh-pages/_images/Terminal.png?raw=true" alt="Terminal" class="bg-primary" width="540px">
-</center>
-<br>
+<p>Open Windows Terminal (or Terminal for Mac) and run <code class="docutils literal notranslate"><span class="pre">python</span></code> in Windows or <code class="docutils literal notranslate"><span class="pre">python3</span></code> in Mac.
+You can also use Terminal in VS Code.</p>
 <p>This will open the Python Shell. The Shell is where you can enter code and see the responses and output of code you have programmed into Python.  This is a kind of sandbox, where you’re able to try out some simple code and processes. For example, in the Shell enter: <code class="docutils literal notranslate"><span class="pre">2+2</span></code>.  If you press enter, it will display the answer <code class="docutils literal notranslate"><span class="pre">4</span></code> on the next line.</p>
 <p>Try the following code in the Shell. In the Colab environment, you can also select the following cell and click the arrow button to run the code in the cell, but unlike the Shell, it will only display the output of the last line in the cell.</p>
 <div class="cell docutils container">
@@ -1443,24 +1437,6 @@ S
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="SoftwareConfiguration.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">🔨 Software Setup</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="python.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">🐍 Python Tutorial</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
