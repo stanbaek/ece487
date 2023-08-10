@@ -13,6 +13,6 @@ parts:
   chapters:
   - file: SoftwareConfiguration.md
   - file: PythonTutorial.md
-  - file: robots.md
+  - file: videos.md
   - file: NoPointer.ipynb
 

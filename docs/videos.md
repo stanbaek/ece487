@@ -1,5 +1,18 @@
-# 🤖 Robots, Robots, and Robots
+# 🎥 Videos
 
+## Machine Learning
+
+## Google DeepMind's Deep Q-learning playing Atari Breakout!
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V1eYniJ0Rnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+
+### Quadruped 'robotic dog' learns how to walk on its own in one hour
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jfqXkY7ZLJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
 ## Biologically-Inspired Robots & Soft Robotics
 
