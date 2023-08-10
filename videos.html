@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>📆 Course Schedule &#8212; Advanced Robotics</title>
+    <title>🎥 Videos &#8212; Advanced Robotics</title>
   
   
   
@@ -63,12 +63,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'schedule';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'videos';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="🔨 Software Setup" href="SoftwareConfiguration.html" />
-    <link rel="prev" title="📌 Syllabus" href="syllabus.html" />
+    <link rel="next" title="🐍 No Pointers in Python?" href="NoPointer.html" />
+    <link rel="prev" title="🐍 Python Tutorial" href="PythonTutorial.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -160,15 +160,15 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="syllabus.html">📌 Syllabus</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">📆 Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">📆 Course Schedule</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supplementary</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="SoftwareConfiguration.html">🔨 Software Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PythonTutorial.html">🐍 Python Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="videos.html">🎥 Videos</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">🎥 Videos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NoPointer.html">🐍 No Pointers in Python?</a></li>
 </ul>
 
@@ -241,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/stanbaek/ece487/issues/new?title=Issue%20on%20page%20%2Fschedule.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/stanbaek/ece487/issues/new?title=Issue%20on%20page%20%2Fvideos.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -271,7 +271,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/schedule.md" target="_blank"
+      <li><a href="_sources/videos.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,7 +340,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -351,11 +353,39 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>📆 Course Schedule</h1>
+    <h1>🎥 Videos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning">Machine Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-deepminds-deep-q-learning-playing-atari-breakout">Google DeepMind’s Deep Q-learning playing Atari Breakout!</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quadruped-robotic-dog-learns-how-to-walk-on-its-own-in-one-hour">Quadruped ‘robotic dog’ learns how to walk on its own in one hour</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biologically-inspired-robots-soft-robotics">Biologically-Inspired Robots &amp; Soft Robotics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soft-robotics-tutorial">Soft Robotics tutorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soft-robotics-octopus-inspired-robots-industrial-grippers">Soft Robotics’ octopus-inspired robots industrial grippers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meet-the-worlds-first-completely-soft-robot">Meet the World’s First Completely Soft Robot</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#robotic-arms">Robotic Arms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bmw-paint-shop">BMW Paint Shop</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-interior-painting-at-vw-wolfsburg">Efficient interior painting at VW Wolfsburg</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#this-robot-walks-flies-skateboards-slacklines">This Robot Walks, Flies, Skateboards, Slacklines</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-robots">Other Robots</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genesis-to-robots">Genesis to Robots</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -365,224 +395,60 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="course-schedule">
-<h1>📆 Course Schedule<a class="headerlink" href="#course-schedule" title="Permalink to this heading">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This schedule is subject to change as appropriate.</p>
-</div>
-<p><strong>Last Updated: 17 May 2022</strong></p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Lesson</strong></p></th>
-<th class="head"><p><strong>Topic</strong></p></th>
-<th class="head"><p><strong>Due</strong></p></th>
-<th class="head"><p><strong>Note</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>L1</p></td>
-<td><p>Intro to Robotics</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L2</p></td>
-<td><p>Linear Algebra Review</p></td>
-<td><p>Cadet Intro</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L3</p></td>
-<td><p>Pose in 2D Space</p></td>
-<td><p>HW2</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L4</p></td>
-<td><p>Rotation in 3D</p></td>
-<td><p>HW3, Skills Review</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L5</p></td>
-<td><p>Transformation Matrices</p></td>
-<td><p>HW4</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L6</p></td>
-<td><p>Euler Angles</p></td>
-<td><p>HW5</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L7</p></td>
-<td><p>Extracting Euler Angles</p></td>
-<td><p>HW6</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L8</p></td>
-<td><p>Singularity &amp; Gimbal Lock</p></td>
-<td><p>HW7</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L9</p></td>
-<td><p>ICE1 - Python Intro</p></td>
-<td><p>HW8</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L10</p></td>
-<td><p>ICE2 - Containers &amp; Numpy</p></td>
-<td><p>ICE1</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L11</p></td>
-<td><p>Lab1 - Extracting Euler Angles</p></td>
-<td><p>ICE2</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L12</p></td>
-<td><p>Lab1 - Extracting Euler Angles</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L13</p></td>
-<td><p>Quaternions 1</p></td>
-<td><p>Lab1</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L14</p></td>
-<td><p>Quaternions 2</p></td>
-<td><p>HW13</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L15</p></td>
-<td><p>Quaternions 3</p></td>
-<td><p>HW14</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L16</p></td>
-<td><p>GR 1</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L17</p></td>
-<td><p>ICE3 - Classes and Objects</p></td>
-<td><p>HW15</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L18</p></td>
-<td><p>Pose in 3D Space</p></td>
-<td><p>ICE3</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L19</p></td>
-<td><p>Danavit-Hartenberg Representation</p></td>
-<td><p>HW18</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L20</p></td>
-<td><p>Forward Kinematics 1</p></td>
-<td><p>HW19</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L21</p></td>
-<td><p>Forward Kinematics 2</p></td>
-<td><p>HW20</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L22</p></td>
-<td><p>ICE4 - Spatial Maths</p></td>
-<td><p>HW21</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L23</p></td>
-<td><p>ICE5 - Robotics Toolbox</p></td>
-<td><p>ICE4</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L24</p></td>
-<td><p>Lab2 - Forward Kinematics</p></td>
-<td><p>ICE5</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L25</p></td>
-<td><p>Inverse Kinematics 1</p></td>
-<td><p>Lab2</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L26</p></td>
-<td><p>Inverse Kinematics 2</p></td>
-<td><p>HW25</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L27</p></td>
-<td><p>Inverse Kinematics 3</p></td>
-<td><p>HW26</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L28</p></td>
-<td><p>Inverse Kinematics 4</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L29</p></td>
-<td><p>Project1 - Inverse Kinematics</p></td>
-<td><p>HW28</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L30</p></td>
-<td><p>Project1 - Inverse Kinematics</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L31</p></td>
-<td><p>Project1 - Inverse Kinematics</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L32</p></td>
-<td><p>GR2</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L33</p></td>
-<td><p>Least Square Estimate (LSE)</p></td>
-<td><p>P1</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L34</p></td>
-<td><p>ICE6 - LSE</p></td>
-<td><p>HW33</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L35</p></td>
-<td><p>Lab3 - LSE/Camera</p></td>
-<td><p>ICE6</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L36</p></td>
-<td><p>Lab3 - LSE/Camera</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L37</p></td>
-<td><p>Project2 - Colaborative Robots</p></td>
-<td><p>Lab3 Due</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L38</p></td>
-<td><p>Project2 - Colaborative Robots</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>L39</p></td>
-<td><p>Project2 - Colaborative Robots</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>L40</p></td>
-<td><p>Project2 - Colaborative Robots</p></td>
-<td><p>P2 Due Midnight</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+  <section class="tex2jax_ignore mathjax_ignore" id="videos">
+<h1>🎥 Videos<a class="headerlink" href="#videos" title="Permalink to this heading">#</a></h1>
+<section id="machine-learning">
+<h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="google-deepminds-deep-q-learning-playing-atari-breakout">
+<h2>Google DeepMind’s Deep Q-learning playing Atari Breakout!<a class="headerlink" href="#google-deepminds-deep-q-learning-playing-atari-breakout" title="Permalink to this heading">#</a></h2>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V1eYniJ0Rnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+<section id="quadruped-robotic-dog-learns-how-to-walk-on-its-own-in-one-hour">
+<h3>Quadruped ‘robotic dog’ learns how to walk on its own in one hour<a class="headerlink" href="#quadruped-robotic-dog-learns-how-to-walk-on-its-own-in-one-hour" title="Permalink to this heading">#</a></h3>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jfqXkY7ZLJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+</section>
+</section>
+<section id="biologically-inspired-robots-soft-robotics">
+<h2>Biologically-Inspired Robots &amp; Soft Robotics<a class="headerlink" href="#biologically-inspired-robots-soft-robotics" title="Permalink to this heading">#</a></h2>
+<section id="soft-robotics-tutorial">
+<h3>Soft Robotics tutorial<a class="headerlink" href="#soft-robotics-tutorial" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://youtu.be/TyYW9BmMeSs"><img alt="Soft Robotics tutorial" src="http://img.youtube.com/vi/TyYW9BmMeSs/0.jpg" /></a></p>
+</section>
+<section id="soft-robotics-octopus-inspired-robots-industrial-grippers">
+<h3>Soft Robotics’ octopus-inspired robots industrial grippers<a class="headerlink" href="#soft-robotics-octopus-inspired-robots-industrial-grippers" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=X0XGure7mak&amp;ab_channel=TechCrunch"><img alt="Octopus" src="http://img.youtube.com/vi/X0XGure7mak/0.jpg" /></a></p>
+</section>
+<section id="meet-the-worlds-first-completely-soft-robot">
+<h3>Meet the World’s First Completely Soft Robot<a class="headerlink" href="#meet-the-worlds-first-completely-soft-robot" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://youtu.be/DfHehxz_-Hc"><img alt="Completely Soft Robot" src="http://img.youtube.com/vi/DfHehxz_-Hc/0.jpg" /></a></p>
+</section>
+</section>
+<section id="robotic-arms">
+<h2>Robotic Arms<a class="headerlink" href="#robotic-arms" title="Permalink to this heading">#</a></h2>
+<section id="bmw-paint-shop">
+<h3>BMW Paint Shop<a class="headerlink" href="#bmw-paint-shop" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=O0ScFQ1rbe4&amp;ab_channel=AutoMotoTV"><img alt="BMW Paint Shop" src="http://img.youtube.com/vi/O0ScFQ1rbe4/0.jpg" /></a></p>
+</section>
+<section id="efficient-interior-painting-at-vw-wolfsburg">
+<h3>Efficient interior painting at VW Wolfsburg<a class="headerlink" href="#efficient-interior-painting-at-vw-wolfsburg" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://youtu.be/LHXEeSr0KAE"><img alt="VW Wolfsburg" src="http://img.youtube.com/vi/LHXEeSr0KAE/0.jpg" /></a></p>
+</section>
+<section id="this-robot-walks-flies-skateboards-slacklines">
+<h3>This Robot Walks, Flies, Skateboards, Slacklines<a class="headerlink" href="#this-robot-walks-flies-skateboards-slacklines" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=H1_OpWiyijU&amp;ab_channel=Veritasium"><img alt="Watch This Video" src="http://img.youtube.com/vi/H1_OpWiyijU/0.jpg" /></a></p>
+</section>
+</section>
+<section id="other-robots">
+<h2>Other Robots<a class="headerlink" href="#other-robots" title="Permalink to this heading">#</a></h2>
+<section id="genesis-to-robots">
+<h3>Genesis to Robots<a class="headerlink" href="#genesis-to-robots" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://youtu.be/uzM32wVTbsY"><img alt="Oldest Robtos" src="http://img.youtube.com/vi/uzM32wVTbsY/0.jpg" /></a></p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -617,20 +483,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="syllabus.html"
+       href="PythonTutorial.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">📌 Syllabus</p>
+        <p class="prev-next-title">🐍 Python Tutorial</p>
       </div>
     </a>
     <a class="right-next"
-       href="SoftwareConfiguration.html"
+       href="NoPointer.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">🔨 Software Setup</p>
+        <p class="prev-next-title">🐍 No Pointers in Python?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -643,6 +509,40 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning">Machine Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-deepminds-deep-q-learning-playing-atari-breakout">Google DeepMind’s Deep Q-learning playing Atari Breakout!</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quadruped-robotic-dog-learns-how-to-walk-on-its-own-in-one-hour">Quadruped ‘robotic dog’ learns how to walk on its own in one hour</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biologically-inspired-robots-soft-robotics">Biologically-Inspired Robots &amp; Soft Robotics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soft-robotics-tutorial">Soft Robotics tutorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soft-robotics-octopus-inspired-robots-industrial-grippers">Soft Robotics’ octopus-inspired robots industrial grippers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meet-the-worlds-first-completely-soft-robot">Meet the World’s First Completely Soft Robot</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#robotic-arms">Robotic Arms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bmw-paint-shop">BMW Paint Shop</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#efficient-interior-painting-at-vw-wolfsburg">Efficient interior painting at VW Wolfsburg</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#this-robot-walks-flies-skateboards-slacklines">This Robot Walks, Flies, Skateboards, Slacklines</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-robots">Other Robots</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genesis-to-robots">Genesis to Robots</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
