@@ -106,7 +106,7 @@ print(type(str(a)))
 
 ### Logic Operators
 
-```
+```python
 x == y # x is equal to y
 x != y # x is not equal to y
 x > y # x is greater than y
@@ -149,19 +149,24 @@ In programming languages, variables are containers that store simple information
 ```python
 # a string variable
 name = "Stan Baek"
+```
+You can check the type in use by issuing the type() command
 
-# You can check the type in use by issuing the type() command
+```python
 type(name)
+```
 
-# It will return <class 'str'>
+It will return `<class 'str'>`
 
-# Add a new string variable 
+Add a new string variable 
+```python
 title = "the legendary pirate captain"
+```
 
-# You can add (+) string variables to combine them into a new variable
+You can add (+) string variables to combine them into a new variable
+
+```python
 character = name + ": " + title
-
-# print
 print(character)  # It will print "Stan Baek: the legendary pirate captain"
 
 # integer variable
@@ -169,26 +174,28 @@ age = 726
 
 # Check the type using type()
 type(name)
-
-# Let's try to combine a string with an integer
-# For string concatenation use + sign
-print(character + age) # will throw an error
-
 ```
 
+Let's try to combine a string with an integer
+```python
+# For string concatenation use + sign
+print(character + age) # it will throw an error
+```
 
-
+Now let's convert integer to string for printing
 
 ```python
-# Now let's convert integer to string for printing
 print(character + " is " + str(age) + " years old.")
+```
 
-# It will print 
-# Stan Baek: the legendary pirate captain is 726 years old.
+It will print 
+```
+Stan Baek: the legendary pirate captain is 726 years old.
+```
 
-# You can ask for input from the user. 
+You can ask for input from the user. 
+```python
 age = input("How old are you? ")
-
 type(age)
 
 # Since age is a string variable. We need to convert it to integer.
@@ -203,8 +210,7 @@ print(x)  # It will print 3.141
 print(int(x))  # It will print 3
 ```
 
-
-A few things are going on here while creating variables. First, Python lets us define variables using the convention variable_name = value. As long as the variable name is unique (it is not the name of a function, module, or other variable), we can define our variable this way. For strings, single quotes or double quotes must be used around the text that needs to be in the variable; it doesn't matter whether you choose single or double quotes, just stay consistent.
+A few things are going on here while creating variables. First, Python lets us define variables using the convention variable_name = value. As long as the variable name is unique (it is not the name of a function, module, or other variable), we can define our variables this way. For strings, single quotes or double quotes must be used around the text that needs to be in the variables; it doesn't matter whether you choose single or double quotes, just stay consistent.
 
 
 ### Functions and Modules
@@ -279,9 +285,6 @@ The legendary pirate captain is   726.2500 years old.
 ### Python Modules
 Additional functions can be added to python through modules. Modules are packages of additional functionality built by others. Typically, a module is comprised of compiled code that serves a specific function. To use advanced mathematical functions, enter `import math`
 
-
-
-
 ```python
 import math
 math.sqrt(16)
@@ -289,12 +292,9 @@ math.sin(math.pi/2)
 math.cos(0)
 ```
 
+With Python code, the convention is to import all required modules at the top of the python script. By importing all modules at the beginning of the script, we ensure that all modules have been loaded by the time we need them later in the script. Also, it ensures anyone reading our code can very quickly see all the modules (dependencies) needed to run the code. 
 
-With Python code, the convention is to import all required modules at the top of the python script. 
-By importing all modules at the beginning of the script, we ensure that all modules have been loaded by the time we need them later in the script. Also, it ensures anyone reading our code can very quickly see all the modules (dependencies) needed to run the code. 
-
-We can also import individual function from a module
-
+We can also import individual functions from a module
 
 ```python
 from math import sqrt, sin, pi
@@ -335,7 +335,6 @@ else:
 
 Here is an example
 
-
 ```Python
 word = input("Enter a four-letter word: ")
 if len(word) == 4:
@@ -351,13 +350,13 @@ Let's take a look at the following if-elif-else statement.
 ```Python
 hand = input("What would you like to play? ")
 if hand == "Rock":
-    print("It is a valid play")
+    print("It is a valid play.")
 elif hand == "Paper":
-    print("It is a valid play")
+    print("It is a valid play.")
 elif hand == "Sciccors":
-    print("It is a valid play")
+    print("It is a valid play.")
 else:    
-    print("It is an invalid play")
+    print("It is an invalid play.")
 ```
 
 This code can be simplified by
@@ -374,7 +373,7 @@ It can be even further simplified by
 
 ```Python
 hand = input("What would you like to play? ")
-if hand in  ("Rock", "Paper", "Scissors"):
+if hand in  ("Rock", "Paper", "Scissors"):  # This is Pythonian
     print("It is a valid play")
 else:    
     print("It is an invalid play")    
@@ -392,12 +391,10 @@ else:
 print(x)
 ```
 
+The code above can be simplified by
+
 ```Python
-# The code above can be simplified by
-condition = True
-
-x = 1 if y == 1 else 0
-
+x = 1 if y == 1 else 0  # This is Pythonian
 print(x)
 ```
 
