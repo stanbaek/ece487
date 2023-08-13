@@ -534,7 +534,7 @@ document.write(`
 </section>
 <section id="logic-operators">
 <h3>Logic Operators<a class="headerlink" href="#logic-operators" title="Permalink to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">==</span> <span class="n">y</span> <span class="c1"># x is equal to y</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">==</span> <span class="n">y</span> <span class="c1"># x is equal to y</span>
 <span class="n">x</span> <span class="o">!=</span> <span class="n">y</span> <span class="c1"># x is not equal to y</span>
 <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> <span class="c1"># x is greater than y</span>
 <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> <span class="c1"># x is less than y</span>
@@ -573,19 +573,19 @@ document.write(`
 <p>In programming languages, variables are containers that store simple information. In Python, variables can store strings or numbers. A string is a block of text, such as “Stan Baek is the legendary pirate captain.” A number can be an integer or a decimal number.  Try the the following code in Python Console.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># a string variable</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Stan Baek&quot;</span>
-
-<span class="c1"># You can check the type in use by issuing the type() command</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-
-<span class="c1"># It will return &lt;class &#39;str&#39;&gt;</span>
-
-<span class="c1"># Add a new string variable </span>
-<span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;the legendary pirate captain&quot;</span>
-
-<span class="c1"># You can add (+) string variables to combine them into a new variable</span>
-<span class="n">character</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">title</span>
-
-<span class="c1"># print</span>
+</pre></div>
+</div>
+<p>You can check the type in use by issuing the type() command</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It will return <code class="docutils literal notranslate"><span class="pre">&lt;class</span> <span class="pre">'str'&gt;</span></code></p>
+<p>Add a new string variable</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;the legendary pirate captain&quot;</span>
+</pre></div>
+</div>
+<p>You can add (+) string variables to combine them into a new variable</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">character</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">title</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>  <span class="c1"># It will print &quot;Stan Baek: the legendary pirate captain&quot;</span>
 
 <span class="c1"># integer variable</span>
@@ -593,22 +593,23 @@ document.write(`
 
 <span class="c1"># Check the type using type()</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-
-<span class="c1"># Let&#39;s try to combine a string with an integer</span>
-<span class="c1"># For string concatenation use + sign</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">character</span> <span class="o">+</span> <span class="n">age</span><span class="p">)</span> <span class="c1"># will throw an error</span>
-
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now let&#39;s convert integer to string for printing</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">character</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; years old.&quot;</span><span class="p">)</span>
-
-<span class="c1"># It will print </span>
-<span class="c1"># Stan Baek: the legendary pirate captain is 726 years old.</span>
-
-<span class="c1"># You can ask for input from the user. </span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How old are you? &quot;</span><span class="p">)</span>
-
+<p>Let’s try to combine a string with an integer</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># For string concatenation use + sign</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">character</span> <span class="o">+</span> <span class="n">age</span><span class="p">)</span> <span class="c1"># it will throw an error</span>
+</pre></div>
+</div>
+<p>Now let’s convert integer to string for printing</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">character</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; years old.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It will print</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Stan</span> <span class="n">Baek</span><span class="p">:</span> <span class="n">the</span> <span class="n">legendary</span> <span class="n">pirate</span> <span class="n">captain</span> <span class="ow">is</span> <span class="mi">726</span> <span class="n">years</span> <span class="n">old</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>You can ask for input from the user.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How old are you? &quot;</span><span class="p">)</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 
 <span class="c1"># Since age is a string variable. We need to convert it to integer.</span>
@@ -623,7 +624,7 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># It will print 3</span>
 </pre></div>
 </div>
-<p>A few things are going on here while creating variables. First, Python lets us define variables using the convention variable_name = value. As long as the variable name is unique (it is not the name of a function, module, or other variable), we can define our variable this way. For strings, single quotes or double quotes must be used around the text that needs to be in the variable; it doesn’t matter whether you choose single or double quotes, just stay consistent.</p>
+<p>A few things are going on here while creating variables. First, Python lets us define variables using the convention variable_name = value. As long as the variable name is unique (it is not the name of a function, module, or other variable), we can define our variables this way. For strings, single quotes or double quotes must be used around the text that needs to be in the variables; it doesn’t matter whether you choose single or double quotes, just stay consistent.</p>
 </section>
 <section id="functions-and-modules">
 <h3>Functions and Modules<a class="headerlink" href="#functions-and-modules" title="Permalink to this heading">#</a></h3>
@@ -691,9 +692,8 @@ document.write(`
 <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>With Python code, the convention is to import all required modules at the top of the python script.
-By importing all modules at the beginning of the script, we ensure that all modules have been loaded by the time we need them later in the script. Also, it ensures anyone reading our code can very quickly see all the modules (dependencies) needed to run the code.</p>
-<p>We can also import individual function from a module</p>
+<p>With Python code, the convention is to import all required modules at the top of the python script. By importing all modules at the beginning of the script, we ensure that all modules have been loaded by the time we need them later in the script. Also, it ensures anyone reading our code can very quickly see all the modules (dependencies) needed to run the code.</p>
+<p>We can also import individual functions from a module</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
@@ -740,13 +740,13 @@ By importing all modules at the beginning of the script, we ensure that all modu
 <p>Let’s take a look at the following if-elif-else statement.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">hand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to play? &quot;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Rock&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play.&quot;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Paper&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play.&quot;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">hand</span> <span class="o">==</span> <span class="s2">&quot;Sciccors&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play.&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>    
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is an invalid play&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is an invalid play.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>This code can be simplified by</p>
@@ -759,7 +759,7 @@ By importing all modules at the beginning of the script, we ensure that all modu
 </div>
 <p>It can be even further simplified by</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">hand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to play? &quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">hand</span> <span class="ow">in</span>  <span class="p">(</span><span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Paper&quot;</span><span class="p">,</span> <span class="s2">&quot;Scissors&quot;</span><span class="p">):</span>
+<span class="k">if</span> <span class="n">hand</span> <span class="ow">in</span>  <span class="p">(</span><span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Paper&quot;</span><span class="p">,</span> <span class="s2">&quot;Scissors&quot;</span><span class="p">):</span>  <span class="c1"># This is Pythonian</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>    
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is an invalid play&quot;</span><span class="p">)</span>    
@@ -775,11 +775,8 @@ By importing all modules at the beginning of the script, we ensure that all modu
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># The code above can be simplified by</span>
-<span class="n">condition</span> <span class="o">=</span> <span class="kc">True</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span>
-
+<p>The code above can be simplified by</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span>  <span class="c1"># This is Pythonian</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
