@@ -657,7 +657,7 @@ S
 ## Deliverables
 
 ### Deliverable 1
-Complete `sqrt.py` that computes square roots using the Newton's method of successive approximation, which says that whenever we have a guess $y$ for the value of the square root of a number $x$, we can perform a simple manipulation to get a better guess by averaging $y$ with $x/y$. For example we can compute the square root of 2 as shown below
+Write a Python script that computes square roots using the Newton's method of successive approximation, which says that whenever we have a guess $y$ for the value of the square root of a number $x$, we can perform a simple manipulation to get a better guess by averaging $y$ with $x/y$. For example we can compute the square root of 2 as shown below
 
 
 | Guess    | Quotient          | Average                    |
