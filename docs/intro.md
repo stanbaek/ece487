@@ -16,7 +16,7 @@
 - All communication and announcement 📣 will be provided through a course and section Team.
 - All lecture 📓 materials will be provided through MS Teams.
 - Laboratory 🔬 work will be posted on this course web.
-- All assignments must be submitted in [Gradescope](https://www.gradecope.com)
+- All assignments must be submitted in [Gradescope](https://www.gradescope.com)
 - [Bitbucket](https://www.bitbucket.com) will be used for students to provide their source code 📄 for homework and laboratory assignments.
 - Videos 🎥 will be uploaded to a [YouTube channel](https://www.youtube.com/watch?v=RcfQyc3R-tA&list=PLdXU2qMgwlRtIJIXX8bZWp8W-YwxSDODq&ab_channel=StanBaek) for your convenience.
 
