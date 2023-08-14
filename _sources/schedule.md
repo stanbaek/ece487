@@ -5,10 +5,10 @@ This schedule is subject to change as appropriate.
 ```
 **Last Updated: 9 Aug 2023**
 
-**Lesson**|  **Topic**                        | **Due**            | **Note**
-----------|-----------------------------------|--------------------|-----------
+**Lesson**|  **Topic**                        | **Due**            | **Reading**
+----------|-----------------------------------|--------------------|-----------------
  L1       | Intro to Machine Learning         |                    |           
- L2       | Linear Algebra                    | Cadet Intro        |           
+ L2       | Linear Algebra                    | Cadet Intro        | M: 7.1-7.1.2.3, 7.1.4.2           
  L3       | Eigenvalues                       | HW2                |           
  L4       | Eigen Analysis                    | HW3                |           
  L5       | Lab1: Python and numpy            | HW4                |           

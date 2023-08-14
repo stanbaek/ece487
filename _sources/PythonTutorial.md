@@ -635,6 +635,7 @@ It will print
 ```
 
 
+
 ```Python
 # manipulating lists using for loops
 for value in ['a','n','i','m','a','l','s']:
@@ -651,4 +652,39 @@ A
 L
 S
 ```
+
+
+## Deliverables
+
+### Deliverable 1
+Write a Python script that computes square roots using the Newton's method of successive approximation, which says that whenever we have a guess $y$ for the value of the square root of a number $x$, we can perform a simple manipulation to get a better guess by averaging $y$ with $x/y$. For example we can compute the square root of 2 as shown below
+
+
+| Guess    | Quotient          | Average                    |
+|:--------:|:-----------------:|:--------------------------:|
+| $1$      | $2/1=2$           | $(2+1)/2=1.5$              | 
+| $1.5$    | $2/1.5=1.333$     | $(1.333+1.5)/2=1.4176$     |
+| $1.4176$ | $2/1.4176=1.4188$ | $(1.4188+1.4176)/2=1.4142$ |                  
+| $1.4142$ | $\cdots$          |                            |
+| $\vdots$ |                   |                            | 
+
+You need to iterate until $|y^2 - x| < \epsilon$, where $\epsilon = 10^{-9}$ is the tolerance. You are not allowed to use any functions in the `math` module except `math.fabs` for the absolute values.  
+
+### Deliverable 2
+Write the `num_vowels` function inside `vowels.py` that takes a string argument and returns the number of lowercase vowels in the string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
