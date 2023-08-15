@@ -5,12 +5,17 @@ This schedule is subject to change as appropriate.
 ```
 **Last Updated: 9 Aug 2023**
 
+Reading: 
+- PML: Probabilistic Machine Learning by Murphy
+- PRML: Pattern Recognition and Machine Learning by Bishop 
+- ML: Machine Learning by Mitchell
+
 **Lesson**|  **Topic**                        | **Due**            | **Reading**
 ----------|-----------------------------------|--------------------|-----------------
  L1       | Intro to Machine Learning         |                    |           
- L2       | Linear Algebra                    | Cadet Intro        | M: 7.1-7.1.2.3, 7.1.4.2           
- L3       | Eigenvalues                       | HW2                |           
- L4       | Eigen Analysis                    | HW3                |           
+ L2       | Linear Algebra                    | Cadet Intro        | PML: 7.1-7.1.2.3, 7.1.4.2           
+ L3       | Basis and eigenvectors            | HW2                |           
+ L4       | Eigenvalues                       | HW3                |           
  L5       | Lab1: Python and numpy            | HW4                |           
  L6       | Curve fitting                     | Lab1               |           
  L7       | Least Squares                     | HW6                |           
