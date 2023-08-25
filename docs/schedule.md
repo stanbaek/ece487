@@ -13,13 +13,13 @@ Reading:
 **Lesson**|  **Topic**                        | **Due**            | **Reading**
 ----------|-----------------------------------|--------------------|-----------------
  L1       | Intro to Machine Learning         |                    |           
- L2       | Linear Algebra                    | Cadet Intro        | PML: 7.1-7.1.2.3, 7.1.4.2           
+ L2       | Linear Algebra                    | Cadet Intro        | PML: 7.1-7.1.2.3, 7.1.4.2 
  L3       | Basis and eigenvectors            | HW2                |           
  L4       | Eigenvalues                       | HW3                |           
  L5       | Lab1: Python and numpy            | HW4                |           
- L6       | Curve fitting                     | Lab1               |           
- L7       | Least Squares                     | HW6                |           
- L8       | Least Squares                     | HW7                |           
+ L6       | Least Square Estimate             | Lab1               | PRML: 1.1          
+ L7       | Least Square Estimate             | HW6                |           
+ L8       | Least Square Estimates            | HW7                |           
  L9       | Lab2: least square                | HW8                |           
  L10      | Random Variables                  | Lab2               |    
  L11      | Expectation and Variance          |                    |    
