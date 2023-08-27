@@ -18,8 +18,8 @@ Reading:
  L4       | Eigenvalues                       | HW3                |           
  L5       | Lab1: Python and numpy            | HW4                |           
  L6       | Least Square Estimate             | Lab1               | PRML: 1.1          
- L7       | Least Square Estimate             |                    |           
- L8       | Least Square Estimate             | HW7                |           
+ L7       | Least Square Estimate             | HW6                |           
+ L8       | Least Square Estimates            | HW7                |           
  L9       | Lab2: least square                | HW8                |           
  L10      | Random Variables                  | Lab2               |    
  L11      | Expectation and Variance          |                    |    
