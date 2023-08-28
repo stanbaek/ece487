@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Python Containers &amp; Numpy &#8212; Advanced Robotics</title>
+    <title>Python Containers &#8212; Advanced Robotics</title>
   
   
   
@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="🎥 Videos" href="videos.html" />
+    <link rel="next" title="Python Containers" href="NumPy.html" />
     <link rel="prev" title="🔬 Lab 1: 🐍 Python Tutorial" href="PythonTutorial.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,7 +172,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supplementary</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Python Containers &amp; Numpy</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Python Containers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NumPy.html">Python Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">🎥 Videos</a></li>
 </ul>
 
@@ -357,7 +358,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Python Containers & Numpy</h1>
+    <h1>Python Containers</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -368,22 +369,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-lists-tuples-and-dictionaries">Strings, Lists, Tuples, and Dictionaries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy">NumPy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-array">Creating Array</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-operations">Basic Operations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing-slicing-and-iterating">Indexing, Slicing and Iterating</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy-manipulation-routines">NumPy manipulation routines</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy-linalg">numpy.linalg</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic-functions">Logic Functions</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
 </ul>
             </nav>
         </div>
@@ -395,18 +384,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="python-containers-numpy">
-<h1>Python Containers &amp; Numpy<a class="headerlink" href="#python-containers-numpy" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="python-containers">
+<h1>Python Containers<a class="headerlink" href="#python-containers" title="Permalink to this heading">#</a></h1>
 <section id="purpose">
 <h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading">#</a></h2>
-<p>This tutorial will introduce Python data containers, such as lists, tuples, and strings.  It will also introduce NumPy, a fundametal package for scientific computing in Python.</p>
+<p>This tutorial will introduce Python data containers, such as lists, tuples, and strings.</p>
+<p>Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009</p>
 <hr>
 </section>
-<section id="strings-lists-tuples-and-dictionaries">
-<h2>Strings, Lists, Tuples, and Dictionaries<a class="headerlink" href="#strings-lists-tuples-and-dictionaries" title="Permalink to this heading">#</a></h2>
-<p>Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009</p>
 <section id="strings">
-<h3>Strings<a class="headerlink" href="#strings" title="Permalink to this heading">#</a></h3>
+<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this heading">#</a></h2>
 <p>To create string literals, enclose them in single, double, or triple quotes as follows</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hellow World&quot;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;Python is groovy&#39;</span>
@@ -442,7 +429,7 @@ document.write(`
 </div>
 </section>
 <section id="lists">
-<h3>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h3>
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h2>
 <p>Lists are sequences of arbitrary objects. You create a list by enclosing values in square brackets, as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Dave&quot;</span><span class="p">,</span> <span class="s2">&quot;Mark&quot;</span><span class="p">,</span> <span class="s2">&quot;Ann&quot;</span><span class="p">,</span> <span class="s2">&quot;Phil&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
@@ -507,7 +494,7 @@ document.write(`
 </div>
 </section>
 <section id="tuples">
-<h3>Tuples<a class="headerlink" href="#tuples" title="Permalink to this heading">#</a></h3>
+<h2>Tuples<a class="headerlink" href="#tuples" title="Permalink to this heading">#</a></h2>
 <p>To create sinple data structures, you can pack a collection of values together into a single object using a <em>tuple</em>. You can create a tuple by enclosing group of values in parentheses like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stock</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;GOOG&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">490.10</span><span class="p">)</span>
 <span class="n">address</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;www.python.org&#39;</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
@@ -546,7 +533,7 @@ document.write(`
 </div>
 </section>
 <section id="dictionaries">
-<h3>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this heading">#</a></h3>
+<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>In Python, a dictionary (or dict) is mapping between a set of indices (keys) and a set of values</p></li>
 <li><p>The items in a dictionary are key-value pairs</p></li>
@@ -568,238 +555,6 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">eng2sp</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </pre></div>
 </div>
-<hr>
-</section>
-</section>
-<section id="numpy">
-<h2>NumPy<a class="headerlink" href="#numpy" title="Permalink to this heading">#</a></h2>
-<p>NumPy’s main object is the homogeneous multidimensional array. It is a table of elements (usually numbers), all of the same type. In NumPy dimensions are called axes.</p>
-<p>For example, the array for the coordinates of a point in 3D space, <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">1]</span></code>, has one axis. That axis has 3 elements in it, so we say it has a length of 3. In the example pictured below, the array has 2 axes. The first axis has a length of 2, the second axis has a length of 3.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
- <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]]</span>
-</pre></div>
-</div>
-<p>Reference: <code class="docutils literal notranslate"><span class="pre">https://numpy.org/doc/stable/user/quickstart.html</span></code></p>
-<section id="creating-array">
-<h3>Creating Array<a class="headerlink" href="#creating-array" title="Permalink to this heading">#</a></h3>
-<p>You can create an array from a regular Python list or tuple using the array function. The type of the resulting array is deduced from the type of the elements in the sequences.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>A frequent error consists in calling array with multiple arguments, rather than providing a single sequence as an argument</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>    <span class="c1"># WRONG</span>
-<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-  <span class="o">...</span>
-<span class="ne">TypeError</span><span class="p">:</span> <span class="n">array</span><span class="p">()</span> <span class="n">takes</span> <span class="kn">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="mi">2</span> <span class="n">positional</span> <span class="n">arguments</span> <span class="n">but</span> <span class="mi">4</span> <span class="n">were</span> <span class="n">given</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>  <span class="c1"># RIGHT</span>
-</pre></div>
-</div>
-<p><code class="docutils literal notranslate"><span class="pre">np.array</span></code> transforms sequences of sequences into two-dimensional arrays, sequences of sequences of sequences into three-dimensional arrays, and so on.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
-</pre></div>
-</div>
-<p>The function <code class="docutils literal notranslate"><span class="pre">np.zeros</span></code> creates an array full of zeros, the function ones creates an array full of ones, and the function empty creates an array whose initial content is random and depends on the state of the memory. By default, the dtype of the created array is float64, but it can be specified via the key word argument dtype.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>To create sequences of numbers, NumPy provides the <code class="docutils literal notranslate"><span class="pre">arange</span></code> function which is analogous to the Python built-in range, but returns an array.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>  
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>When <code class="docutils literal notranslate"><span class="pre">arange</span></code> is used with floating point arguments, it is generally not possible to predict the number of elements obtained, due to the finite floating point precision. For this reason, it is usually better to use the function <code class="docutils literal notranslate"><span class="pre">linspace</span></code> that receives as an argument the number of elements that we want, instead of the step:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>                   <span class="c1"># 9 numbers from 0 to 2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>        <span class="c1"># useful to evaluate function at lots of points</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="basic-operations">
-<h3>Basic Operations<a class="headerlink" href="#basic-operations" title="Permalink to this heading">#</a></h3>
-<p>Arithmetic operators on arrays apply elementwise. A new array is created and filled with the result.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-<span class="n">d</span> <span class="o">=</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-<span class="n">e</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">35</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><span style="color:red"><strong>IMPORTANT</strong></span>
-Unlike in many matrix languages, the product operator <code class="docutils literal notranslate"><span class="pre">*</span></code> operates <strong>elementwise</strong> in NumPy arrays. The matrix product can be performed using the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> operator (in python &gt;=3.5) or the dot function or method:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-              <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">)</span>   <span class="c1"># elementwise product</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="nd">@B</span><span class="p">)</span>   <span class="c1"># matrix product</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">))</span> <span class="c1"># matrix product</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">B</span><span class="p">))</span>  <span class="c1"># matrix product</span>
-</pre></div>
-</div>
-<p>Some operations, such as <code class="docutils literal notranslate"><span class="pre">+=</span></code> and <code class="docutils literal notranslate"><span class="pre">*=</span></code>, act in place to modify an existing array rather than create a new one.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># create instance of default random number generator</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">rg</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">*=</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">+=</span> <span class="n">a</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">+=</span> <span class="n">b</span>  <span class="c1"># b is not automatically converted to integer type</span>
-</pre></div>
-</div>
-<p><span style="color:red"><strong>IMPORTANT</strong></span>
-A Python <code class="docutils literal notranslate"><span class="pre">list</span></code> cannot directly handle a mathematical operations, while numpy <code class="docutils literal notranslate"><span class="pre">array</span></code> can.  This is one of the main differences between a <code class="docutils literal notranslate"><span class="pre">list</span></code> and <code class="docutils literal notranslate"><span class="pre">array</span></code>. While you can store an integer or float in a list, you can’t really do mathematical operations in it.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># np array</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># python list</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># Error</span>
-</pre></div>
-</div>
-</section>
-<section id="indexing-slicing-and-iterating">
-<h3>Indexing, Slicing and Iterating<a class="headerlink" href="#indexing-slicing-and-iterating" title="Permalink to this heading">#</a></h3>
-<p>One-dimensional arrays can be indexed, sliced and iterated over, much like lists and other Python sequences.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[:</span><span class="mi">4</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">1</span><span class="p">])</span>
-<span class="c1"># equivalent to a[0:6:2] = 1000;</span>
-<span class="c1"># from start to position 6, exclusive, set every 2nd element to 1000</span>
-<span class="n">a</span><span class="p">[:</span><span class="mi">6</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># reversed a</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">b</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
-</pre></div>
-</div>
-<p>Examples of two-dimensional arrays are</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">arr2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arr2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arr2</span><span class="p">[</span><span class="mi">1</span><span class="p">,:])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arr2</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arr2</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
-
-</pre></div>
-</div>
-</section>
-<section id="numpy-manipulation-routines">
-<h3>NumPy manipulation routines<a class="headerlink" href="#numpy-manipulation-routines" title="Permalink to this heading">#</a></h3>
-<p>There are a number of functions for array manipulation. Let’s take look at a few of them.
-A complete list can be found in the reference below.</p>
-<p>Reference: <code class="docutils literal notranslate"><span class="pre">https://numpy.org/doc/stable/reference/routines.array-manipulation.html</span></code></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c1"># returns the array shape which is the same as matrix dimension</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>     <span class="c1"># shape is a properity of numpy.array </span>
-
-<span class="c1"># we can change the array shape</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>     <span class="c1">#  array shape </span>
-
-<span class="c1"># flatten an array</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="c1"># transpose</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># matrix transpose of x</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># same as x.T</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># axis = 0 means the row </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># axis = 0 means the column </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># reverse the order elements along the row axis (or reverse left and right)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># reverse the order elements along the col axis (or reverse up and down)</span>
-
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diagonal</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># get the diagonal elelments</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">.</span><span class="n">diagonal</span><span class="p">()</span>  <span class="c1"># fliplr and then get the diagonal elements</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-<span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">.</span><span class="n">diagonal</span><span class="p">()</span>  <span class="c1"># flipup and then get the diagonal elements</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="numpy-linalg">
-<h3>numpy.linalg<a class="headerlink" href="#numpy-linalg" title="Permalink to this heading">#</a></h3>
-<p>Since matrix can be easily represented by a NumPy <code class="docutils literal notranslate"><span class="pre">array</span></code>, NumPy contains a <code class="docutils literal notranslate"><span class="pre">linalg</span></code> submodule that provides various linear algebra functions.</p>
-<p>Reference: <code class="docutils literal notranslate"><span class="pre">https://numpy.org/doc/stable/reference/routines.linalg.html#module-numpy.linalg</span></code></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linalg</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">))</span> <span class="c1"># determinant of A</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1"># inverse of A</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
-<span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1"># eigen values and normalized eigenvectors</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="c1"># each column of v is a normlized eigenvector associated with w in the same order. </span>
-</pre></div>
-</div>
-</section>
-<section id="logic-functions">
-<h3>Logic Functions<a class="headerlink" href="#logic-functions" title="Permalink to this heading">#</a></h3>
-<p>Reference: <code class="docutils literal notranslate"><span class="pre">https://numpy.org/doc/stable/reference/routines.logic.html</span></code></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># x is a numpy array</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>        <span class="c1"># check if each element is zero</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="mi">0</span><span class="p">))</span>  <span class="c1"># check if all elements are zero</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="mi">0</span><span class="p">))</span>  <span class="c1"># check if any elemnent is zero</span>
-<span class="nb">print</span><span class="p">((</span><span class="n">x</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">())</span>  <span class="c1"># check if all elements are zero</span>
-<span class="nb">print</span><span class="p">((</span><span class="n">x</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">())</span>  <span class="c1"># check if any elemnent is zero</span>
-<span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>            <span class="c1"># y is a list</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">y</span><span class="o">==</span><span class="mi">0</span><span class="p">))</span>  <span class="c1"># np.all() takes a list argument</span>
-<span class="nb">print</span><span class="p">((</span><span class="n">y</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">())</span>  <span class="c1"># a list object does not have all() method.</span>
-</pre></div>
-</div>
-</section>
 </section>
 </section>
 
@@ -844,11 +599,11 @@ A complete list can be found in the reference below.</p>
       </div>
     </a>
     <a class="right-next"
-       href="videos.html"
+       href="NumPy.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">🎥 Videos</p>
+        <p class="prev-next-title">Python Containers</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -871,22 +626,10 @@ A complete list can be found in the reference below.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings-lists-tuples-and-dictionaries">Strings, Lists, Tuples, and Dictionaries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy">NumPy</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-array">Creating Array</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-operations">Basic Operations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing-slicing-and-iterating">Indexing, Slicing and Iterating</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy-manipulation-routines">NumPy manipulation routines</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy-linalg">numpy.linalg</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic-functions">Logic Functions</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
 </ul>
   </nav></div>
 
