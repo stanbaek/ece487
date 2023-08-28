@@ -22,7 +22,7 @@ Don’t worry if it doesn’t work right. If everything did, you’d be out of a
 - Name the new repository as follows: ECE487_LastName_FirstName.
 - Ensure that the access level is set to `Private repository`.
 - Give your instructor (Dr. Baek) read access: Click `Invite` and then select `Add members`.
-- Enter Dr. Baek's email address, ![baek](https://img.shields.io/badge/stanley.baek@afafacademy.af.edu-red), to provide him with read access.
+- Enter Dr. Baek's email address, ![baek](https://img.shields.io/badge/stanley.baek@afacademy.af.edu-red), to provide him with read access.
 
   
 ```{note}
