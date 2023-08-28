@@ -20,7 +20,7 @@ Reading:
  L6       | Least Square Estimate             | Lab1               | PRML: 1.1          
  L7       | Least Square Estimate             |                    |           
  L8       | Lab2: Least Square Estimate       | HW7                |           
- L9       | Least Square Estimate             | Lab2               |           
+ L9       | Probability Review                | Lab2               |           
  L10      | Random Variables                  |                    |    
  L11      | Expectation and Variance          |                    |    
  L12      | Joint Distribution and Covariance |                    |    
