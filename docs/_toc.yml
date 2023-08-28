@@ -8,11 +8,17 @@ parts:
   chapters:
   - file: syllabus.md
   - file: schedule.md
-
-- caption: Supplementary 
-  chapters:
   - file: SoftwareConfiguration.md
-  - file: PythonTutorial.md
-  - file: videos.md
   - file: NoPointer.ipynb
 
+- caption: Labs
+  chapters:
+  - file: PythonTutorial.md
+
+
+- caption: Supplementary
+  chapters:
+  - file: PythonContainers.md
+  - file: NumPy.md
+  - file: videos.md
+  

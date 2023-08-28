@@ -19,9 +19,9 @@ Reading:
  L5       | Lab1: Python and numpy            | HW4                |           
  L6       | Least Square Estimate             | Lab1               | PRML: 1.1          
  L7       | Least Square Estimate             |                    |           
- L8       | Least Square Estimate             | HW7                |           
- L9       | Lab2: least square                | HW8                |           
- L10      | Random Variables                  | Lab2               |    
+ L8       | Lab2: Least Square Estimate       | HW7                |           
+ L9       | Least Square Estimate             | Lab2               |           
+ L10      | Random Variables                  |                    |    
  L11      | Expectation and Variance          |                    |    
  L12      | Joint Distribution and Covariance |                    |    
  L13      | Regression                        |                    |    

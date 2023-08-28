@@ -15,3 +15,6 @@ ECE487 Machine Learning Course Web
 ### Recommended extensions for vscode
 - Python, Python Extension Pack
 - Jupyter, MyST-Markdown
+
+### Convert Jupyter notebooks to markdown files
+- jupytext notebook.ipynb --to md
