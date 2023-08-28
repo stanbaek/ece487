@@ -1,4 +1,4 @@
-# 🐍 Python Tutorial
+# 🔬 Lab 1: 🐍 Python Tutorial 
 
 ```{note}
 The only way to learn a new programming language is by writing programs in it. - Dennis Ritchie (inventor of C programming language)
