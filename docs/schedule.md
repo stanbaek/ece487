@@ -21,7 +21,7 @@ Reading:
  L7       | Least Square Estimate             |                    |           
  L8       | Lab2: Least Square Estimate       | HW7                |           
  L9       | Probability Review                | Lab2               |           
- L10      | Random Variables                  |                    |    
+ L10      | Joint Distribution                |                    |    
  L11      | Expectation and Variance          |                    |    
  L12      | Joint Distribution and Covariance |                    |    
  L13      | Regression                        |                    |    
