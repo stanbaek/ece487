@@ -20,11 +20,11 @@ Reading:
  L6       | Least Square Estimate             | Lab1               | PRML: 1.1          
  L7       | Least Square Estimate             |                    |           
  L8       | Lab2: Least Square Estimate       | HW7                |           
- L9       | Probability Review                | Lab2               |           
- L10      | Joint Distribution                | HW8                |    
- L11      | Covariance & Correlation          | HW9                |    
- L12      | Entropy                           | HW10               |    
- L13      | Regression                        | HW11               |    
+ L9       | Probability Review                | Lab2               | PML: 2.1-2.2, PRML: 1.2           
+ L10      | Joint Distribution                | HW8                | PML: 3.1-3.2, PRML: 1.2   
+ L11      | Covariance & Correlation          | HW9                | PRML: 1.2   
+ L12      | Statistics - MLE & MAP            | HW10               | PML: 4.1-4.2   
+ L13      | Entropy                           | HW11               | PRML: 1.6, PML: 6.1   
  L14      | Regression                        |                    |    
  L15      | Regression                        |                    |    
  L16      | Regression                        |                    |    
