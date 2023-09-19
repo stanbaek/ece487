@@ -22,16 +22,16 @@ Reading:
  L8       | Lab2: Least Square Estimate       | HW7          |           
  L9       | Probability Review                | Lab2         | PML: 2.1-2.2, PRML: 1.2           
  L10      | Joint Distribution                | HW8          | PML: 3.1-3.2, PRML: 1.2   
- L11      | Multivariate Gaussian             |              | PRML: 1.2   
- L12      | Statistical Inference             | HW10         | PML: 4.1-4.2   
- L13      | Statistical Inference             |              | PRML: 1.6, PML: 6.1   
- L14      | MLE & MAP                         | HW13         |    
- L15      | Regression                        |              |    
- L16      | Regression                        |              |    
+ L11      | Multivariate Gaussian             |              | PML: 2.3, PRML: 3.2   
+ L12      | Statistical Inference             | HW10         | PRML: 3.2-3.3    
+ L13      | Statistical Inference             |              |     
+ L14      | Maximum Likelihood                | HW13         | PML: 4.1-4.2  
+ L15      | Linear Regression                 |              | PMRL: 3.1, PMR: 11.2S   
+ L16      | Regularization                    |              |    
  L17      | GR1                               |              |    
  L18      | Backpropagaction                  |              |    
  L19      | Lab3: regression                  |              |    
- L20      | Entropy                           |              |    
+ L20      | Entropy                           |              | PRML: 1.6, PML: 6.1
  L21      | Classification                    |              |    
  L22      | Classification                    |              |    
  L23      | Classification                    |              |    
