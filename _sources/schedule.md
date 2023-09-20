@@ -26,13 +26,13 @@ Reading:
  L12      | Statistical Inference             | HW10         | PRML: 3.2-3.3    
  L13      | Statistical Inference             |              |     
  L14      | Maximum Likelihood                | HW13         | PML: 4.1-4.2  
- L15      | Linear Regression                 |              | PMRL: 3.1, PMR: 11.2S   
- L16      | Regularization                    |              |    
+ L15      | Maximum Likelihood                |              |    
+ L16      | Linear Regression                 | HW15         | PMRL: 3.1, PMR: 11.2S   
  L17      | GR1                               |              |    
  L18      | Backpropagaction                  |              |    
  L19      | Lab3: regression                  |              |    
- L20      | Entropy                           |              | PRML: 1.6, PML: 6.1
- L21      | Classification                    |              |    
+ L20      | Regularization                    |              |    
+ L21      | Entropy                           |              | PRML: 1.6, PML: 6.1
  L22      | Classification                    |              |    
  L23      | Classification                    |              |    
  L24      | Classification                    |              |    
