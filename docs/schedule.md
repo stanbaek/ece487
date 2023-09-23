@@ -28,23 +28,23 @@ Reading:
  L14      | Maximum Likelihood                | HW13         | PML: 4.1-4.2  
  L15      | Maximum Likelihood                |              |    
  L16      | Linear Regression                 | HW15         | PMRL: 3.1, PMR: 11.2S   
- L17      | GR1                               |              |    
- L18      | Backpropagaction                  |              |    
- L19      | Lab3: regression                  |              |    
- L20      | Regularization                    |              |    
- L21      | Entropy                           |              | PRML: 1.6, PML: 6.1
- L22      | Classification                    |              |    
- L23      | Classification                    |              |    
+ L17      | Backpropagation                   |              |    
+ L18      | Regularization                    | HW17         |    
+ L19      | Lab3: Backpropagation             |              |    
+ L20      | GR1                               |              |    
+ L21      | Kalman Filter                     | Lab3         |
+ L22      | Kalman Filter                     |              |
+ L23      | Entropy                           |              | PRML: 1.6, PML: 6.1
  L24      | Classification                    |              |    
- L25      | Lab4: classification              |              |    
- L26      | Neural Networks                   |              |    
- L27      | Neural Networks                   |              |    
+ L25      | Classification                    |              |    
+ L26      | Classification                    |              |    
+ L27      | Lab4: classification              |              |    
  L28      | Neural Networks                   |              |    
- L29      | Neural Networks                   |              |   
- L30      | Lab5: Neural Networks             |              |
- L31      | GR2                               |              |
- L32      | Reinforcement Learning            |              |
- L33      | Reinforcement Learning            |              |
+ L29      | Neural Networks                   |              |    
+ L30      | Neural Networks                   |              |    
+ L31      | Neural Networks                   |              |   
+ L32      | Lab5: Neural Networks             |              |
+ L33      | GR2                               |              |
  L34      | Reinforcement Learning            |              |
  L35      | Reinforcement Learning            |              |
  L36      | Final Project                     |              |
