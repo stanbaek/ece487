@@ -28,7 +28,7 @@ Reading:
  L14      | Maximum Likelihood                | HW13         | PML: 4.1-4.2  
  L15      | Maximum Likelihood                |              |    
  L16      | Linear Regression                 | HW15         | PMRL: 3.1, PMR: 11.2S   
- L17      | Backpropagation                   |              |    
+ L17      | Gradient Descent                  |              |    
  L18      | Regularization                    | HW17         |    
  L19      | Lab3: Backpropagation             |              |    
  L20      | GR1                               |              |    
