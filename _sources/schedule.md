@@ -29,11 +29,11 @@ Reading:
  L15      | Maximum Likelihood                |              |    
  L16      | Linear Regression                 | HW15         | PMRL: 3.1, PMR: 11.2S   
  L17      | Gradient Descent                  |              |    
- L18      | Regularization                    | HW17         |    
- L19      | Lab3: Backpropagation             |              |    
+ L18      | Logistic Regression               | HW17         |    
+ L19      | Lab3: Advanced Gradient Descent   | HW18         |    
  L20      | GR1                               |              |    
- L21      | Kalman Filter                     | Lab3         |
- L22      | Kalman Filter                     |              |
+ L21      | Special Topic: Kalman Filter      | Lab3         |
+ L22      | Special Topic: Kalman Filter      |              |
  L23      | Entropy                           |              | PRML: 1.6, PML: 6.1
  L24      | Classification                    |              |    
  L25      | Classification                    |              |    
