@@ -33,16 +33,16 @@ Reading:
  L19      | Lab3: Gradient Descent            |              |    
  L20      | GR1                               |              |    
  L21      | Lab4: Logistic Regression         |              |    
- L22      | Special Topic: Kalman Filter      | Lab3         |
- L23      | Special Topic: Kalman Filter      |              |
- L24      | Entropy                           |              | PRML: 1.6, PML: 6.1
+ L22      | Naive Bayes                       | Lab3         |    
+ L23      | Entropy                           |              | PRML: 1.6, PML: 6.1
+ L24      | Classification                    |              |    
  L25      | Classification                    |              |    
- L26      | Classification                    |              |    
- L27      | Classification                    |              |    
- L28      | Lab4: classification              |              |    
- L29      | Neural Networks                   |              |    
- L30      | Neural Networks                   |              |    
- L31      | Neural Networks                   |              |   
+ L26      | Lab4: classification              |              |    
+ L27      | Neural Networks                   |              |    
+ L28      | Neural Networks                   |              |    
+ L29      | Neural Networks                   |              |   
+ L30      | Special Topic: Kalman Filter      |              |
+ L31      | Special Topic: Kalman Filter      |              |
  L32      | Lab5: Neural Networks             |              |
  L33      | GR2                               |              |
  L34      | Reinforcement Learning            |              |
