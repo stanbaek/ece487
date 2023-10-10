@@ -27,22 +27,22 @@ Reading:
  L13      | Statistical Inference             |              |     
  L14      | Maximum Likelihood                | HW13         | PML: 4.1-4.2  
  L15      | Maximum Likelihood                |              |    
- L16      | Linear Regression                 | HW15         | PMRL: 3.1, PMR: 11.2S   
+ L16      | Linear Regression                 | HW15         | PRML: 3.1, PML: 11.2S   
  L17      | Gradient Descent                  |              |    
- L18      | Logistic Regression               | HW17         |    
+ L18      | Logistic Regression               | HW17         | PRML: 4.3   
  L19      | Lab3: Gradient Descent            |              |    
  L20      | GR1                               |              |    
- L21      | Lab4: Logistic Regression         |              |    
- L22      | Naive Bayes                       | Lab3         |    
- L23      | Entropy                           |              | PRML: 1.6, PML: 6.1
- L24      | Classification                    |              |    
- L25      | Classification                    |              |    
- L26      | Lab4: classification              |              |    
- L27      | Neural Networks                   |              |    
- L28      | Neural Networks                   |              |    
- L29      | Neural Networks                   |              |   
- L30      | Special Topic: Kalman Filter      |              |
- L31      | Special Topic: Kalman Filter      |              |
+ L21      | Naive Bayes                       |              | PML: 9.3   
+ L22      | Lab4: Logistic Regression         | Lab3         |    
+ L23      | Accessing Performance             |              | 
+ L24      | Special Topic: Kalman Filter      |              |
+ L25      | Special Topic: Kalman Filter      |              |
+ L26      | Entropy                           |              | PRML: 1.6, PML: 6.1
+ L27      | Classification                    |              |    
+ L28      | Lab4: classification              |              |    
+ L29      | Neural Networks                   |              |    
+ L30      | Neural Networks                   |              |    
+ L31      | Neural Networks                   |              |   
  L32      | Lab5: Neural Networks             |              |
  L33      | GR2                               |              |
  L34      | Reinforcement Learning            |              |
