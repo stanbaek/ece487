@@ -1,0 +1,869 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>❄️ ICE5: Robotics Toolbox &#8212; Advanced Robotics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/tabs.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Labs/ICE5_RoboticsToolbox';</script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="❄️ ICE6: Least Squares" href="ICE6_LSE.html" />
+    <link rel="prev" title="❄️ ICE4: Spatial Math for Python" href="ICE4_SpatialMath.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/ece487.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/ece487.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    ECE 487 Advanced Robotics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">📌 Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../schedule.html">📆 Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">🐍 Python Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robots.html">🤖 Robots, Robots, and Robots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../NoPointer.html">🐍 No Pointer in Python?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Labs</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="SoftwareConfiguration.html">✔️ Preflight: Software Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ICE1_PythonIntro.html">❄️ ICE1: Introduction to Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ICE2_PythonContainers.html">❄️ ICE2: Containers &amp; Numpy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ICE3_OOP.html">❄️ ICE3: Classes and Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ICE4_SpatialMath.html">❄️ ICE4: Spatial Math for Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">❄️ ICE5: Robotics Toolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ICE6_LSE.html">❄️ ICE6: Least Squares</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/stanbaek/ece487/blob/master/docs/Labs/ICE5_RoboticsToolbox.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/stanbaek/ece487" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/stanbaek/ece487/issues/new?title=Issue%20on%20page%20%2FLabs/ICE5_RoboticsToolbox.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Labs/ICE5_RoboticsToolbox.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>❄️ ICE5: Robotics Toolbox</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-1">Deliverable 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-2">Deliverable 2</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><a target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/github/stanbaek/ece487/blob/main/docs/Labs/ICE5_RoboticsToolbox.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<section class="tex2jax_ignore mathjax_ignore" id="ice5-robotics-toolbox">
+<h1>❄️ ICE5: Robotics Toolbox<a class="headerlink" href="#ice5-robotics-toolbox" title="Permalink to this heading">#</a></h1>
+<p><strong>A note on this document</strong>
+This document is known as a Jupyter notebook; it is used in academia and industry to allow text and executable code to coexist in a very easy to read format. Blocks can contain text or executable code. To run the executable code in this notebook, click <a target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/github/stanbaek/ece487/blob/main/docs/Labs/ICE5_RoboticsToolbox.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
+. For blocks containing code, press <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>, <code class="docutils literal notranslate"><span class="pre">Ctrl+Enter</span></code>, or click the arrow on the block to run the code. Earlier blocks of code need to be run for the later blocks of code to work.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Interactive matplotlib figures do not seem to work properly in jupyter notebook and Google Colab. It is strongly recommened to run the code in PyCharm.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import robotics toolbox.</span>
+<span class="c1"># if you get an error, you need to install roboticstoolbox-python</span>
+<span class="kn">import</span> <span class="nn">roboticstoolbox</span> <span class="k">as</span> <span class="nn">rtb</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you fail importing roboticstoolbox, you need to uncomment the following line to install the roboticstoolbox-python package.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install roboticstoolbox-python # delete &quot;#&quot; and run it.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A revolute joint and link can be created by</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">roboticstoolbox</span> <span class="k">as</span> <span class="nn">rtb</span>
+<span class="n">link</span> <span class="o">=</span> <span class="n">rtb</span><span class="o">.</span><span class="n">RevoluteMDH</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RevoluteMDH:   θ=q,  d=0.0,  a=1,  ⍺=0.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>which is a RevoluteMDH object which is a subclass of the generic DHLink object. The displayed value of the object shows the kinematic parameters (most of which have defaulted to zero), the joint type and the <em>modified</em> Denavit-Hartenberg (MDH) convention is used (the tag <em>RevoluteMDH</em>).</p>
+<p>A Link object has many parameters and methods which are described in the documentation in
+<a class="reference external" href="https://petercorke.github.io/robotics-toolbox-python/intro.html#robotics-toolbox">https://petercorke.github.io/robotics-toolbox-python/intro.html#robotics-toolbox</a>
+<a class="github reference external" href="https://github.com/petercorke/robotics-toolbox-python">petercorke/robotics-toolbox-python</a></p>
+<p>The link transform for <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span> rad is</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">pi</span>
+<span class="n">link</span><span class="o">.</span><span class="n">A</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># forward kinematics - pose of the link</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   0        -1         0         1         
+   1         0         0         0         
+   0         0         1         0         
+   0         0         0         1         
+</pre></div>
+</div>
+</div>
+</div>
+<p>representing the homogeneous transformation due to this robot link with the particular value of <span class="math notranslate nohighlight">\(\theta\)</span>.  Various link parameters can be read or altered, for example,</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">link</span><span class="o">.</span><span class="n">isprismatic</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">link</span><span class="o">.</span><span class="n">isrevolute</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<p>indicate that the link is revolute and</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">link</span><span class="o">.</span><span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<p>returns the link length, <span class="math notranslate nohighlight">\(a\)</span>.  Finally a link can contain an offset</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">link</span><span class="o">.</span><span class="n">offset</span> <span class="o">=</span> <span class="n">pi</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">link</span><span class="o">.</span><span class="n">A</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   0        -1         0         1         
+   1         0         0         0         
+   0         0         1         0         
+   0         0         0         1         
+</pre></div>
+</div>
+</div>
+</div>
+<p>which is added to the joint variable before computing the link transformation. The joint coordinate offset provides a mechanism to set an arbitrary configuration for the zero joint coordinate case. The offset is added to the user specified joint angle before any kinematic or dynamic function is invoked.</p>
+<p>Shown below is the 3 DoF revolute-prismatic-revolute (RPR) robotic arm we discussed in Lesson 19.</p>
+<a class="reference internal image-reference" href="Labs/figures/RPR.png"><img alt="Labs/figures/RPR.png" class="align-center" src="Labs/figures/RPR.png" style="width: 640px;" /></a>
+<p>Suppse <span class="math notranslate nohighlight">\(L_1 = L_2 = L_3 = 1\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">L2</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">L3</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">RPR</span> <span class="o">=</span> <span class="n">rtb</span><span class="o">.</span><span class="n">robot</span><span class="o">.</span><span class="n">DHRobot</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="n">rtb</span><span class="o">.</span><span class="n">RevoluteMDH</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">L1</span><span class="p">),</span> 
+        <span class="n">rtb</span><span class="o">.</span><span class="n">PrismaticMDH</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="n">L2</span><span class="p">),</span>
+        <span class="n">rtb</span><span class="o">.</span><span class="n">RevoluteMDH</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">L3</span><span class="p">)</span>        
+    <span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;RPR&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">RPR</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DHRobot: RPR, 3 joints (RPR), dynamics, modified DH parameters
+┌─────┬───────┬──────┬─────────┐
+│aⱼ₋₁ │ ⍺ⱼ₋₁  │  θⱼ  │   dⱼ    │
+├─────┼───────┼──────┼─────────┤
+│ 0.0 │  0.0° │   q1 │       1 │
+│ 0.0 │ 90.0° │ 0.0° │  q2 + 1 │
+│ 0.0 │  0.0° │   q3 │       1 │
+└─────┴───────┴──────┴─────────┘
+
+┌─┬──┐
+└─┴──┘
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can now perform standard kinematic operations</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qz</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1"># zero angle configuration</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">RPR</span><span class="o">.</span><span class="n">fkine</span><span class="p">(</span><span class="n">qz</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   1         0         0         0         
+   0         0        -1        -2         
+   0         1         0         1         
+   0         0         0         1         
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can generate plots using the plot method, for example</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: this is for jupyter-book &amp; jupyter-lab.</span>
+<span class="c1"># If figures are not correctly displayed in this doc, </span>
+<span class="c1"># &quot;%matplotlib widget&quot; may need to be added  </span>
+<span class="c1"># If it throws anerror after adding %matplotlib widget, </span>
+<span class="c1"># run &quot;pip install --upgrade jupyterlab ipympl&quot;</span>
+<span class="c1"># %matplotlib notebook  </span>
+<span class="c1"># %matplotlib inline </span>
+
+<span class="o">%</span><span class="k">matplotlib</span> inline 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">RPR</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">qz</span><span class="p">,</span> <span class="n">block</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># It may not display correctly</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/4e8b33672499532abbec93e7cac49137e00bc15dafa65ccbb9989be7e062749b.png" src="../_images/4e8b33672499532abbec93e7cac49137e00bc15dafa65ccbb9989be7e062749b.png" />
+</div>
+</div>
+<p>which shows a skeleton of the robot with pipes that connect the link coordinate frames as defined by the Denavit-Hartenberg parameters. The plot method has many options for showing the joint axes, wrist coordinate frame, shadows and so on. Also. we can rotate the figure by holding down the left mouse button.</p>
+<p>We can also animate as the robot moves along multiple configurations. Let’s animate the path from the <code class="docutils literal notranslate"><span class="pre">qz</span></code> to <code class="docutils literal notranslate"><span class="pre">q1</span></code> given by</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q1</span> <span class="o">=</span> <span class="p">[</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">qt</span> <span class="o">=</span> <span class="n">rtb</span><span class="o">.</span><span class="n">jtraj</span><span class="p">(</span><span class="n">qz</span><span class="p">,</span> <span class="n">q1</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span> <span class="c1"># 50 steps</span>
+<span class="n">RPR</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">qt</span><span class="o">.</span><span class="n">q</span><span class="p">,</span> <span class="n">block</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># qt.q is the trajectory from qz to q1  # It may not display correctly</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Shown below is the 3 DoF revolute-revolute-revolute (RRR) robotic arm we discussed in Lesson 19.</p>
+<a class="reference internal image-reference" href="Labs/figures/RRR.png"><img alt="Labs/figures/RRR.png" class="align-center" src="Labs/figures/RRR.png" style="width: 760px;" /></a>
+<p>Suppse <span class="math notranslate nohighlight">\(L_1 = 0.2\)</span>, <span class="math notranslate nohighlight">\( L_2 = 1\)</span> and <span class="math notranslate nohighlight">\(L_3 = 0.8\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">spatialmath</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">L1</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">L2</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">L3</span> <span class="o">=</span> <span class="mf">0.8</span>
+<span class="n">RRR</span> <span class="o">=</span> <span class="n">rtb</span><span class="o">.</span><span class="n">robot</span><span class="o">.</span><span class="n">DHRobot</span><span class="p">(</span>
+    <span class="p">[</span> <span class="n">rtb</span><span class="o">.</span><span class="n">RevoluteMDH</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">L1</span><span class="p">),</span> 
+      <span class="n">rtb</span><span class="o">.</span><span class="n">RevoluteMDH</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span>
+      <span class="n">rtb</span><span class="o">.</span><span class="n">RevoluteMDH</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">L2</span><span class="p">)</span>        
+    <span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;RRR&#39;</span><span class="p">,</span> <span class="n">RRR</span><span class="o">.</span><span class="n">tool</span> <span class="o">=</span> <span class="n">SE3</span><span class="o">.</span><span class="n">Tx</span><span class="p">(</span><span class="n">L3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">RRR</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">RRR</span><span class="o">.</span><span class="n">tool</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>where the tool tip position (origin of Frame {4}) with repect to Frame {3} is (L3, 0, 0), which is an extension by L3 in the x-direction of Frame {3}.</p>
+<p>Forward kinematics can be computed to find the pose of the tool tip as before</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qz</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="c1"># zero angle configuration</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">RRR</span><span class="o">.</span><span class="n">fkine</span><span class="p">(</span><span class="n">qz</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+<span class="n">T</span><span class="o">.</span><span class="n">printline</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This returns the homogeneous transformation corresponding to the end-effector pose <span class="math notranslate nohighlight">\((𝑅, \mathbf{t})\)</span>, where
+$<span class="math notranslate nohighlight">\(R = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 \\ 0 &amp; 1 &amp; 0\end{bmatrix}\)</span>$
+represents the orientation of the tool tip and</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{t} = \begin{bmatrix} 1.8 \\ 0 \\ 0.2\end{bmatrix}\end{split}\]</div>
+<p>represents the position of the tool tip.</p>
+<p>We can find the roll-pitch-yaw angles of the tool tip relative to Frame {0} by</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span><span class="o">.</span><span class="n">rpy</span><span class="p">(</span><span class="s1">&#39;deg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>which is a <span class="math notranslate nohighlight">\(90^\circ\)</span> rotaion about the <span class="math notranslate nohighlight">\(\hat{X}_0\)</span>-axis.</p>
+<p>We can generate a plot</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">RRR</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">qz</span><span class="p">,</span> <span class="n">block</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   <span class="c1"># It may not display correctly</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="deliverables">
+<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this heading">#</a></h2>
+<section id="deliverable-1">
+<h3>Deliverable 1<a class="headerlink" href="#deliverable-1" title="Permalink to this heading">#</a></h3>
+<p>Create a folder called <code class="docutils literal notranslate"><span class="pre">ICE3</span></code> in your repository.  Write a Python script that constrcuts an instance of DHRobot for the robot shown below.</p>
+<a class="reference internal image-reference" href="Labs/figures/Mover6.png"><img alt="Labs/figures/Mover6.png" class="align-center" src="Labs/figures/Mover6.png" style="width: 700px;" /></a>
+<p>Find the forword kinematics for the following configurations of (<span class="math notranslate nohighlight">\(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6\)</span>).</p>
+<p>a. (0, 0, 0, 0, 0, 0)</p>
+<p>b. (0, 0, 90, 0, -90, 0)</p>
+<p>c. (0, 90, 90, 0, -90, 0)</p>
+<p>d. (90, 90, 90, 0, -90, 0)</p>
+<p>e. (90, 90, -90, 0, -90, 0)</p>
+<p>f. (90, 90, -90, 90, -90, -90)</p>
+<p>Use the following values for the link lengths:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># link length in mm.</span>
+<span class="n">L1</span> <span class="o">=</span> <span class="mi">193</span>
+<span class="n">L2</span> <span class="o">=</span> <span class="mi">190</span>
+<span class="n">L3</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">L4</span> <span class="o">=</span> <span class="mi">290</span>
+<span class="n">L5</span> <span class="o">=</span> <span class="mi">75</span>
+<span class="n">L6</span> <span class="o">=</span> <span class="mi">70</span>
+</pre></div>
+</div>
+<p>For each configuration, provide</p>
+<ul class="simple">
+<li><p>Euler angles (rpy) and position of the tool tip.</p></li>
+<li><p>plot as shown below.</p></li>
+</ul>
+<p>For (<span class="math notranslate nohighlight">\(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6\)</span>) = (0, 0, 0, 0, 0, 0), the figure should be</p>
+<a class="reference internal image-reference" href="../_images/Mover6_zero_config.png"><img alt="../_images/Mover6_zero_config.png" class="align-center" src="../_images/Mover6_zero_config.png" style="width: 600px;" /></a>
+<p>Although Joint 3 does not look like 90 degrees in the figure, it is actually 90 degrees. Apparently, the plot function cannot correctly display L3.  Use the plot as a reference only and you need to look at the pose returned by <code class="docutils literal notranslate"><span class="pre">fkine</span></code>.</p>
+</section>
+<section id="deliverable-2">
+<h3>Deliverable 2<a class="headerlink" href="#deliverable-2" title="Permalink to this heading">#</a></h3>
+<p>Construct a DH table for the 5 DoF robotic arm shown below.</p>
+<a class="reference internal image-reference" href="Labs/figures/xArm.png"><img alt="Labs/figures/xArm.png" class="align-center" src="Labs/figures/xArm.png" style="width: 560px;" /></a>
+<p>There are five revolute joints. Attach Frame 5 for Joint 5 at the end of the tooltip.</p>
+<p>The link lengths are given by</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">B0</span> <span class="o">=</span> <span class="mf">0.090</span>
+<span class="n">L1</span> <span class="o">=</span> <span class="mf">0.010</span>  <span class="c1"># we will use it later, set it to 0 this time.</span>
+<span class="n">L2</span> <span class="o">=</span> <span class="mf">0.105</span>
+<span class="n">L3</span> <span class="o">=</span> <span class="mf">0.088</span>
+<span class="n">L4</span> <span class="o">=</span> <span class="mf">0.170</span>
+</pre></div>
+</div>
+<p>Write a Python script that constructs an instance of DHRobot for the robot and tests the following angles.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># rest position</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>     <span class="c1"># zero position</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Labs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ICE4_SpatialMath.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">❄️ ICE4: Spatial Math for Python</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ICE6_LSE.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">❄️ ICE6: Least Squares</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-1">Deliverable 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-2">Deliverable 2</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Stan Baek
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
