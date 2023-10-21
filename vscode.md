@@ -6,7 +6,7 @@ If not exist, create it by Settings (Gear Icon) > Settings > Workspace > Open Se
 
 {
     "python.envFile": "${workspaceFolder}/.venv",
-    "python.terminal.activateEnvInCurrentTerminal": true
+    "python.terminal.activateEnvInCurrentTerminal": true,
 
     "git.autofetch": true,
     "git.enableSmartCommit": true,
