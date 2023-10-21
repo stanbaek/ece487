@@ -34,21 +34,21 @@ Reading:
  L20      | GR1                               |              |    
  L21      | Naive Bayes                       |              | PML: 9.3   
  L22      | Lab4: Logistic Regression         | Lab3         |    
- L23      | Special Topic: Kalman Filter      |              | 
- L24      | Special Topic: Kalman Filter      | Lab4         |
- L25      | Special Topic: Kalman Filter      | HW24         |
- L26      | Entropy                           | HW25         |   
- L27      | Accessing Performance             | HW26         |
- L28      | Lab5: Performance                 |              |    
- L29      | SVM                               | Lab5         |    
- L30      | Lab6: SVM                         |              |    
- L31      | Back Propagation                  | Lab6         |  
- L32      | Lab7: Back propagation            |              |  
- L33      | Neural Networks                   | Lab7         |
- L34      | Lab8: Neural Networks             |              |
+ L23      | Special Topic: Kalman Filter      |              |
+ L24      | Special Topic: Kalman Filter      |              |
+ L25      | Special Topic: Kalman Filter      |              |
+ L26      | Special Topic: Kalman Filter      |              |
+ L27      | Lab5: Kalman Filter               |              | 
+ L28      | Lab6: Naive Bayes                 |              |    
+ L29      | Accessing Performance             |              | 
+ L30      | Lab7: Accessing Performance       |              |    
+ L31      | Neural Networks                   |              |    
+ L32      | Lab8: Neural Networks             |              |
+ L33      | Lab9: scikit-learn                |              |
+ L34      | Lab10: scikit-learn               |              |
  L35      | GR2                               |              |
- L36      | Final Project                     | Lab8         |
+ L36      | Final Project                     |              |
  L37      | Final Project                     |              |
  L38      | Final Project                     |              |
  L39      | Final Project                     |              |
- L40      | Final Project                     | Final Report |
+ L40      | Final Project                     |              |
