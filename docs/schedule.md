@@ -34,19 +34,19 @@ Reading:
  L20      | GR1                               |              |    
  L21      | Naive Bayes                       |              | PML: 9.3   
  L22      | Lab4: Logistic Regression         | Lab3         |    
- L23      | Accessing Performance             |              | 
+ L23      | Special Topic: Kalman Filter      |              |
  L24      | Special Topic: Kalman Filter      |              |
  L25      | Special Topic: Kalman Filter      |              |
- L26      | Entropy                           |              | PRML: 1.6, PML: 6.1
- L27      | Classification                    |              |    
- L28      | Lab4: classification              |              |    
- L29      | Neural Networks                   |              |    
- L30      | Neural Networks                   |              |    
- L31      | Neural Networks                   |              |   
- L32      | Lab5: Neural Networks             |              |
- L33      | GR2                               |              |
- L34      | Reinforcement Learning            |              |
- L35      | Reinforcement Learning            |              |
+ L26      | Special Topic: Kalman Filter      |              |
+ L27      | Lab5: Kalman Filter               |              | 
+ L28      | Lab6: Naive Bayes                 |              |    
+ L29      | Accessing Performance             |              | 
+ L30      | Lab7: Accessing Performance       |              |    
+ L31      | Neural Networks                   |              |    
+ L32      | Lab8: Neural Networks             |              |
+ L33      | Lab9: scikit-learn                |              |
+ L34      | Lab10: scikit-learn               |              |
+ L35      | GR2                               |              |
  L36      | Final Project                     |              |
  L37      | Final Project                     |              |
  L38      | Final Project                     |              |
