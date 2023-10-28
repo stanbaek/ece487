@@ -39,9 +39,9 @@ Reading:
  L25      | Special Topic: Kalman Filter      | HW24         |
  L26      | Special Topic: Kalman Filter      |              |
  L27      | Lab5: Kalman Filter               | HW26         | 
- L28      | Lab6: Naive Bayes                 | Lab5         |    
- L29      | Accessing Performance             | Lab6         | 
- L30      | SVM                               |              |    
+ L28      | Accessing Performance             | Lab6         | 
+ L29      | SVM                               |              |    
+ L30      | Lab6: Naive Bayes                 | Lab5         |    
  L31      | Lab7: SVM                         |              |  
  L32      | Back propagation                  | Lab7         |  
  L33      | Neural Networks                   |              |
