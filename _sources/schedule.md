@@ -39,15 +39,15 @@ Reading:
  L25      | Special Topic: Kalman Filter      | HW24         |
  L26      | Special Topic: Kalman Filter      |              |
  L27      | Lab5: Kalman Filter               | HW26         | 
- L28      | Accessing Performance             | Lab6         | 
- L29      | SVM                               |              |    
- L30      | Lab6: Naive Bayes                 | Lab5         |    
- L31      | Lab7: SVM                         |              |  
+ L28      | Accessing Performance             | Lab5         | 
+ L29      | Lab6: scikit-learn                | HW28         |    
+ L30      | SVM                               | Lab6         |    
+ L31      | Lab7: SVM & Naive Bayes           |              |  
  L32      | Back propagation                  | Lab7         |  
  L33      | Neural Networks                   |              |
  L34      | Lab8: Neural Networks             |              |
  L35      | GR2                               |              |
- L36      | Final Project (SciKit-Learn)      | Lab8         |
+ L36      | Final Project                     | Lab8         |
  L37      | Final Project                     |              |
  L38      | Final Project                     |              |
  L39      | Final Project                     |              |
