@@ -41,8 +41,8 @@ Reading:
  L27      | Lab5: Kalman Filter               | HW26         | 
  L28      | Accessing Performance             | Lab5         | 
  L29      | Lab6: scikit-learn                | HW28         |    
- L30      | SVM                               | Lab6         |    
- L31      | Lab7: SVM & Naive Bayes           |              |  
+ L30      | SVM                               |              |    
+ L31      | Lab7: SVM & Naive Bayes           | Lab6         |  
  L32      | Back propagation                  | Lab7         |  
  L33      | Neural Networks                   |              |
  L34      | Lab8: Neural Networks             |              |
