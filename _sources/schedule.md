@@ -43,12 +43,12 @@ Reading:
  L29      | Lab6: scikit-learn                | HW28         |    
  L30      | SVM                               |              |    
  L31      | Lab7: SVM & Naive Bayes           | Lab6         |  
- L32      | Back propagation                  | Lab7         |  
- L33      | Neural Networks                   |              |
+ L32      | Neural Networks                   |              |
+ L33      | Back propagation                  | Lab7         |  
  L34      | Lab8: Neural Networks             |              |
- L35      | GR2                               |              |
- L36      | Final Project                     | Lab8         |
- L37      | Final Project                     |              |
+ L35      | Final Project                     |              |
+ L36      | Final Project                     | Lab8, HW33   |
+ L37      | GR2                               |              |
  L38      | Final Project                     |              |
  L39      | Final Project                     |              |
  L40      | Final Project                     | Final Report |
