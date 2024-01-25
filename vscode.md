@@ -2,6 +2,15 @@
 settings.json under .vscode
 If not exist, create it by Settings (Gear Icon) > Settings > Workspace > Open Settings (Top Right)
 
+The following setting.json file works with
+pip install black
+pip install flake8
+
+TODO: If we install the following vscode Extensions 
+- pylint (Microsoft)
+- Flake (Microsoft)
+- Black Formatter (Microsoft)
+the settings.json file should be changed.
 
 
 {
@@ -33,5 +42,4 @@ If not exist, create it by Settings (Gear Icon) > Settings > Workspace > Open Se
 
 
 
-pip install black
-pip install flake8
+
