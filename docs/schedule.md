@@ -12,15 +12,16 @@ Reading:
 
 **Lesson**|  **Topic**                    | **Due**            | **Reading**
 ----------|-------------------------------|--------------------|-----------------
- L1       | Intro to Machine Learning     |                    |           
- L2       | Linear Algebra                | Cadet Intro        | M: 7.1-7.1.2.3, 7.1.4.2 
- L3       | Basis and eigenvectors        | HW1 (Skills Review)|           
- L4       | Eigenvalues                   |                    |           
- L5       | Lab1: Python and numpy        | HW2                |      
- L6       | Least Square Estimate         |                    | B: 1.1          
- L7       | Least Square Estimate         | Lab1               |           
- L8       | Conditional Probability       |                    | M: 2.1-2.2, B: 1.2           
- L9       | Lab2: Least Square Estimate   | HW3                |           
+ L1       | Course Intro                  |                    |           
+ L2       | Intro to Machine Learning     | Cadet Intro        | S:1.1-1.6 
+ L3       | Linear Algebra                | HW1 (Skills Review)| M:7.1, S:2.5-2.7 
+ L4       | Basis                         |                    |           
+ L5       | Eigenvalues & Eigenvectors    |                    |           
+ L6       | Least Square Estimate         | HW2                | B: 1.1          
+ L7       | Least Square Estimate         |                    |           
+ L8       | Conditional Probability       | HW3                | M: 2.1-2.2, B: 1.2      
+ L9       | Lab1: Python and numpy        | HW2                |      
+ L10      | Lab2: Least Square Estimate   | HW3                |           
  L10      | Joint Distribution            |                    | M: 3.1-3.2, B: 1.2   
  L11      | Multivariate Gaussian         | Lab2               | M: 2.3, B: 3.2   
  L12      | Kalman Filter                 |                    |
