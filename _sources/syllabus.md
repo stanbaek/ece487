@@ -18,8 +18,8 @@ The **Grade distribution** for this course is shown below.
 |------------------------|-------------|------------------------|-------------|
 |     GR (1)             |     20%     |     GRs (2)            |     20%     |
 |     Labs               |     15%     |     Labs               |     15%     |
-|Homework + Skills Review|     40%     |Homework + Skills Review|     40%     |
-|     Project (1)        |     25%     |     Projects (2)       |     25%     |
+|     Homework           |     45%     |     Homework           |     40%     |
+|     Project (1)        |     20%     |     Projects (2)       |     25%     |
 |                        |             |                        |             |
 |     Total              |     100%    |     Total              |     100%    |
 
@@ -48,6 +48,7 @@ All communication and course materials will be provided through a course and sec
 <a href="https://www.cambridge.org/us/universitypress/subjects/engineering/communications-and-signal-processing/machine-learning-engineers?format=HB" target="_blank"> Machine Learning for Engineers</a>, Osvaldo Simeone, Cambridge, November 2022.
 
 **Optional**
+
 <a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022. [Free PDF](https://github.com/probml/pml-book/releases/latest/download/book1.pdf)
 <br>
 <a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. <a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf" target="_blank">Free PDF</a>
