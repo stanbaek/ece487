@@ -45,12 +45,15 @@ All communication and course materials will be provided through a course and sec
 ## Textbooks
 **Required**
 
+<a href="https://www.cambridge.org/us/universitypress/subjects/engineering/communications-and-signal-processing/machine-learning-engineers?format=HB" target="_blank"> Machine Learning for Engineers</a>, Osvaldo Simeone, Cambridge, November 2022.
+
 **Optional**
 <a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022. [Free PDF](https://github.com/probml/pml-book/releases/latest/download/book1.pdf)
 <br>
-<a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. [Free PDF](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+<a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. <a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf" target="_blank">Free PDF</a>
 <br>
-<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997. [Free PDF](http://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf)
+<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997. <a href="http://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf" target="_blank">Free PDF</a>
+
 
 ## Collaboration Policy
 
