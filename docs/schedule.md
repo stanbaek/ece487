@@ -10,46 +10,47 @@ Reading:
 - M: Murphy, Probabilistic Machine Learning (Optional)
 - B: Biship, Pattern Recognition and Machine Learning (Optional)
 
-**Lesson**|  **Topic**                    | **Due**            | **Reading**
-----------|-------------------------------|--------------------|-----------------
- L1       | Course Intro                  |                    |           
- L2       | Intro to Machine Learning     | Cadet Intro        | S:1.1-1.6 
- L3       | Linear Algebra                | HW1 (Skills Review)| M:7.1, S:2.5-2.7 
- L4       | Basis                         |                    |           
- L5       | Eigenvalues & Eigenvectors    |                    |           
- L6       | Least Square Estimate         | HW2                | B: 1.1          
- L7       | Least Square Estimate         |                    |           
- L8       | Conditional Probability       | HW3                | M: 2.1-2.2, B: 1.2      
- L9       | Lab1: Python and numpy        | HW2                |      
- L10      | Lab2: Least Square Estimate   | HW3                |           
- L10      | Joint Distribution            |                    | M: 3.1-3.2, B: 1.2   
- L11      | Multivariate Gaussian         | Lab2               | M: 2.3, B: 3.2   
- L12      | Kalman Filter                 |                    |
- L13      | Kalman Filter                 | HW4                |
- L14      | Kalman Filter                 |                    |
- L15      | Project 1                     | HW5                |
- L16      | Statistical Inference         |                    | B: 3.2-3.3    
- L17      | Statistical Inference         | Proj1              |     
- L18      | Maximum Likelihood            | HW6                | M: 4.1-4.2  
- L19      | GR1                           |                    |    
- L20      | Maximum Likelihood            |                    |    
- L21      | Linear Regression             | HW7                | B: 3.1, M: 11.2S   
- L22      | Gradient Descent              |                    |    
- L23      | Logistic Regression           | HW8                | B: 4.3   
- L25      | Naive Bayes                   |                    | M: 9.3   
- L24      | Lab3: Basic ML                |                    |    
- L26      | Data Cleaning                 | Lab3               |    
- L27      |                               |              | 
- L28      | Accessing Performance         | Lab5               | 
- L29      | Lab4: scikit-learn            | HW28               |    
- L30      | SVM                           |                    |    
- L31      | Lab7: SVM & Naive Bayes       | Lab6               |  
- L32      | Neural Networks               |                    |
- L33      | Back propagation              | Lab7               |  
- L34      | Lab8: Neural Networks         |                    |
- L35      | Final Project                 |                    |
- L36      | Final Project                 | Lab8, HW33         |
- L37      | GR2                           |                    |
- L38      | Final Project                 |                    |
- L39      | Final Project                 |                    |
- L40      | Final Project                 | Final Report       |
+|Lesson|  Topic                    | Due            | Reading
+|:----:|-------------------------------|--------------------|-----------------
+|1     | Course Intro                  |                    |           
+|2     | Intro to Machine Learning     | Cadet Intro        | S:1.1-1.6 
+|3     | Linear Algebra                | HW1 (Skills Review)| M:7.1, S:2.5-2.7 
+|4     | Basis                         |                    |           
+|5     | Eigenvalues & Eigenvectors    | HW2                |           
+|6     | Least Square Estimate         |                    | B:1.1          
+|7     | Least Square Estimate         | HW3                |           
+|8     | Conditional Probability       |                    | M:2.1-2.2, B: 1.2      
+|9     | Lab1: Python & LSE            | HW4                |      
+|10    | Joinst Distribution           |                    |           
+|11    | Multivariate Gaussian         | Lab1               | M:2.3,3.1-3.2, B: 1.2,3.2   
+|12    | Kalman Filter                 | HW5                |
+|13    | Kalman Filter                 |                    |
+|14    | Kalman Filter                 | HW6                |
+|15    | Project 1                     |                    |
+|16    | Statistical Inference         |                    | B: 3.2-3.3    
+|17    | Statistical Inference         | Proj1              |     
+|18    | Maximum Likelihood            | HW7                | M: 4.1-4.2  
+|19    | GR1                           |                    |    
+|20    | Maximum Likelihood            |                    |    
+|21    | Linear Regression             | HW8                | B: 3.1, M: 11.2S   
+|22    | Gradient Descent              |                    |    
+|23    | Logistic Regression           | HW9                | B: 4.3   
+|24    | Naive Bayes                   |                    | M: 9.3   
+|25    | Lab2: Basic ML                |                    |    
+|26    | Data Cleaning                 | Lab3               |    
+|27    | TBA                           |                    | 
+|28    | Accessing Performance         | Lab5               | 
+|29    | Lab3: scikit-learn            | HW28               |    
+|30    | SVM                           |                    |    
+|31    | TBA                           |                    |    
+|32    | Neural Networks               |                    |
+|33    | Back propagation              | Lab7               |  
+|34    | TBA                           |                    |    
+|35    | GR2                           |                    |
+|36    | Final Project                 |                    |
+|37    | Final Project                 | Lab8, HW33         |
+|38    | Final Project                 |                    |
+|      | Thanksgiving Break            |                    |
+|39    | Final Project                 |                    |
+|40    | Final Project                 | Final Report       |
+|Final | No Final Exam                 |                    |
