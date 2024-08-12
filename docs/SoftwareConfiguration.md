@@ -107,7 +107,7 @@ Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-
 
 ### Install and Configure VS Code
 
-- To get Python 3.11, go to <a href="https://www.python.org/downloads/" target="_blank">python.org</a> and click on the download button. Run the file and follow the steps to install it on your computer.
+- Download <a href="https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe">Python 3.10.11</a>. Run the file and follow the steps to install it on your computer. In the first window, ensure you check the box that says `Add to PATH!`
 - To get VS Code, go to <a href="https://code.visualstudio.com/download" target="_blank">VS Code</a> and click on the download button for your operating system. Run the file and follow the steps to install it on your computer.
 - When you install VS Code, make sure you check the last four boxes as shown in the picture below. This will let you use VS Code with Python and Git more easily.
 
