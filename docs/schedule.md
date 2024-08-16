@@ -19,14 +19,14 @@ Reading:
 |5     | Eigenvalues & Eigenvectors    | HW2         | [3Blue1Brown](https://www.youtube.com/watch?v=PFDu9oVAE-g)
 |6     | Least Square Estimate         |             | B:1.1          
 |7     | Least Square Estimate         | HW3         | Note          
-|8     | Lab1: Python & LSE            |             |      
-|9     | Joint Distribution            | Lab1        | S:2.1-2.4,2.7-2.8       
-|10    | Conditional Distribution      |             | S:2.9-2.10,M:2.1-2.2,B: 1.2
-|11    | Bayes' Theorem                | HW4         | M:2.3,3.1-3.2, B:1.2,3.2   
+|8     | Joint Distribution            |             | S:2.1-2.4,2.7-2.8       
+|9     | Conditional Distribution      | HW4         | S:2.9-2.10,M:2.1-2.2,B: 1.2
+|10    | Lab1: Python & LSE            |             |      
+|11    | Bayes' Theorem                | Lab1        | M:2.3,3.1-3.2, B:1.2,3.2   
 |12    | Kalman Filter                 |             | 
-|13    | Kalman Filter                 |             |
-|14    | Kalman Filter                 | HW5         |
-|15    | Project 1                     |             |
+|13    | Kalman Filter                 | HW5         |
+|14    | Kalman Filter                 |             |
+|15    | Project 1                     | HW6         |
 |16    | Statistical Inference         |             | S:3.1-3.3, B: 3.2-3.3    
 |17    | Statistical Inference         | Proj1       |     
 |18    | Maximum Likelihood            | HW7         | M: 4.1-4.2  
