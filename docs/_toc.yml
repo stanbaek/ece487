@@ -21,4 +21,6 @@ parts:
   - file: PythonContainers.md
   - file: NumPy.md
   - file: videos.md
+  - file: Readings.md
+  
   
