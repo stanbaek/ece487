@@ -8,7 +8,7 @@
 ## 📝 Course information
 - **Course Goal**: Provide cadets with fundamental knowledge and skills to design and develop machine learning algorithms to solve robotic problems.
 - **Prerequisites**: ECE 346 and Math 356/377 or department approval
-- **Course Text**:  All [textbooks](syllabus:Textbooks) have free pdf versions. Reading materials/labs are posted on [Schedule](schedule.md).
+- **Course Text**:  Textbooks can be found [here](syllabus:Textbooks), adn reading materials/labs are posted on [Schedule](schedule.md).
 - **Syllabus**: Posted [here](syllabus.md).
 - **Course Schedule**: Posted [here](schedule.md) and subject to change.
 
@@ -24,8 +24,8 @@
 ## ⏰ Late Policy:  
 **If problems arise with graded assignments, see your instructor in advance**
 
-- The cutoff for **on-time submission is 07:00 🕖 a.m.** on the due date. 
-- Late days are counted in 24-hour periods. Submitting between 07:00:01 on the due date and 07:00:00 the next day is one day late, and so on.
+- The cutoff for **on-time submission is 08:00 🕖 a.m.** on the due date. 
+- Late days are counted in 24-hour periods. Submitting between 08:00:01 on the due date and 08:00:00 the next day is one day late, and so on.
 - You are given **5 grace days (self-granted extensions)** which you can use to give yourself extra time without penalty. No more than **2 grace days** can used for each assignment.
 - Instructor-granted extensions are only considered after all grace days are used and only given in exceptional situations. Computer problems such as hard-drive reimaging are **not** considered as exceptional situations and you must use grace days.
 - Late work handed in when you have run out of grace is 💥 **discounted 25% for the first day late and 10% per day late thereafter**.

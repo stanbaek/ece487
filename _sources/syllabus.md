@@ -10,17 +10,16 @@ ECE 346 and Math 356/377 or department approval
 ## Course Schedule
 The course schedule is [here](schedule.md)
 
-
 ## Grade Distribution and Policy
 
 The **Grade distribution** for this course is shown below.
 
 |     Prog               |             |     Final              |             |
 |------------------------|-------------|------------------------|-------------|
-|     GRs                |     30%     |     GRs                |     20%     |
-|     Labs               |     30%     |     Labs               |     15%     |
-|Homework + Skills Review|     40%     |Homework + Skills Review|     40%     |
-|                        |             |     Projects           |     25%     |
+|     GR (1)             |     20%     |     GRs (2)            |     20%     |
+|     Labs               |     15%     |     Labs               |     15%     |
+|     Homework           |     45%     |     Homework           |     40%     |
+|     Project (1)        |     20%     |     Projects (2)       |     25%     |
 |                        |             |                        |             |
 |     Total              |     100%    |     Total              |     100%    |
 
@@ -46,13 +45,16 @@ All communication and course materials will be provided through a course and sec
 ## Textbooks
 **Required**
 
-<a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022. 
+<a href="https://www.cambridge.org/us/universitypress/subjects/engineering/communications-and-signal-processing/machine-learning-engineers?format=HB" target="_blank"> Machine Learning for Engineers</a>, Osvaldo Simeone, Cambridge, November 2022.
 
 **Optional**
+
+<a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022. [Free PDF](https://github.com/probml/pml-book/releases/latest/download/book1.pdf)
 <br>
-<a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. 
+<a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. <a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf" target="_blank">Free PDF</a>
 <br>
-<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997.
+<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997. <a href="http://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf" target="_blank">Free PDF</a>
+
 
 ## Collaboration Policy
 
@@ -69,30 +71,6 @@ Unless  specifically directed otherwise, the collaboration policy for this cours
 - If no help was received on this assignment, the documentation statement must state “None.”
 - If you checked answers with anyone, you must document with whom on which problems. You must document whether you made any changes or not.  If you did make changes, you must document the problems you changed and the reasons why.
 - Vague documentation statements will result in a 5% deduction on the assignment.
-
-### Sample Documentation 
-Consider the following examples when writing your own detailed documentation statements:
-
-**Bad Example**:  Cadet McFly explained how the factorial worked.
-<br>
-**Good Example**: Cadet McFly explained how a recursive function worked conceptually, using diagrams and the assignment materials. He did not look at my code nor did I look at his code during this discussion.
-
-**Bad Example**: Cadet McFly helped fix my factorial() method.
-<br>
-**Good Example**: Cadet McFly helped fix my factorial() method by looking at my code and finding that I had n > 0 instead of n >= 0 on line 85. _Note: A situation such as this may result in less than full credit for the factorial() method, but due to the documentation statement there is no violation of the honor code._
-
-**Bad Example**: Cadet McFly and I worked together on the factorial() method.
-<br>
-**Good Example**: Cadet McFly and I worked together on the factorial() method, each contributing equally to its development. Prior to this help, neither of our factorial() methods was working. My factorial() method is now nearly identical to Cadet McFly's factorial() method. _Note: In a situation such as this, at most half-credit would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code._
-
-**Bad Example**: Cadet McFly showed me how the factorial() method works.
-<br>
-**Good Example**: Cadet McFly showed me how the factorial() method works by letting me look at his code. Prior to this help, my own factorial() method was not working.  My factorial() method is now nearly identical to Cadet McFly's factorial() method. _Note: In a situation such as this, no points would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code._
-
-**Bad Example**: Cadet McFly showed me how the factorial() method works.
-<br>
-**Good Example**: Cadet McFly showed me how the factorial() method works by looking at my code and talking me through each line as I wrote it. Prior to this help my own factorial() method was wrong.  My factorial() method is now nearly identical to Cadet McFly's factorial() method. _Note: In a situation such as this, no points would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code._
-
 
 ## Extra Instruction (EI)
 

@@ -3,52 +3,55 @@
 ```{note}
 This schedule is subject to change as appropriate.
 ```
-**Last Updated: 9 Aug 2023**
+**Last Updated: 30 Jun 2024**
 
 Reading: 
-- PML: Probabilistic Machine Learning by Murphy
-- PRML: Pattern Recognition and Machine Learning by Bishop 
-- ML: Machine Learning by Mitchell
+- S: Simeone, Machine Learning for Engineers (Required)
+- M: Murphy, Probabilistic Machine Learning (Optional)
+- B: Biship, Pattern Recognition and Machine Learning (Optional)
 
-**Lesson**|  **Topic**                        | **Due**      | **Reading**
-----------|-----------------------------------|--------------|-----------------
- L1       | Intro to Machine Learning         |              |           
- L2       | Linear Algebra                    | Cadet Intro  | PML: 7.1-7.1.2.3, 7.1.4.2 
- L3       | Basis and eigenvectors            | HW2          |           
- L4       | Eigenvalues                       | HW3          |           
- L5       | Lab1: Python and numpy            | HW4          |           
- L6       | Least Square Estimate             | Lab1         | PRML: 1.1          
- L7       | Least Square Estimate             |              |           
- L8       | Lab2: Least Square Estimate       | HW7          |           
- L9       | Probability Review                | Lab2         | PML: 2.1-2.2, PRML: 1.2           
- L10      | Joint Distribution                | HW8          | PML: 3.1-3.2, PRML: 1.2   
- L11      | Multivariate Gaussian             |              | PML: 2.3, PRML: 3.2   
- L12      | Statistical Inference             | HW10         | PRML: 3.2-3.3    
- L13      | Statistical Inference             |              |     
- L14      | Maximum Likelihood                | HW13         | PML: 4.1-4.2  
- L15      | Maximum Likelihood                |              |    
- L16      | Linear Regression                 | HW15         | PRML: 3.1, PML: 11.2S   
- L17      | Gradient Descent                  |              |    
- L18      | Logistic Regression               | HW17         | PRML: 4.3   
- L19      | Lab3: Gradient Descent            |              |    
- L20      | GR1                               |              |    
- L21      | Naive Bayes                       |              | PML: 9.3   
- L22      | Lab4: Logistic Regression         | Lab3         |    
- L23      | Special Topic: Kalman Filter      |              |
- L24      | Special Topic: Kalman Filter      | Lab4         |
- L25      | Special Topic: Kalman Filter      | HW24         |
- L26      | Special Topic: Kalman Filter      |              |
- L27      | Lab5: Kalman Filter               | HW26         | 
- L28      | Accessing Performance             | Lab5         | 
- L29      | Lab6: scikit-learn                | HW28         |    
- L30      | SVM                               |              |    
- L31      | Lab7: SVM & Naive Bayes           | Lab6         |  
- L32      | Neural Networks                   |              |
- L33      | Back propagation                  | Lab7         |  
- L34      | Lab8: Neural Networks             |              |
- L35      | Final Project                     |              |
- L36      | Final Project                     | Lab8, HW33   |
- L37      | GR2                               |              |
- L38      | Final Project                     |              |
- L39      | Final Project                     |              |
- L40      | Final Project                     | Final Report |
+|Lesson|  Topic                        | Due         | Reading
+|:----:|-------------------------------|-------------|-----------------
+|1     | Course Intro                  |             |           
+|2     | Intro to Machine Learning     | Cadet Intro | S:1.1-1.6 
+|3     | Linear Algebra                | HW1         | S:2.5-2.6,M:7.1  
+|4     | Basis                         |             | [3Blue1Brown](https://www.youtube.com/watch?v=P2LTAUO1TdA)
+|5     | Eigenvalues & Eigenvectors    | HW2         | [3Blue1Brown](https://www.youtube.com/watch?v=PFDu9oVAE-g)
+|6     | Eigenvalues & Eigenvectors    |             |           
+|7     | Least Square Estimate         | HW3         | B:1.1          
+|8     | Least Square Estimate         |             | B:1.1          
+|9     | Special Topic                 | HW4         |           
+|10    | Lab1: Python & LSE            |             |      
+|11    | Joint Distribution            | HW5         | S:2.1-2.4,2.7-2.8       
+|12    | Conditional Distribution      | Lab1        | S:2.9-2.10,M:2.1-2.2,B: 1.2
+|13    | Kalman Filter                 |             | [Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
+|14    | Kalman Filter                 | HW6         | [Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
+|15    | Kalman Filter                 |             | [Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
+|16    | Project 1                     | HW7         |
+|17    | Statistical Inference         |             | S:3.1-3.3, B: 3.2-3.3    
+|18    | Statistical Inference         | Proj1       |     
+|19    | GR1                           |             |    
+|20    | Bayes' Theorem                |             | S:2.11,M:2.3,3.1-3.2,B:1.2,3.2   
+|X     | Maximum Likelihood            | HW          | M: 4.1-4.2  
+|X     | Maximum Likelihood            |             |    
+|X     | Linear Regression             | HW          | B: 3.1, M: 11.2S   
+|X     | Gradient Descent              |             |    
+|23    | Logistic Regression           | HW          | B: 4.3   
+|24    | Naive Bayes                   |             | M: 9.3   
+|25    | Lab2: Basic ML                | HW          |    
+|26    | Data Cleaning                 |             |    
+|27    | TBA                           |             | 
+|28    | Accessing Performance         |             | 
+|29    | Lab3: scikit-learn            |             |    
+|30    | SVM                           | Lab         |    
+|31    | TBA                           |             |    
+|32    | Neural Networks               | HW          |
+|33    | Back propagation              |             |  
+|34    | TBA                           | HW          |    
+|35    | GR2                           |             |
+|36    | Final Project                 |             |
+|37    | Final Project                 |             |
+|      | Thanksgiving Break            |             |
+|38    | Final Project                 |             |
+|39    | Final Project                 |             |
+|40    | Final Project                 | Final Report|

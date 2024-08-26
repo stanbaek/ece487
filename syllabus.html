@@ -175,6 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="PythonContainers.html">Python Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NumPy.html">Numpy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">🎥 Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readings.html">📃 Readings</a></li>
 </ul>
 
     </div>
@@ -375,10 +376,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-communication-and-control-c2">Primary Communication and Control (C2)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#textbooks">Textbooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration-policy">Collaboration Policy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-requirements">Documentation Requirements</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-documentation">Sample Documentation</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-requirements">Documentation Requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-instruction-ei">Extra Instruction (EI)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-policy">CAS Policy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments">Assignments</a></li>
@@ -424,24 +422,24 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>GRs</p></td>
-<td><p>30%</p></td>
-<td><p>GRs</p></td>
+<tr class="row-even"><td><p>GR (1)</p></td>
+<td><p>20%</p></td>
+<td><p>GRs (2)</p></td>
 <td><p>20%</p></td>
 </tr>
 <tr class="row-odd"><td><p>Labs</p></td>
-<td><p>30%</p></td>
+<td><p>15%</p></td>
 <td><p>Labs</p></td>
 <td><p>15%</p></td>
 </tr>
-<tr class="row-even"><td><p>Homework + Skills Review</p></td>
-<td><p>40%</p></td>
-<td><p>Homework + Skills Review</p></td>
+<tr class="row-even"><td><p>Homework</p></td>
+<td><p>45%</p></td>
+<td><p>Homework</p></td>
 <td><p>40%</p></td>
 </tr>
-<tr class="row-odd"><td><p></p></td>
-<td><p></p></td>
-<td><p>Projects</p></td>
+<tr class="row-odd"><td><p>Project (1)</p></td>
+<td><p>20%</p></td>
+<td><p>Projects (2)</p></td>
 <td><p>25%</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
@@ -494,12 +492,13 @@ document.write(`
 <section id="textbooks">
 <span id="syllabus-textbooks"></span><h2>Textbooks<a class="headerlink" href="#textbooks" title="Permalink to this heading">#</a></h2>
 <p><strong>Required</strong></p>
-<p><a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022.</p>
-<p><strong>Optional</strong>
+<p><a href="https://www.cambridge.org/us/universitypress/subjects/engineering/communications-and-signal-processing/machine-learning-engineers?format=HB" target="_blank"> Machine Learning for Engineers</a>, Osvaldo Simeone, Cambridge, November 2022.</p>
+<p><strong>Optional</strong></p>
+<p><a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022. <a class="reference external" href="https://github.com/probml/pml-book/releases/latest/download/book1.pdf">Free PDF</a>
 <br>
-<a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006.
+<a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. <a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf" target="_blank">Free PDF</a>
 <br>
-<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997.</p>
+<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997. <a href="http://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf" target="_blank">Free PDF</a></p>
 </section>
 <section id="collaboration-policy">
 <h2>Collaboration Policy<a class="headerlink" href="#collaboration-policy" title="Permalink to this heading">#</a></h2>
@@ -519,25 +518,6 @@ document.write(`
 <li><p>If you checked answers with anyone, you must document with whom on which problems. You must document whether you made any changes or not.  If you did make changes, you must document the problems you changed and the reasons why.</p></li>
 <li><p>Vague documentation statements will result in a 5% deduction on the assignment.</p></li>
 </ul>
-<section id="sample-documentation">
-<h3>Sample Documentation<a class="headerlink" href="#sample-documentation" title="Permalink to this heading">#</a></h3>
-<p>Consider the following examples when writing your own detailed documentation statements:</p>
-<p><strong>Bad Example</strong>:  Cadet McFly explained how the factorial worked.
-<br>
-<strong>Good Example</strong>: Cadet McFly explained how a recursive function worked conceptually, using diagrams and the assignment materials. He did not look at my code nor did I look at his code during this discussion.</p>
-<p><strong>Bad Example</strong>: Cadet McFly helped fix my factorial() method.
-<br>
-<strong>Good Example</strong>: Cadet McFly helped fix my factorial() method by looking at my code and finding that I had n &gt; 0 instead of n &gt;= 0 on line 85. <em>Note: A situation such as this may result in less than full credit for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
-<p><strong>Bad Example</strong>: Cadet McFly and I worked together on the factorial() method.
-<br>
-<strong>Good Example</strong>: Cadet McFly and I worked together on the factorial() method, each contributing equally to its development. Prior to this help, neither of our factorial() methods was working. My factorial() method is now nearly identical to Cadet McFly’s factorial() method. <em>Note: In a situation such as this, at most half-credit would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
-<p><strong>Bad Example</strong>: Cadet McFly showed me how the factorial() method works.
-<br>
-<strong>Good Example</strong>: Cadet McFly showed me how the factorial() method works by letting me look at his code. Prior to this help, my own factorial() method was not working.  My factorial() method is now nearly identical to Cadet McFly’s factorial() method. <em>Note: In a situation such as this, no points would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
-<p><strong>Bad Example</strong>: Cadet McFly showed me how the factorial() method works.
-<br>
-<strong>Good Example</strong>: Cadet McFly showed me how the factorial() method works by looking at my code and talking me through each line as I wrote it. Prior to this help my own factorial() method was wrong.  My factorial() method is now nearly identical to Cadet McFly’s factorial() method. <em>Note: In a situation such as this, no points would be earned for the factorial() method, but due to the documentation statement there is no violation of the honor code.</em></p>
-</section>
 </section>
 <section id="extra-instruction-ei">
 <h2>Extra Instruction (EI)<a class="headerlink" href="#extra-instruction-ei" title="Permalink to this heading">#</a></h2>
@@ -667,10 +647,7 @@ For missed GRs, the following policies are outlined in USAFA FOI 537-3:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-communication-and-control-c2">Primary Communication and Control (C2)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#textbooks">Textbooks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration-policy">Collaboration Policy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-requirements">Documentation Requirements</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-documentation">Sample Documentation</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-requirements">Documentation Requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-instruction-ei">Extra Instruction (EI)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-policy">CAS Policy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments">Assignments</a></li>
