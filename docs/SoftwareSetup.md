@@ -1,9 +1,9 @@
 # 🔨 Software Setup
 
 ## 📜 Agenda
-- Create a Bitbucket repository.
+- Create a GitHub repository.
 - Configure git repository.
-- Install and Configure PyCharm
+- Install and Configure VS Code
 
 ```{note}
 Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.
@@ -11,59 +11,64 @@ Don’t worry if it doesn’t work right. If everything did, you’d be out of a
 
 ## 💻 Procedure
 
-### Create Bitbucket Repository
+### Create a repo within the GitHub Classroom
 
-- If you don't already have a <a href="https://bitbucket.org/" target="_blank">Bitbucket</a> account, go ahead and create one.
-- Once you have your account, log in to <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>.
-- Next, navigate to the following URL: <a href="https://bitbucket.org/stanbaek2/ece487_wksp/src/master/" target="_blank">https://bitbucket.org/stanbaek2/ece487_wksp/src/master/</a>
-- At the top right-hand corner of the page, you'll see three dots ($\cdots$). Click on the icon to reveal more options.
-- From the dropdown menu, select `Fork this repository`. 
-- When prompted, enter "ECE487" for the project name.
-- Name the new repository as follows: ECE487_LastName_FirstName.
-- Ensure that the access level is set to `Private repository`.
-- Give your instructor (Dr. Baek) read access: Click `Invite` and then select `Add members`.
-- Enter Dr. Baek's email address, ![baek](https://img.shields.io/badge/stanley.baek@afacademy.af.edu-red), to provide him with read access.
-
-  
-```{note}
-The gif animation below has been adpated from ECE382. You must use ECE487 in place of ECE382.
-```
-<br>
-
-```{image} ./figures/GitFork.gif
-:width: 720
-:align: center
-```
-<br>
+1. If you don't already have a <a href="https://github.com/" target="_blank">GitHub</a> account, go ahead and create one.
+1. Once you have your account, browse to <a href="https://classroom.github.com/a/_D0KthO4/" target="_blank">ECE487 Classroom</a>.
+1. Select “Accept this assignment”
+1. Browse to your repository. Note the url for your repository (save this link, it is the best way to check if your repo is updated).
+1. Go to Settings and change your repository name to `ece487-YourLastName`, e.g., `ece487-baek`.
 
 ```{important}
-Please name your repository as ECE487_LastName_FirstName. This will help instructors find your repository easily.
+Please name your repository as ece487-LastName. This will help instructors find your repository easily.
 ```
-
-- You may need to create a Bitbucket `app password` as follows.
-- Go to `Your Profile` at the top right corner and select `Personal Settings`. 
-- Find `App Passwords` and then click on `Create app password`. 
-- Write your preferred label and select permissions as needed.
-- Click on `Create`.
-- Save the password somewhere safe.  You will not be able to see it again after this.
-
-```{image} ./figures/BitBucketAppPassword.gif 
-:width: 720
-:align: center
-```
-<br>
 
 ### Install Git
 
-- To download `Git for Windows`  go to <a href="https://git-scm.com/download/win" target="_blank">git-scm</a> and click on the link.
-- Run the setup file and install Git with the default settings. If you have a Mac, you don’t need to do this step because Git is already installed on your computer.
-- Make a new folder called `ece487_wksp` in your home folder, for example, C:\Users\stanley.baek\ece487_wksp.
-- Right-click on the `ece487_wksp` folder and choose `Git Bash Here` from the menu.   
-- In Bitbucket, open your repository and click on Clone. Copy the command that starts with _git clone_ by clicking on the copy button. 
-- Paste the command on the Bash terminal (you can use middle-click, right-click > Paste, or Shift+Ins to paste) and add a space and a **_dot_** at the end.  The **_dot_** means that you want to clone the repository into the **_current folder_**. Press Enter.
-- If it asks for a password, type in the app password that you saved before.
-- Notice that you have `(master)` at the end of the folder name. 
-- Note: The gif animation below is from ECE382. You should use ECE487 instead of ECE382.
+1. To download `Git for Windows`  go to <a href="https://git-scm.com/download/win" target="_blank">git-scm</a> and click on the link.
+1. Run the setup file and install Git with the default settings. If you have a Mac, you don’t need to do this step because Git is already installed on your computer.
+1. Make a new folder called `ece487_wksp` in your home folder, for example, C:\Users\stanley.baek\ece487_wksp.
+1. Right-click on the `ece487_wksp` folder and choose `Git Bash Here` from the menu.   
+
+### Enable SSH connection to your GitHub account
+
+Skip this section if you already have set up the SSH connection to your GitHub account.
+1. On Git Bash, generate a new SSH key, substituting your GitHub email address:
+
+    ```bash
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+    ```
+
+1. When you’re prompted to “Enter a file in which to save the key,” hit `Enter`.
+1. At the prompt for a secure passphrase, hit `Enter`.
+1. Start the ssh-agent in the background and add your SSH private key to the ssh-agent:
+    ```bash
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_ed25519
+    ```
+1. f
+    ```bash
+    cat ~/.ssh/id_ed25519.pub
+    ```
+
+1. Select the output on the terminal (ensure you select your GIT email at the end), right click, and select copy.
+1. Open a web browser and sign in to your GitHub account.
+1. In the upper-right corner of any page, click your profile photo, then click Settings.
+
+    ```{image} ./figures/ssh1.png
+    :width: 140
+    :align: center
+    ```
+
+1. In the user settings sidebar, click SSH and GPG keys.
+1. Click New SSH key
+1. In the “Title” field, add a descriptive label for the new key, such as “MasterX”.
+1. Paste your key into the “Key” field (contents of the .pub file).
+1. Click Add SSH key.
+1. If prompted, confirm your GitHub password.
+
+
+
 
 ```{image} ./figures/GitClone.gif
 :width: 680
@@ -92,8 +97,8 @@ Please name your repository as ECE487_LastName_FirstName. This will help instruc
 ```
 <br>
 
-- If the instructor’s code changes, you will be notified and you need to run `git fetch upstream` to get the latest updates on your local files.
-- When you push or pull your code, you will use origin, which is your own Bitbucket repository.
+- If the instructor’s code changes, you will be notified and you need to run `git pull upstream main` to get the latest updates on your local files.
+- When you push or pull your code, you will use origin by default, which is your own GitHub repository.
 
 
 ```{image} ./figures/FetchUpstream.png
