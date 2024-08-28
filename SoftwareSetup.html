@@ -371,10 +371,12 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agenda">📜 Agenda</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure">💻 Procedure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repo-within-the-github-classroom">Create a repo within the GitHub Classroom</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repository-within-the-github-classroom">Create a Repository within the GitHub Classroom</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-git">Install Git</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-ssh-connection-to-your-github-account">Enable SSH connection to your GitHub account</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-ssh-connection-to-your-github-account">Enable SSH Connection to Your GitHub Account</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-repository-to-your-computer">Clone repository to your computer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-and-configure-vs-code">Install and Configure VS Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-and-push-your-update">Commit and Push Your Update</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">🚚 Deliverables</a><ul class="nav section-nav flex-column">
@@ -409,14 +411,14 @@ document.write(`
 </section>
 <section id="procedure">
 <h2>💻 Procedure<a class="headerlink" href="#procedure" title="Permalink to this heading">#</a></h2>
-<section id="create-a-repo-within-the-github-classroom">
-<h3>Create a repo within the GitHub Classroom<a class="headerlink" href="#create-a-repo-within-the-github-classroom" title="Permalink to this heading">#</a></h3>
+<section id="create-a-repository-within-the-github-classroom">
+<h3>Create a Repository within the GitHub Classroom<a class="headerlink" href="#create-a-repository-within-the-github-classroom" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>If you don’t already have a <a href="https://github.com/" target="_blank">GitHub</a> account, go ahead and create one.</p></li>
 <li><p>Once you have your account, browse to <a href="https://classroom.github.com/a/_D0KthO4/" target="_blank">ECE487 Classroom</a>.</p></li>
-<li><p>Select “Accept this assignment”</p></li>
-<li><p>Browse to your repository. Note the url for your repository (save this link, it is the best way to check if your repo is updated).</p></li>
-<li><p>Go to Settings and change your repository name to <code class="docutils literal notranslate"><span class="pre">ece487-YourLastName</span></code>, e.g., <code class="docutils literal notranslate"><span class="pre">ece487-baek</span></code>.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Accept</span> <span class="pre">this</span> <span class="pre">assignment</span></code>.</p></li>
+<li><p>Browse to your repository. Note the URL for your repository (save this link; it is the best way to check if your repo is updated).</p></li>
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Settings</span></code> and change your repository name to <code class="docutils literal notranslate"><span class="pre">ece487-YourLastName</span></code>, e.g., <code class="docutils literal notranslate"><span class="pre">ece487-baek</span></code>.</p></li>
 </ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -428,136 +430,158 @@ document.write(`
 <ol class="arabic simple">
 <li><p>To download <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">for</span> <span class="pre">Windows</span></code>  go to <a href="https://git-scm.com/download/win" target="_blank">git-scm</a> and click on the link.</p></li>
 <li><p>Run the setup file and install Git with the default settings. If you have a Mac, you don’t need to do this step because Git is already installed on your computer.</p></li>
-<li><p>Make a new folder called <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> in your home folder, for example, C:\Users\stanley.baek\ece487_wksp.</p></li>
-<li><p>Right-click on the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder and choose <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> from the menu.</p></li>
 </ol>
 </section>
 <section id="enable-ssh-connection-to-your-github-account">
-<h3>Enable SSH connection to your GitHub account<a class="headerlink" href="#enable-ssh-connection-to-your-github-account" title="Permalink to this heading">#</a></h3>
-<p>Skip this section if you already have set up the SSH connection to your GitHub account.</p>
+<h3>Enable SSH Connection to Your GitHub Account<a class="headerlink" href="#enable-ssh-connection-to-your-github-account" title="Permalink to this heading">#</a></h3>
+<p>Skip this section and go <a class="reference internal" href="#clonerepo"><span class="std std-ref">here</span></a> if you already have set up the SSH connection to your GitHub account.</p>
 <ol class="arabic">
-<li><p>On Git Bash, generate a new SSH key, substituting your GitHub email address:</p>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span></code> and generate a new SSH key, replacing <code class="docutils literal notranslate"><span class="pre">&quot;your_email&#64;example.com&quot;</span></code> with your actual GitHub email address:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span>
 </pre></div>
 </div>
 </li>
-<li><p>When you’re prompted to “Enter a file in which to save the key,” hit <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
-<li><p>At the prompt for a secure passphrase, hit <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+<li><p>When prompted to “Enter a file in which to save the key,” hit <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+<li><p>At the prompt for a secure passphrase, press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to skip it.</p></li>
 <li><p>Start the ssh-agent in the background and add your SSH private key to the ssh-agent:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span><span class="s2">&quot;</span>
 ssh-add<span class="w"> </span>~/.ssh/id_ed25519
 </pre></div>
 </div>
 </li>
-<li><p>f</p>
+<li><p>Display the contents of your public key:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>~/.ssh/id_ed25519.pub
 </pre></div>
 </div>
 </li>
-<li><p>Select the output on the terminal (ensure you select your GIT email at the end), right click, and select copy.</p></li>
+<li><p>Select the output (ensure it include your GitHub email at the end), right click, and select <code class="docutils literal notranslate"><span class="pre">Copy</span></code>.</p></li>
 <li><p>Open a web browser and sign in to your GitHub account.</p></li>
-<li><p>In the upper-right corner of any page, click your profile photo, then click Settings.</p>
+<li><p>In the upper-right corner, click your profile photo, then click <code class="docutils literal notranslate"><span class="pre">Settings</span></code>.</p>
 <a class="reference internal image-reference" href="_images/ssh1.png"><img alt="_images/ssh1.png" class="align-center" src="_images/ssh1.png" style="width: 140px;" /></a>
+ <br>
 </li>
-<li><p>In the user settings sidebar, click SSH and GPG keys.</p></li>
-<li><p>Click New SSH key</p></li>
-<li><p>In the “Title” field, add a descriptive label for the new key, such as “MasterX”.</p></li>
-<li><p>Paste your key into the “Key” field (contents of the .pub file).</p></li>
-<li><p>Click Add SSH key.</p></li>
+<li><p>In the user settings sidebar, click <code class="docutils literal notranslate"><span class="pre">SSH</span></code> and <code class="docutils literal notranslate"><span class="pre">GPG</span> <span class="pre">keys</span></code>.</p>
+<a class="reference internal image-reference" href="_images/settings-sidebar-ssh-keys.png"><img alt="_images/settings-sidebar-ssh-keys.png" class="align-center" src="_images/settings-sidebar-ssh-keys.png" style="width: 180px;" /></a>
+ <br>
+</li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">SSH</span> <span class="pre">key</span></code></p>
+<a class="reference internal image-reference" href="_images/ssh-add-ssh-key.png"><img alt="_images/ssh-add-ssh-key.png" class="align-center" src="_images/ssh-add-ssh-key.png" style="width: 480px;" /></a>
+ <br>
+</li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Title</span></code> field, add a descriptive label for the new key, such as <code class="docutils literal notranslate"><span class="pre">HP830</span> <span class="pre">G7</span></code>.</p></li>
+<li><p>Paste your SSH key into the <code class="docutils literal notranslate"><span class="pre">Key</span></code> field (contents of the <code class="docutils literal notranslate"><span class="pre">.pub</span></code> file).</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">SSH</span> <span class="pre">key</span></code>.</p></li>
 <li><p>If prompted, confirm your GitHub password.</p></li>
 </ol>
+</section>
+<section id="clone-repository-to-your-computer">
+<span id="clonerepo"></span><h3>Clone repository to your computer<a class="headerlink" href="#clone-repository-to-your-computer" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Create a new folder named <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> in your home directory, e.g., <code class="docutils literal notranslate"><span class="pre">C:\Users\stanley.baek\ece487_wksp</span></code>.</p></li>
+<li><p>Right-click on the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> from the menu.</p>
+<p><strong>Note</strong>: The gif animation below has been adapted from ECE382. You must use ECE487 in place of ECE382.</p>
 <a class="reference internal image-reference" href="_images/GitClone.gif"><img alt="_images/GitClone.gif" class="align-center" src="_images/GitClone.gif" style="width: 680px;" /></a>
-<br>
-<ul class="simple">
-<li><p>The figure below shows an example of a local <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder on your computer.</p></li>
-</ul>
+ <br>
+</li>
+<li><p>The figure below shows an example of a local <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder on your computer.</p>
 <a class="reference internal image-reference" href="_images/workspace_folder.png"><img alt="_images/workspace_folder.png" class="align-center" src="_images/workspace_folder.png" style="width: 740px;" /></a>
-<br>
-<ul class="simple">
-<li><p>Go back to the Git Bash terminal. If you have already closed it, right-click on an empty area inside the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder and pick <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> from the menu.</p></li>
-<li><p>Type in <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code> and press Enter.  You should see two lines that say <code class="docutils literal notranslate"><span class="pre">origin</span></code> is your remote repository on <a class="reference external" href="http://bitbucket.org">bitbucket.org</a> for both fetching and pushing.</p></li>
-<li><p>Type in <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">https://stanbaek2&#64;bitbucket.org/stanbaek2/ece487_wksp.git</span></code> (or copy &amp; paste) and press Enter.  This will add the instructor’s repository as another remote source.</p></li>
-<li><p>Type in <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code> and press Enter.  You should now see two more lines that say upstream is the original repository that you forked from.</p></li>
-<li><p>Note: The gif animation below has been adpated from ECE382. You must use ECE487 in place of ECE382.</p></li>
-</ul>
+ <br>
+</li>
+<li><p>Return to the Git Bash terminal. If it’s closed, right-click an empty area inside the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> from the menu.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code> and press Enter.  You should see two lines indicating <code class="docutils literal notranslate"><span class="pre">origin</span></code> is your remote repository on GitHub for both fetching and pushing.</p></li>
+<li><p>Add the instructor’s repository as another remote source:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/ECE487/ece487-classroom-ece487_wksp.git
+</pre></div>
+</div>
+</li>
+<li><p>Verify the upstream repository has been added by typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code> and press Enter.  You should now see two additional lines indicating <code class="docutils literal notranslate"><span class="pre">upstream</span></code> is the original repository you forked from.</p>
 <a class="reference internal image-reference" href="_images/GitAddUpstream.gif"><img alt="_images/GitAddUpstream.gif" class="align-center" src="_images/GitAddUpstream.gif" style="width: 640px;" /></a>
-<br>
-<ul class="simple">
-<li><p>If the instructor’s code changes, you will be notified and you need to run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">upstream</span> <span class="pre">main</span></code> to get the latest updates on your local files.</p></li>
-<li><p>When you push or pull your code, you will use origin by default, which is your own GitHub repository.</p></li>
-</ul>
+ <br>
+</li>
+<li><p>If the instructor updates the code, you will be notified, and you will need to run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">upstream</span> <span class="pre">main</span></code> to get the latest updates.</p></li>
+<li><p>When you push or pull your code, <code class="docutils literal notranslate"><span class="pre">origin</span></code> will be used by default, which points to your own GitHub repository.</p>
 <a class="reference internal image-reference" href="_images/FetchUpstream.png"><img alt="_images/FetchUpstream.png" class="align-center" src="_images/FetchUpstream.png" style="width: 320px;" /></a>
-<center>
-Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github/9257901#9257901" target="_blank">Stakeoverflow</a>
-</center>
+ <br>
+ <center>
+ Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github/9257901#9257901" target="_blank">Stack Overflow</a>
+ </center>
+</li>
+</ol>
 </section>
 <section id="install-and-configure-vs-code">
 <h3>Install and Configure VS Code<a class="headerlink" href="#install-and-configure-vs-code" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Download <a href="https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe">Python 3.10.11</a>. Run the file and follow the steps to install it on your computer. In the first window, ensure you check the box that says <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">PATH!</span></code></p></li>
-<li><p>To get VS Code, go to <a href="https://code.visualstudio.com/download" target="_blank">VS Code</a> and click on the download button for your operating system. Run the file and follow the steps to install it on your computer.</p></li>
-<li><p>When you install VS Code, make sure you check the last four boxes as shown in the picture below. This will let you use VS Code with Python and Git more easily.</p></li>
-</ul>
+<ol class="arabic">
+<li><p>Download <a href="https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe">Python 3.10.11</a>. Run the file and follow the installation steps. Make sure to check the box that says <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Python</span> <span class="pre">to</span> <span class="pre">PATH!</span></code></p></li>
+<li><p>Download and install <a href="https://code.visualstudio.com/download" target="_blank">VS Code</a>. Choose the appropriate version for your operating system.</p></li>
+<li><p>During installation, ensure that you check the last four boxes (see image below) to integrate VS Code with Python and Git.</p>
 <a class="reference internal image-reference" href="_images/VSCode_Setup.png"><img alt="_images/VSCode_Setup.png" class="align-center" src="_images/VSCode_Setup.png" style="width: 580px;" /></a>
-<br>
-<ul class="simple">
-<li><p>To open the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder with VS Code, right-click on it and choose <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">with</span> <span class="pre">Code</span></code> from the menu.</p></li>
-<li><p>To open the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">All</span> <span class="pre">Commands</span></code> menu, go to Help and click on it, or press <code class="docutils literal notranslate"><span class="pre">Shift+Ctrl+P</span></code>. This is a useful menu that you will use a lot, so remember the shortcut <code class="docutils literal notranslate"><span class="pre">Shift+Ctrl+P</span></code>.</p></li>
-<li><p>To create a virtual environment for Python, type in the first few letters of <code class="docutils literal notranslate"><span class="pre">Python:</span> <span class="pre">Create</span> <span class="pre">Environment</span></code> in the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">All</span> <span class="pre">Commands</span></code> menu and select it.</p></li>
-<li><p>Pick <code class="docutils literal notranslate"><span class="pre">Venv</span></code> to create a virtual environment.</p></li>
+ <br>
+</li>
+<li><p>To open the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder with VS Code, right-click on the folder and choose <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">with</span> <span class="pre">Code</span></code> from the menu.</p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">All</span> <span class="pre">Commands</span></code> menu by going to Help or pressing <code class="docutils literal notranslate"><span class="pre">Shift+Ctrl+P</span></code>. This is a frequently used menu - remember the shortcut <code class="docutils literal notranslate"><span class="pre">Shift+Ctrl+P</span></code>.</p></li>
+<li><p>Create a virtual environment for Python typing in the first few letters of <code class="docutils literal notranslate"><span class="pre">Python:</span> <span class="pre">Create</span> <span class="pre">Environment</span></code> in the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">All</span> <span class="pre">Commands</span></code> menu and select it.</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Venv</span></code> to create a virtual environment.</p></li>
 <li><p>Select the Python path that you want to use.</p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> to install the Python packages that you need for this course.</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> to install the Python packages for this course.</p></li>
 <li><p>Wait for a few minutes until all the packages are installed.</p></li>
-<li><p>Click on the gear icon at the bottom left corner and select <code class="docutils literal notranslate"><span class="pre">Settings</span></code>.</p></li>
-<li><p>Selct the <code class="docutils literal notranslate"><span class="pre">workspace</span></code> tab and click on the turn page icon at the top right corner. This will open <code class="docutils literal notranslate"><span class="pre">settings.json</span></code></p></li>
-<li><p>To copy the code for the virtual environment settings, open <a class="reference external" href="http://vscode.md">vscode.md</a> and copy the code inside the curly brackets.</p></li>
-<li><p>Paste the code into settings.json and save it. This will make sure that the virtual environment starts automatically when you open the workspace.</p></li>
-</ul>
+<li><p>Click the gear icon at the bottom-left corner and select <code class="docutils literal notranslate"><span class="pre">Settings</span></code>.</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">workspace</span></code> tab and click the page icon at the top-right corner. This will open <code class="docutils literal notranslate"><span class="pre">settings.json</span></code></p></li>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">vscode.md</span></code>, copy the code inside the curly braces, paste it into <code class="docutils literal notranslate"><span class="pre">settings.json</span></code>, and save the file.
+This ensures the virtual environment starts automatically when you open the workspace.</p>
 <a class="reference internal image-reference" href="_images/VirtualEnvSetup.gif"><img alt="_images/VirtualEnvSetup.gif" class="align-center" src="_images/VirtualEnvSetup.gif" style="width: 720px;" /></a>
-<br>
-<ul class="simple">
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">README.md</span></code> and type in your name for author.  To save the file, press <code class="docutils literal notranslate"><span class="pre">Ctrl+s</span></code>.</p></li>
-<li><p>You should see the number 1 next to the <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Control</span></code> icon.  Click on the <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Control</span></code> icon and type in “initial commit”.</p></li>
-<li><p>Click on the arrow next to the <code class="docutils literal notranslate"><span class="pre">Commit</span></code> button and pick <code class="docutils literal notranslate"><span class="pre">Commit</span> <span class="pre">&amp;</span> <span class="pre">Push</span></code> on the drop down menu.</p></li>
-</ul>
+ <br>
+</li>
+</ol>
+</section>
+<section id="commit-and-push-your-update">
+<h3>Commit and Push Your Update<a class="headerlink" href="#commit-and-push-your-update" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">README.md</span></code> and enter your name as the author.  Save the file by pressing <code class="docutils literal notranslate"><span class="pre">Ctrl+s</span></code>.</p></li>
+<li><p>You should see a number 1 next to the <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Control</span></code> icon.  Click on the icon and type <strong>initial commit</strong> in the message box, and then click the arrow next to the <code class="docutils literal notranslate"><span class="pre">Commit</span></code> button. Select <code class="docutils literal notranslate"><span class="pre">Commit</span> <span class="pre">&amp;</span> <span class="pre">Push</span></code> from the dropdown menu.</p>
 <a class="reference internal image-reference" href="_images/GitCommitPush.gif"><img alt="_images/GitCommitPush.gif" class="align-center" src="_images/GitCommitPush.gif" style="width: 720px;" /></a>
-<br>
-<ul class="simple">
-<li><p>You can accomplish the same thing in <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span></code>.</p></li>
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span></code> and type in <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-A</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-all</span></code> and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
-<li><p>Type in <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;Initial</span> <span class="pre">commit.&quot;</span></code> and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
-<li><p>Type in <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code></p></li>
-<li><p>Enter your username and password if prompted.</p></li>
+ <br>
+</li>
+<li><p>You can accomplish the same steps in <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span></code>.</p>
+<ul>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span></code> and type</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>-A
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit.&quot;</span>
+git<span class="w"> </span>push
+</pre></div>
+</div>
+</li>
+<li><p>Press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> after each command.</p></li>
+<li><p>If prompted, enter your GitHub username and password.</p></li>
 </ul>
+</li>
+</ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>There are also many third-party graphic user interface (GUI) clients. Check out <a class="reference external" href="https://git-scm.com/downloads/guis">https://git-scm.com/downloads/guis</a>.</p>
+<p>There are also many third-party graphical user interface (GUI) clients for Git. Explore options at <a href="https://git-scm.com/downloads/guis" target="_blank">Git-SCM GUIs</a>.</p>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>It is your responsibility to check your files have been successfully pushed to your Bitbucket repository. Always visit your Bitbucket repository after you push your assignments to the repository.</p>
+<p>It is your responsibility to verify that your files have been successfully pushed to your GitHub repository. Always visit your GitHub repository after pushing your assignments to ensure everything is correctly uploaded.</p>
 </div>
 </section>
 </section>
 <section id="deliverables">
 <h2>🚚 Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this heading">#</a></h2>
-<p>Take screenshots of the following and submit them via Gradescope.  Use <code class="docutils literal notranslate"><span class="pre">Snip</span> <span class="pre">&amp;</span> <span class="pre">Sketch</span></code> (Win+Shift+S) in Windows 10 or Shift+CMD+4 in Mac to take a screenshot. Save it in <code class="docutils literal notranslate"><span class="pre">png</span></code> or <code class="docutils literal notranslate"><span class="pre">jpg</span></code>.</p>
+<p>Take screenshots of the following and submit them via Gradescope.  Use <code class="docutils literal notranslate"><span class="pre">Snip</span> <span class="pre">&amp;</span> <span class="pre">Sketch</span></code> (Win+Shift+S) on Windows 10 or <code class="docutils literal notranslate"><span class="pre">Shift+CMD+4</span></code> in Mac to capture the screenshots. Save them in <code class="docutils literal notranslate"><span class="pre">png</span></code> or <code class="docutils literal notranslate"><span class="pre">jpg</span></code> format.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Snap a picture of your computer screen with a mobile device or digital camera and then upload it to Gradescope. This will show that you have no idea what sampling aliasing (a concept covered in ECE215) is and you are not qualified for a bachelor’s degree in ECE. You will lose 30 points every time you submit a picture of a computer screen taken by your phone or mobile device. And yes, I’m quite serious about this.</p>
+<p>Do <strong>not</strong> take pictures of your computer screen using a mobile device or camera. Doing so will indicate a lack of understanding of sampling aliasing (covered in ECE215 &amp; ECE333), and you will lose 30 points. Yes, I’m serious about this.</p>
 </div>
 <section id="deliverable-1">
 <h3>Deliverable 1<a class="headerlink" href="#deliverable-1" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Provide a screenshot of your Bitbucket repository as shown below</p></li>
+<li><p>Push your updates to GitHub</p></li>
 </ul>
-<a class="reference internal image-reference" href="figures/BitbucketPushed.png"><img alt="figures/BitbucketPushed.png" class="align-center" src="figures/BitbucketPushed.png" style="width: 400px;" /></a>
-<br>
 </section>
 <section id="deliverable-2">
 <h3>Deliverable 2<a class="headerlink" href="#deliverable-2" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Provide a screenshot of your VS Code as shown below. Make sure you have the <code class="docutils literal notranslate"><span class="pre">.venv</span></code> and <code class="docutils literal notranslate"><span class="pre">.vscode</span></code> folders under the <code class="docutils literal notranslate"><span class="pre">EXPLORER</span></code> window.</p></li>
+<li><p>Provide a screenshot of your VS Code as shown below. Ensure that the <code class="docutils literal notranslate"><span class="pre">.venv</span></code> and <code class="docutils literal notranslate"><span class="pre">.vscode</span></code> folders are visible under the <code class="docutils literal notranslate"><span class="pre">EXPLORER</span></code> window.</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/VSCode_Configured.png"><img alt="_images/VSCode_Configured.png" class="align-center" src="_images/VSCode_Configured.png" style="width: 620px;" /></a>
 <br>
@@ -634,10 +658,12 @@ Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agenda">📜 Agenda</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure">💻 Procedure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repo-within-the-github-classroom">Create a repo within the GitHub Classroom</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-repository-within-the-github-classroom">Create a Repository within the GitHub Classroom</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-git">Install Git</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-ssh-connection-to-your-github-account">Enable SSH connection to your GitHub account</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-ssh-connection-to-your-github-account">Enable SSH Connection to Your GitHub Account</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-repository-to-your-computer">Clone repository to your computer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-and-configure-vs-code">Install and Configure VS Code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-and-push-your-update">Commit and Push Your Update</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">🚚 Deliverables</a><ul class="nav section-nav flex-column">
