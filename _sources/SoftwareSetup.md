@@ -11,6 +11,7 @@ Don’t worry if it doesn’t work right. If everything did, you’d be out of a
 
 ## 💻 Procedure
 
+(CreateRepo)=
 ### Create a Repository within the GitHub Classroom
 
 1. If you don't already have a <a href="https://github.com/" target="_blank">GitHub</a> account, go ahead and create one.
@@ -85,6 +86,15 @@ Skip this section and go [here](CloneRepo) if you already have set up the SSH co
 
 1. Create a new folder named `ece487_wksp` in your home directory, e.g., `C:\Users\stanley.baek\ece487_wksp`.
 1. Right-click on the `ece487_wksp` folder and select `Git Bash Here` from the menu.   
+1. Open the GitHub repository that you created in this [section](CreateRepo). Copy your repo address using the SSH mode:
+1. From the GitHub repository you created in this [section](CreateRepo), click Clone and copy the command that begins with `git clone` by clicking on the `copy` button as shown below.
+    ```{image} ./figures/GitClone.png
+    :width: 480
+    :align: center
+    ```
+    <br>
+1. Paste it within the Bash terminal (middle-click, right-click > Paste, or Shift+Ins to paste) and add a space followed by a period as shown below. The period at the end means that the destination is the current folder. Hit Enter.
+1. If it asks for a password, enter the app password you saved in the previous step.
 
     **Note**: The gif animation below has been adapted from ECE382. You must use ECE487 in place of ECE382.
 

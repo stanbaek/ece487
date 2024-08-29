@@ -412,7 +412,7 @@ document.write(`
 <section id="procedure">
 <h2>💻 Procedure<a class="headerlink" href="#procedure" title="Permalink to this heading">#</a></h2>
 <section id="create-a-repository-within-the-github-classroom">
-<h3>Create a Repository within the GitHub Classroom<a class="headerlink" href="#create-a-repository-within-the-github-classroom" title="Permalink to this heading">#</a></h3>
+<span id="createrepo"></span><h3>Create a Repository within the GitHub Classroom<a class="headerlink" href="#create-a-repository-within-the-github-classroom" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>If you don’t already have a <a href="https://github.com/" target="_blank">GitHub</a> account, go ahead and create one.</p></li>
 <li><p>Once you have your account, browse to <a href="https://classroom.github.com/a/_D0KthO4/" target="_blank">ECE487 Classroom</a>.</p></li>
@@ -478,7 +478,14 @@ ssh-add<span class="w"> </span>~/.ssh/id_ed25519
 <span id="clonerepo"></span><h3>Clone repository to your computer<a class="headerlink" href="#clone-repository-to-your-computer" title="Permalink to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Create a new folder named <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> in your home directory, e.g., <code class="docutils literal notranslate"><span class="pre">C:\Users\stanley.baek\ece487_wksp</span></code>.</p></li>
-<li><p>Right-click on the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> from the menu.</p>
+<li><p>Right-click on the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> from the menu.</p></li>
+<li><p>Open the GitHub repository that you created in this <a class="reference internal" href="#createrepo"><span class="std std-ref">section</span></a>. Copy your repo address using the SSH mode:</p></li>
+<li><p>From the GitHub repository you created in this <a class="reference internal" href="#createrepo"><span class="std std-ref">section</span></a>, click Clone and copy the command that begins with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> by clicking on the <code class="docutils literal notranslate"><span class="pre">copy</span></code> button as shown below.</p>
+<a class="reference internal image-reference" href="_images/GitClone.png"><img alt="_images/GitClone.png" class="align-center" src="_images/GitClone.png" style="width: 480px;" /></a>
+ <br>
+</li>
+<li><p>Paste it within the Bash terminal (middle-click, right-click &gt; Paste, or Shift+Ins to paste) and add a space followed by a period as shown below. The period at the end means that the destination is the current folder. Hit Enter.</p></li>
+<li><p>If it asks for a password, enter the app password you saved in the previous step.</p>
 <p><strong>Note</strong>: The gif animation below has been adapted from ECE382. You must use ECE487 in place of ECE382.</p>
 <a class="reference internal image-reference" href="_images/GitClone.gif"><img alt="_images/GitClone.gif" class="align-center" src="_images/GitClone.gif" style="width: 680px;" /></a>
  <br>
