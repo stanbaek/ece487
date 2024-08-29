@@ -86,10 +86,9 @@ Skip this section and go [here](CloneRepo) if you already have set up the SSH co
 
 1. Create a new folder named `ece487_wksp` in your home directory, e.g., `C:\Users\stanley.baek\ece487_wksp`.
 1. Right-click on the `ece487_wksp` folder and select `Git Bash Here` from the menu.   
-1. Open the GitHub repository that you created in this [section](CreateRepo). Copy your repo address using the SSH mode:
 1. From the GitHub repository you created in this [section](CreateRepo), click Clone and copy the command that begins with `git clone` by clicking on the `copy` button as shown below.
     ```{image} ./figures/GitClone.png
-    :width: 480
+    :width: 320
     :align: center
     ```
     <br>
