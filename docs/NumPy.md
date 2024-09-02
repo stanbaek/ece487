@@ -1,4 +1,4 @@
-# Numpy
+# ➕ Numpy
 
 ## Purpose
 This tutorial will introduce NumPy, a fundametal package for scientific computing in Python.

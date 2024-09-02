@@ -9,17 +9,17 @@ parts:
   - file: syllabus.md
   - file: schedule.md
   - file: SoftwareSetup.md
-  - file: NoPointer.ipynb
+  - url: https://stanbaek.github.io/NoPointer.html
+    title: No Pointers in Python?
 
 - caption: Labs
   chapters:
-
+  - glob: Lab*
 
 - caption: Supplementary
   chapters:
   - file: PythonBasic.md
   - file: PythonIntermediate.md
-  - file: PythonContainers.md
   - file: NumPy.md
   - file: videos.md
   - file: Readings.md
