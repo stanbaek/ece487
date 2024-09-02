@@ -55,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script src="_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -226,37 +227,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/stanbaek/ece487/blob/master/docs/Lab2_lse.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -312,7 +282,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/Lab2_lse.ipynb" target="_blank"
+      <li><a href="_sources/Lab2_lse.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,7 +292,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -431,9 +401,7 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <p>We need to solve a least squares regression problem to find a linear equation that best fits the measured data. Let the measured data is given by <span class="math notranslate nohighlight">\(\mathbf{y} = (y_1, y_2, \cdots, y_n)\)</span> and the corresponding values are given by <span class="math notranslate nohighlight">\(\mathbf{x} = (x_1, x_2, \cdots, x_n)\)</span>.</p>
 <p>The goal is to find <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(b\)</span> such that <span class="math notranslate nohighlight">\(y = mx + b\)</span> best approximates the linear relationship between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p>
 <p>Let’s first plot the data</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
@@ -449,11 +417,6 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/0a9c9abc564813406284447c767c2184d72ca65cdfb7820eb5c5a4f0cd4228a5.png" src="_images/0a9c9abc564813406284447c767c2184d72ca65cdfb7820eb5c5a4f0cd4228a5.png" />
-</div>
-</div>
 <p>First, we can rewrite the line equation as <span class="math notranslate nohighlight">\(y = \mathbf{c} \cdot \mathbf{q}\)</span>, where</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{c} = \begin{bmatrix} x &amp; 1\end{bmatrix}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{q} = \begin{bmatrix} m \\ b\end{bmatrix} \)</span>. That is,</p>
 <p><span class="math notranslate nohighlight">\(y = mx + b = \begin{bmatrix} x &amp; 1\end{bmatrix} \begin{bmatrix} m \\ b\end{bmatrix} = \mathbf{c} \cdot \mathbf{q}\)</span></p>
@@ -462,9 +425,7 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <p>where</p>
 <p><span class="math notranslate nohighlight">\(C = \begin{bmatrix} x_1 &amp; 1 \\ x_2 &amp; 1 \\x_3 &amp; 1 \\x_4 &amp; 1 \end{bmatrix} = \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 1 \\2 &amp; 1 \\3 &amp; 1 \end{bmatrix} \)</span>.</p>
 <p>We can create the <span class="math notranslate nohighlight">\(C\)</span> matrix using <code class="docutils literal notranslate"><span class="pre">np.vstack</span></code></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># x is a row vector.</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># x is a row vector.</span>
 <span class="c1"># Use vstack to append a row vector, [1, 1, ,,, 1] at the end of x.</span>
 <span class="c1"># It will be a 2 by n matrix.</span>
 <span class="c1"># We need to transpose the 2 by n matrix to make it an n by 2 matrix</span>
@@ -472,40 +433,18 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0. 1.]
- [1. 1.]
- [2. 1.]
- [3. 1.]]
-</pre></div>
-</div>
-</div>
-</div>
 <p>Now use <code class="docutils literal notranslate"><span class="pre">np.linalg.lstsq</span></code> to solve for <span class="math notranslate nohighlight">\(\mathbf{q}\)</span>:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">rcond</span><span class="o">=</span><span class="kc">None</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">rcond</span><span class="o">=</span><span class="kc">None</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 <span class="c1"># or you can use</span>
 <span class="n">m</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">rcond</span><span class="o">=</span><span class="kc">None</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[ 0.96 -0.89]
-0.9599999999999999 -0.8899999999999998
-</pre></div>
-</div>
-</div>
-</div>
 <p>With <span class="math notranslate nohighlight">\(m=0.96\)</span> and <span class="math notranslate nohighlight">\(b=-0.89\)</span>, the best fitting line is</p>
 <p><span class="math notranslate nohighlight">\(y = 0.96x-0.89\)</span></p>
 <p>Let’s plot the line, <span class="math notranslate nohighlight">\(y = mx + b\)</span> along with the data.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">()</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;measurements&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -515,15 +454,12 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/2b64d2c507462900cf28a7dfba1386a9c8bdbdf4ea60d8954beef2ce24f480e5.png" src="_images/2b64d2c507462900cf28a7dfba1386a9c8bdbdf4ea60d8954beef2ce24f480e5.png" />
-</div>
-</div>
+<!-- #region -->
 </section>
 <section id="free-fall-example">
 <h2>Free fall example<a class="headerlink" href="#free-fall-example" title="Permalink to this heading">#</a></h2>
 <p>Thoroughly go through the contents of <code class="docutils literal notranslate"><span class="pre">falling_body.ipynb</span></code> notebook to gain insight into three distinct techniques used for curve fitting.</p>
+<!-- #endregion -->
 </section>
 <section id="deliverables">
 <h2>🚚 Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this heading">#</a></h2>
@@ -545,9 +481,7 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <li><p>Hint 3: The initial voltage across the capacitor is <span class="math notranslate nohighlight">\(5\)</span> V, i.e., <span class="math notranslate nohighlight">\(v_0 =5\)</span> V</p></li>
 </ul>
 <p>Use the following measurements of <span class="math notranslate nohighlight">\(v(t)\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
 
 <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span>
     <span class="p">[</span>
@@ -664,11 +598,6 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/d521f409ecdebe3319cb38def4a590b690bcdb6ad0f5dcef538ee456a58e482d.png" src="_images/d521f409ecdebe3319cb38def4a590b690bcdb6ad0f5dcef538ee456a58e482d.png" />
-</div>
-</div>
 <p>The voltage across the capacitor is given by <span class="math notranslate nohighlight">\(v(t) = v_0 e^{-t/\tau}\)</span>, which is a nonlinear function of <span class="math notranslate nohighlight">\(\tau\)</span>. By taking the logarithm on both side, we derive</p>
 <p><span class="math notranslate nohighlight">\( \log (\frac{v}{v_0}) = -t/\tau\)</span></p>
 <p>Rearranging the equation yields</p>
@@ -676,9 +605,7 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <p>As a result, the measuremts can be redefined in terms of <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(\mathbf{x} \coloneqq -\log (\frac{\mathbf{v}}{v_0})\)</span>.  With this, we can establish a linear equation of <span class="math notranslate nohighlight">\(\tau\)</span> given by</p>
 <p><span class="math notranslate nohighlight">\( \mathbf{t} = \mathbf{x} \tau\)</span>,</p>
 <p>where <span class="math notranslate nohighlight">\(\mathbf{t} \in \mathbb{R}^n\)</span> and <span class="math notranslate nohighlight">\(\mathbf{x} \in \mathbb{R}^n\)</span> represents measurement vectors of dimensions <span class="math notranslate nohighlight">\(n\times 1\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add your code to find the optimal value of the time constant, \tau</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add your code to find the optimal value of the time constant, \tau</span>
 
 <span class="c1"># v = v0*exp(-t/tau)</span>
 <span class="c1"># -log(v/v0) * tau = t</span>
@@ -718,122 +645,12 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-2.48547465e-03  0.00000000e+00]
- [ 2.33939654e-02  0.00000000e+00]
- [ 7.93312856e-02  0.00000000e+00]
- [ 8.14399929e-02  0.00000000e+00]
- [ 1.25552581e-01  0.00000000e+00]
- [ 1.65283290e-01  0.00000000e+00]
- [ 1.88079694e-01  0.00000000e+00]
- [ 2.21673889e-01  0.00000000e+00]
- [ 2.53088937e-01  0.00000000e+00]
- [ 3.00496543e-01  0.00000000e+00]
- [ 3.33082758e-01  0.00000000e+00]
- [ 3.75549301e-01  0.00000000e+00]
- [ 4.14079031e-01  0.00000000e+00]
- [ 4.52311350e-01  0.00000000e+00]
- [ 4.86209414e-01  0.00000000e+00]
- [ 5.21795679e-01  0.00000000e+00]
- [ 5.47961220e-01  0.00000000e+00]
- [ 5.77004376e-01  0.00000000e+00]
- [ 6.18323578e-01  0.00000000e+00]
- [ 6.96385474e-01  0.00000000e+00]
- [ 6.89338331e-01  0.00000000e+00]
- [ 7.14524059e-01  0.00000000e+00]
- [ 7.38831205e-01  0.00000000e+00]
- [ 7.76417065e-01  0.00000000e+00]
- [ 8.49610015e-01  0.00000000e+00]
- [ 9.08027234e-01  0.00000000e+00]
- [ 8.77491266e-01  0.00000000e+00]
- [ 9.13409541e-01  0.00000000e+00]
- [ 9.54469291e-01  0.00000000e+00]
- [ 1.04610931e+00  0.00000000e+00]
- [ 1.02917067e+00  0.00000000e+00]
- [ 1.02729254e+00  0.00000000e+00]
- [ 1.16347358e+00  0.00000000e+00]
- [ 1.06355216e+00  0.00000000e+00]
- [ 1.14831855e+00  0.00000000e+00]
- [ 1.19103854e+00  0.00000000e+00]
- [ 1.20847510e+00  0.00000000e+00]
- [ 1.26736272e+00  0.00000000e+00]
- [ 1.32722608e+00  0.00000000e+00]
- [ 1.40469495e+00  0.00000000e+00]
- [ 1.43171931e+00  0.00000000e+00]
- [ 1.42323101e+00  0.00000000e+00]
- [ 1.48912509e+00  0.00000000e+00]
- [ 1.44527956e+00  0.00000000e+00]
- [ 1.51131513e+00  0.00000000e+00]
- [ 1.52143005e+00  0.00000000e+00]
- [ 1.55645961e+00  0.00000000e+00]
- [ 1.68931702e+00  0.00000000e+00]
- [ 1.65344953e+00  0.00000000e+00]
- [ 1.70534889e+00  0.00000000e+00]
- [ 1.63810418e+00  0.00000000e+00]
- [ 1.81661571e+00  0.00000000e+00]
- [ 1.80609749e+00  0.00000000e+00]
- [ 1.76959833e+00  0.00000000e+00]
- [ 1.75157408e+00  0.00000000e+00]
- [ 1.96377737e+00  0.00000000e+00]
- [ 1.85878179e+00  0.00000000e+00]
- [ 1.91158647e+00  0.00000000e+00]
- [ 1.98007356e+00  0.00000000e+00]
- [ 2.05923680e+00  0.00000000e+00]
- [ 2.14596868e+00  0.00000000e+00]
- [ 2.09401735e+00  0.00000000e+00]
- [ 2.12071946e+00  0.00000000e+00]
- [ 2.26878064e+00  0.00000000e+00]
- [ 2.28444701e+00  0.00000000e+00]
- [ 2.16126602e+00  0.00000000e+00]
- [ 2.20999114e+00  0.00000000e+00]
- [ 2.27897750e+00  0.00000000e+00]
- [ 2.28720590e+00  0.00000000e+00]
- [ 2.37437452e+00  0.00000000e+00]
- [ 2.52412089e+00  0.00000000e+00]
- [ 2.39712283e+00  0.00000000e+00]
- [ 2.60206140e+00  0.00000000e+00]
- [ 2.41901932e+00  0.00000000e+00]
- [ 2.50438351e+00  0.00000000e+00]
- [ 2.57294041e+00  0.00000000e+00]
- [ 2.71959368e+00  0.00000000e+00]
- [ 2.56531003e+00  0.00000000e+00]
- [ 2.77373687e+00  0.00000000e+00]
- [ 2.84108868e+00  0.00000000e+00]
- [ 2.99797487e+00  0.00000000e+00]
- [ 2.84987355e+00  0.00000000e+00]
- [ 3.09293390e+00  0.00000000e+00]
- [ 2.99154394e+00  0.00000000e+00]
- [ 3.00987732e+00  0.00000000e+00]
- [ 2.82175167e+00  0.00000000e+00]
- [ 3.40003140e+00  0.00000000e+00]
- [ 2.94824627e+00  0.00000000e+00]
- [ 3.32746633e+00  0.00000000e+00]
- [ 2.97037760e+00  0.00000000e+00]
- [ 3.32940791e+00  0.00000000e+00]
- [ 3.10077457e+00  0.00000000e+00]
- [ 3.22461124e+00  0.00000000e+00]
- [ 2.94136527e+00  0.00000000e+00]
- [ 3.32946046e+00  0.00000000e+00]
- [ 3.28065203e+00  0.00000000e+00]
- [ 3.42321694e+00  0.00000000e+00]
- [ 3.26003288e+00  0.00000000e+00]
- [ 3.28278191e+00  0.00000000e+00]
- [ 3.69798858e+00  0.00000000e+00]]
-0.2858986310259257
-</pre></div>
-</div>
-<img alt="_images/ac90993a97ac367e14d4fc8fb8016b5ba281d5feb080bbede8d2946e5ffb4db3.png" src="_images/ac90993a97ac367e14d4fc8fb8016b5ba281d5feb080bbede8d2946e5ffb4db3.png" />
-</div>
-</div>
 <p>Report the time constant <span class="math notranslate nohighlight">\(\tau\)</span> and the capacitance <span class="math notranslate nohighlight">\(C\)</span> and submit a plot of the fitted line with the measurements.</p>
 </section>
 <section id="deliverable-2">
 <h3>Deliverable 2<a class="headerlink" href="#deliverable-2" title="Permalink to this heading">#</a></h3>
 <p>The following data pertains to the houses found in a given California district and some summary stats about them based on the 1990 census data.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">tarfile</span>
 <span class="kn">import</span> <span class="nn">urllib.request</span>
@@ -854,125 +671,12 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="n">housing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>  <span class="c1"># The first five rows of data.</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>housing_median_age</th>
-      <th>total_rooms</th>
-      <th>total_bedrooms</th>
-      <th>population</th>
-      <th>households</th>
-      <th>median_income</th>
-      <th>median_house_value</th>
-      <th>ocean_proximity</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>-122.23</td>
-      <td>37.88</td>
-      <td>41.0</td>
-      <td>880.0</td>
-      <td>129.0</td>
-      <td>322.0</td>
-      <td>126.0</td>
-      <td>8.3252</td>
-      <td>452600.0</td>
-      <td>NEAR BAY</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>-122.22</td>
-      <td>37.86</td>
-      <td>21.0</td>
-      <td>7099.0</td>
-      <td>1106.0</td>
-      <td>2401.0</td>
-      <td>1138.0</td>
-      <td>8.3014</td>
-      <td>358500.0</td>
-      <td>NEAR BAY</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>-122.24</td>
-      <td>37.85</td>
-      <td>52.0</td>
-      <td>1467.0</td>
-      <td>190.0</td>
-      <td>496.0</td>
-      <td>177.0</td>
-      <td>7.2574</td>
-      <td>352100.0</td>
-      <td>NEAR BAY</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>-122.25</td>
-      <td>37.85</td>
-      <td>52.0</td>
-      <td>1274.0</td>
-      <td>235.0</td>
-      <td>558.0</td>
-      <td>219.0</td>
-      <td>5.6431</td>
-      <td>341300.0</td>
-      <td>NEAR BAY</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>-122.25</td>
-      <td>37.85</td>
-      <td>52.0</td>
-      <td>1627.0</td>
-      <td>280.0</td>
-      <td>565.0</td>
-      <td>259.0</td>
-      <td>3.8462</td>
-      <td>342200.0</td>
-      <td>NEAR BAY</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
 <p>Let’s look at the data size.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">housing</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">housing</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20640
-</pre></div>
-</div>
-</div>
 </div>
 <p>Since the dataset includes graphical information (latitude and longitude), it is good idea to create a scatterplot of all the districts to visualize the data. In particular, we are interested in the median income, population, and median house value.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
 
@@ -1026,67 +730,29 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;longitude&#39;, ylabel=&#39;latitude&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/bebe25845addf1db7f908b74eac89783c7d8efeb1b9648cbae833d9f427d4d3e.png" src="_images/bebe25845addf1db7f908b74eac89783c7d8efeb1b9648cbae833d9f427d4d3e.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="n">housing</span><span class="p">[</span><span class="s2">&quot;median_house_value&quot;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="n">housing</span><span class="p">[</span><span class="s2">&quot;median_house_value&quot;</span><span class="p">]</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">housing</span><span class="p">[</span><span class="s2">&quot;population&quot;</span><span class="p">]</span>
 <span class="n">income</span> <span class="o">=</span> <span class="n">housing</span><span class="p">[</span><span class="s2">&quot;median_income&quot;</span><span class="p">]</span>
 </pre></div>
-</div>
-</div>
 </div>
 <p>Our objective is to predict the value of houses in a specific neighborhood based on the population and median income. The linear model we’re interested in can be expressed as:</p>
 <p><span class="math notranslate nohighlight">\(v = w_2 * x + w_1 * y + w_0\)</span></p>
 <p>where <span class="math notranslate nohighlight">\(v\)</span> represents the house value; <span class="math notranslate nohighlight">\(x\)</span> represents the population, and <span class="math notranslate nohighlight">\(y\)</span> represents the median income.  Essentially, our aim is to determine the values of  <span class="math notranslate nohighlight">\(\mathbf{w} = [w_2 \quad w_1 \quad w_0]^\top\)</span> that minimize the disparities between the training set and the model’s predictions.</p>
 <p>To begin, let’s establish a linear relationship:</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{v} = C \mathbf{w}\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construct the C matrix</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construct the C matrix</span>
 
 <span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">income</span><span class="p">,</span> <span class="n">population</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">income</span><span class="p">)])</span><span class="o">.</span><span class="n">T</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[8.3252e+00 3.2200e+02 1.0000e+00]
- [8.3014e+00 2.4010e+03 1.0000e+00]
- [7.2574e+00 4.9600e+02 1.0000e+00]
- ...
- [1.7000e+00 1.0070e+03 1.0000e+00]
- [1.8672e+00 7.4100e+02 1.0000e+00]
- [2.3886e+00 1.3870e+03 1.0000e+00]]
-</pre></div>
-</div>
-</div>
-</div>
 <p>Utilize the least square estimation technique to determine the coefficients of the linear equation.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">rcond</span><span class="o">=</span><span class="kc">None</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">rcond</span><span class="o">=</span><span class="kc">None</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[ 0.96 -0.89]
-</pre></div>
-</div>
-</div>
-</div>
 <p>Let’s plot the model in 3D.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot the surface</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot the surface</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -1105,15 +771,10 @@ This document is known as a Jupyter notebook; it allows text and executable code
 <span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s2">&quot;meadian house value&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;meadian house value&#39;)
+<p>In Gradescope, provide a concise explanation of how the population is related to the house values, as well as how the median income is linked to the house values.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
-<img alt="_images/9b4ca5b0e1fbe47f8a8f8ba4a8e1a90c6e7dac73321e7153926aab96a9d447ff.png" src="_images/9b4ca5b0e1fbe47f8a8f8ba4a8e1a90c6e7dac73321e7153926aab96a9d447ff.png" />
-</div>
-</div>
-<p>In Gradescope, provide a concise explanation of how the population is related to the house values, as well as how the median income is linked to the house values.</p>
 </section>
 </section>
 </section>
