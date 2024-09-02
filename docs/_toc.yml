@@ -13,11 +13,12 @@ parts:
 
 - caption: Labs
   chapters:
-  - file: PythonTutorial.md
 
 
 - caption: Supplementary
   chapters:
+  - file: PythonBasic.md
+  - file: PythonIntermediate.md
   - file: PythonContainers.md
   - file: NumPy.md
   - file: videos.md
