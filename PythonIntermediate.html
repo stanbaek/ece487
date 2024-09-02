@@ -63,13 +63,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'PythonIntermediate';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="🔬 Lab 1: Python Containers" href="PythonContainers.html" />
+    <link rel="next" title="➕ Numpy" href="NumPy.html" />
     <link rel="prev" title="🐍 Python Basic" href="PythonBasic.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -170,15 +168,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Labs</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Lab1_python.html">Lab 1 Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lab1_python.html">🔬 Lab 1 Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lab2_lse.html">Lab 2: Least Squares</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supplementary</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="PythonBasic.html">🐍 Python Basic</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">🐍 Python Intermediate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PythonContainers.html">🔬 Lab 1: Python Containers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="NumPy.html">Numpy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NumPy.html">➕ Numpy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">🎥 Videos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Readings.html">📃 Readings</a></li>
 </ul>
@@ -374,19 +371,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting">String Formatting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-conditional-statements">Simplifying Conditional Statements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-multiple-lists">Iterating Through Multiple Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-1">Deliverable 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-2">Deliverable 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pythonic-coding">Pythonic Coding</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-conditional-statements">Simplifying Conditional Statements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-multiple-lists">Iterating Through Multiple Lists</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-containers">Python Containers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -400,6 +399,11 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="python-intermediate">
 <h1>🐍 Python Intermediate<a class="headerlink" href="#python-intermediate" title="Permalink to this heading">#</a></h1>
+<section id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading">#</a></h2>
+<p>This tutorial will introduce Pythonic and Python data containers, such as lists, tuples, and strings.</p>
+<p>Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009</p>
+</section>
 <section id="string-formatting">
 <h2>String Formatting<a class="headerlink" href="#string-formatting" title="Permalink to this heading">#</a></h2>
 <ul>
@@ -441,8 +445,26 @@ document.write(`
 </li>
 </ul>
 </section>
+<section id="pythonic-coding">
+<h2>Pythonic Coding<a class="headerlink" href="#pythonic-coding" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">&quot;Pythonic&quot;</span></code> coding refers to writing code in a way that is idiomatic and aligns with the principles and style of the Python programming language. It emphasizes readability, simplicity, and elegance, often leveraging Python’s unique features and conventions.</p>
+<p>Here’s a simple example:</p>
+<ul>
+<li><p>Non-Pythonic Code:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">squares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Pythonic Code:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+</div>
+</li>
+</ul>
 <section id="simplifying-conditional-statements">
-<h2>Simplifying Conditional Statements<a class="headerlink" href="#simplifying-conditional-statements" title="Permalink to this heading">#</a></h2>
+<h3>Simplifying Conditional Statements<a class="headerlink" href="#simplifying-conditional-statements" title="Permalink to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Consider the following <code class="docutils literal notranslate"><span class="pre">if-elif-else</span></code> statement:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">hand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to play? &quot;</span><span class="p">)</span>
@@ -466,7 +488,7 @@ document.write(`
 </pre></div>
 </div>
 </li>
-<li><p>Further simplified using Python’s <code class="docutils literal notranslate"><span class="pre">in</span></code> keyword:</p>
+<li><p>You can also use more <code class="docutils literal notranslate"><span class="pre">Pythonic</span></code> code to further simplify it using Python’s <code class="docutils literal notranslate"><span class="pre">in</span></code> keyword:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">hand</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to play? &quot;</span><span class="p">)</span>  <span class="c1"># This is Pythonic</span>
 <span class="k">if</span> <span class="n">hand</span> <span class="ow">in</span>  <span class="p">(</span><span class="s2">&quot;Rock&quot;</span><span class="p">,</span> <span class="s2">&quot;Paper&quot;</span><span class="p">,</span> <span class="s2">&quot;Scissors&quot;</span><span class="p">):</span>  
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is a valid play&quot;</span><span class="p">)</span>
@@ -486,16 +508,24 @@ document.write(`
 </pre></div>
 </div>
 </li>
-<li><p>The code can be simplified by</p>
+<li><p>The code can be simplified using <code class="docutils literal notranslate"><span class="pre">Pythonic</span></code> by</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span>  <span class="c1"># This is Pythonic</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p>You can also use <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> for more Pythonic code:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Clark Kent&#39;</span><span class="p">,</span> <span class="s1">&#39;Wade Wilson&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruce Wayne&#39;</span><span class="p">,</span> <span class="s1">&#39;Dr. Baek&#39;</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+</ol>
+</section>
+<section id="loops">
+<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>If you would like to use index in a <code class="docutils literal notranslate"><span class="pre">for-loop</span></code>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># indexing using for loops</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Clark Kent&#39;</span><span class="p">,</span> <span class="s1">&#39;Wade Wilson&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruce Wayne&#39;</span><span class="p">,</span> <span class="s1">&#39;Dr. Baek&#39;</span><span class="p">]</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </li>
@@ -508,7 +538,15 @@ document.write(`
 </pre></div>
 </div>
 </li>
-<li><p>You can start the index from 1:</p>
+<li><p>You can also use <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> for more <code class="docutils literal notranslate"><span class="pre">Pythonic</span></code> code:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Clark Kent&#39;</span><span class="p">,</span> <span class="s1">&#39;Wade Wilson&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruce Wayne&#39;</span><span class="p">,</span> <span class="s1">&#39;Dr. Baek&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>This will print the same.</p></li>
+<li><p>You can also start the index from 1:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peter Parker&#39;</span><span class="p">,</span> <span class="s1">&#39;Clark Kent&#39;</span><span class="p">,</span> <span class="s1">&#39;Wade Wilson&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruce Wayne&#39;</span><span class="p">,</span> <span class="s1">&#39;Dr. Baek&#39;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
@@ -525,52 +563,11 @@ document.write(`
 </div>
 </li>
 </ol>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># indexing using for loops</span>
-<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-    <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-</div>
-<p>It will print</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="n">Peter</span> <span class="n">Parker</span>
-<span class="mi">1</span> <span class="n">Clark</span> <span class="n">Kent</span>
-<span class="mi">2</span> <span class="n">Wade</span> <span class="n">Wilson</span>
-<span class="mi">3</span> <span class="n">Bruce</span> <span class="n">Wayne</span>
-<span class="mi">4</span> <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span>
-</pre></div>
-</div>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pythonic with enumerate</span>
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>It will print</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="n">Peter</span> <span class="n">Parker</span>
-<span class="mi">1</span> <span class="n">Clark</span> <span class="n">Kent</span>
-<span class="mi">2</span> <span class="n">Wade</span> <span class="n">Wilson</span>
-<span class="mi">3</span> <span class="n">Bruce</span> <span class="n">Wayne</span>
-<span class="mi">4</span> <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span>
-</pre></div>
-</div>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># the index can start with 1 </span>
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>It will print</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="n">Peter</span> <span class="n">Parker</span>
-<span class="mi">2</span> <span class="n">Clark</span> <span class="n">Kent</span>
-<span class="mi">3</span> <span class="n">Wade</span> <span class="n">Wilson</span>
-<span class="mi">4</span> <span class="n">Bruce</span> <span class="n">Wayne</span>
-<span class="mi">5</span> <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span>
-</pre></div>
-</div>
 </section>
 <section id="iterating-through-multiple-lists">
-<h2>Iterating Through Multiple Lists<a class="headerlink" href="#iterating-through-multiple-lists" title="Permalink to this heading">#</a></h2>
-<ul>
-<li><p>You can iterate through multiple lists using <code class="docutils literal notranslate"><span class="pre">zip()</span></code>:</p>
+<h3>Iterating Through Multiple Lists<a class="headerlink" href="#iterating-through-multiple-lists" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>You can iterate through multiple lists:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">heroes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Spiderman&#39;</span><span class="p">,</span> <span class="s1">&#39;Superman&#39;</span><span class="p">,</span> <span class="s1">&#39;Deadpool&#39;</span><span class="p">,</span> <span class="s1">&#39;Batman&#39;</span><span class="p">,</span> <span class="s1">&#39;Pirate Captain&#39;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
     <span class="n">hero</span> <span class="o">=</span> <span class="n">heroes</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
@@ -578,8 +575,7 @@ document.write(`
 </pre></div>
 </div>
 </li>
-</ul>
-<p>It will print</p>
+<li><p>It will print</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Peter</span> <span class="n">Parker</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Spiderman</span>
 <span class="n">Clark</span> <span class="n">Kent</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Superman</span>
 <span class="n">Wade</span> <span class="n">Wilson</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Deadpool</span>
@@ -587,12 +583,15 @@ document.write(`
 <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Pirate</span> <span class="n">Captain</span>
 </pre></div>
 </div>
+</li>
+<li><p>You can <code class="docutils literal notranslate"><span class="pre">the</span> <span class="pre">Pythonic</span></code> style to iterate through multiple lists using <code class="docutils literal notranslate"><span class="pre">zip()</span></code>:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pythonic with zip</span>
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">hero</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">heroes</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> is actually </span><span class="si">{</span><span class="n">hero</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>It will print</p>
+</li>
+<li><p>This will print</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Peter</span> <span class="n">Parker</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Spiderman</span>
 <span class="n">Clark</span> <span class="n">Kent</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Superman</span>
 <span class="n">Wade</span> <span class="n">Wilson</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Deadpool</span>
@@ -600,12 +599,15 @@ document.write(`
 <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Pirate</span> <span class="n">Captain</span>
 </pre></div>
 </div>
+</li>
+<li><p>Another example:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">universes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Marvel&#39;</span><span class="p">,</span> <span class="s1">&#39;DC&#39;</span><span class="p">,</span> <span class="s1">&#39;Marvel&#39;</span><span class="p">,</span> <span class="s1">&#39;DC&#39;</span><span class="p">,</span> <span class="s1">&#39;USAFA&#39;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">hero</span><span class="p">,</span> <span class="n">universe</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">heroes</span><span class="p">,</span> <span class="n">universes</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> is actually </span><span class="si">{</span><span class="n">hero</span><span class="si">}</span><span class="s1"> from </span><span class="si">{</span><span class="n">universe</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>It will print</p>
+</li>
+<li><p>This will print</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Peter</span> <span class="n">Parker</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Spiderman</span> <span class="kn">from</span> <span class="nn">Marvel</span>
 <span class="n">Clark</span> <span class="n">Kent</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Superman</span> <span class="kn">from</span> <span class="nn">DC</span>
 <span class="n">Wade</span> <span class="n">Wilson</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Deadpool</span> <span class="kn">from</span> <span class="nn">Marvel</span>
@@ -613,103 +615,14 @@ document.write(`
 <span class="n">Dr</span><span class="o">.</span> <span class="n">Baek</span> <span class="ow">is</span> <span class="n">actually</span> <span class="n">Pirate</span> <span class="n">Captain</span> <span class="kn">from</span> <span class="nn">USAFA</span>
 </pre></div>
 </div>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">example_string</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">example_string</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>It will print</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">H</span>
-<span class="n">e</span>
-<span class="n">l</span>
-<span class="n">l</span>
-<span class="n">o</span>
- 
-<span class="n">W</span>
-<span class="n">o</span>
-<span class="n">r</span>
-<span class="n">l</span>
-<span class="n">d</span>
-</pre></div>
-</div>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-<span class="c1"># appending to lists in for loop</span>
-<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Horse&#39;</span><span class="p">,</span><span class="s1">&#39;Mouse&#39;</span><span class="p">,</span><span class="s1">&#39;Aardvark&#39;</span><span class="p">]:</span>
-    <span class="n">animals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-    
-<span class="nb">print</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>It will print</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Horse&#39;</span><span class="p">,</span> <span class="s1">&#39;Mouse&#39;</span><span class="p">,</span> <span class="s1">&#39;Aardvark&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># manipulating lists using for loops</span>
-<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
-</pre></div>
-</div>
-<p>It will print</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span>
-<span class="n">N</span>
-<span class="n">I</span>
-<span class="n">M</span>
-<span class="n">A</span>
-<span class="n">L</span>
-<span class="n">S</span>
-</pre></div>
-</div>
-</section>
-<section id="deliverables">
-<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this heading">#</a></h2>
-<section id="deliverable-1">
-<h3>Deliverable 1<a class="headerlink" href="#deliverable-1" title="Permalink to this heading">#</a></h3>
-<p>Write a Python script that computes square roots using the Newton’s method of successive approximation, which says that whenever we have a guess <span class="math notranslate nohighlight">\(y\)</span> for the value of the square root of a number <span class="math notranslate nohighlight">\(x\)</span>, we can perform a simple manipulation to get a better guess by averaging <span class="math notranslate nohighlight">\(y\)</span> with <span class="math notranslate nohighlight">\(x/y\)</span>. For example we can compute the square root of 2 as shown below</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p>Guess</p></th>
-<th class="head text-center"><p>Quotient</p></th>
-<th class="head text-center"><p>Average</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(2/1=2\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\((2+1)/2=1.5\)</span></p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(1.5\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(2/1.5=1.333\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\((1.333+1.5)/2=1.4176\)</span></p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(1.4176\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(2/1.4176=1.4188\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\((1.4188+1.4176)/2=1.4142\)</span></p></td>
-</tr>
-<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(1.4142\)</span></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\cdots\)</span></p></td>
-<td class="text-center"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p>You need to iterate until <span class="math notranslate nohighlight">\(|y^2 - x| &lt; \epsilon\)</span>, where <span class="math notranslate nohighlight">\(\epsilon = 10^{-9}\)</span> is the tolerance. You are not allowed to use any functions in the <code class="docutils literal notranslate"><span class="pre">math</span></code> module except <code class="docutils literal notranslate"><span class="pre">math.fabs</span></code> for the absolute values.</p>
-</section>
-<section id="deliverable-2">
-<h3>Deliverable 2<a class="headerlink" href="#deliverable-2" title="Permalink to this heading">#</a></h3>
-<p>Write the <code class="docutils literal notranslate"><span class="pre">num_vowels</span></code> function inside <code class="docutils literal notranslate"><span class="pre">vowels.py</span></code> that takes a string argument and returns the number of lowercase vowels in the string.</p>
+</li>
+</ol>
 </section>
 </section>
-<section id="purpose">
-<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading">#</a></h2>
-<p>This tutorial will introduce Python data containers, such as lists, tuples, and strings.</p>
-<p>Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009</p>
-<hr>
-</section>
+<section id="python-containers">
+<h2>Python Containers<a class="headerlink" href="#python-containers" title="Permalink to this heading">#</a></h2>
 <section id="strings">
-<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this heading">#</a></h2>
+<h3>Strings<a class="headerlink" href="#strings" title="Permalink to this heading">#</a></h3>
 <p>To create string literals, enclose them in single, double, or triple quotes as follows</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hellow World&quot;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;Python is groovy&#39;</span>
@@ -745,7 +658,7 @@ document.write(`
 </div>
 </section>
 <section id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h2>
+<h3>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h3>
 <p>Lists are sequences of arbitrary objects. You create a list by enclosing values in square brackets, as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Dave&quot;</span><span class="p">,</span> <span class="s2">&quot;Mark&quot;</span><span class="p">,</span> <span class="s2">&quot;Ann&quot;</span><span class="p">,</span> <span class="s2">&quot;Phil&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
@@ -810,14 +723,14 @@ document.write(`
 </div>
 </section>
 <section id="tuples">
-<h2>Tuples<a class="headerlink" href="#tuples" title="Permalink to this heading">#</a></h2>
+<h3>Tuples<a class="headerlink" href="#tuples" title="Permalink to this heading">#</a></h3>
 <p>To create sinple data structures, you can pack a collection of values together into a single object using a <em>tuple</em>. You can create a tuple by enclosing group of values in parentheses like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stock</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;GOOG&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">490.10</span><span class="p">)</span>
 <span class="n">address</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;www.python.org&#39;</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
 <span class="n">person</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Stan&quot;</span><span class="p">,</span> <span class="s2">&quot;Baek&quot;</span><span class="p">,</span> <span class="s2">&quot;stanley.baek@afacademy&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Python often recognizes that a tuple is intended enve if the parentheses are missing</p>
+<p>Python often recognizes that a tuple is intended even if the parentheses are missing</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stock</span> <span class="o">=</span> <span class="s2">&quot;GOOG&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">490.10</span>
 <span class="n">address</span> <span class="o">=</span> <span class="s1">&#39;www.python.org&#39;</span><span class="p">,</span> <span class="mi">80</span>
 <span class="n">person</span> <span class="o">=</span> <span class="s2">&quot;Stan&quot;</span><span class="p">,</span> <span class="s2">&quot;Baek&quot;</span><span class="p">,</span> <span class="s2">&quot;stanley.baek@afacademy&quot;</span>
@@ -842,14 +755,18 @@ document.write(`
 <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">phone</span> <span class="o">=</span> <span class="n">person</span>
 </pre></div>
 </div>
-<p>Although tuples support most of the same operations as lists, such as indexing, slicing, and concatenation, the contents of a utple cannot be modified after creation.  That is, you cannot replace, delete, or append new elements to an exisiting tuple.</p>
+<p>Although tuples support most of the same operations as lists, such as indexing, slicing, and concatenation, the contents of a tuple cannot be modified after creation.  That is, you cannot replace, delete, or append new elements to an exisiting tuple.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">stock</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> 
 <span class="n">stock</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">200</span>  <span class="c1"># error</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Python tuples and strings are immutable. This means that once it is created, its contents cannot be changed—elements cannot be added, removed, or altered.  On the other hand, Python lists are mutable.</p>
+</div>
 </section>
 <section id="dictionaries">
-<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this heading">#</a></h2>
+<h3>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>In Python, a dictionary (or dict) is mapping between a set of indices (keys) and a set of values</p></li>
 <li><p>The items in a dictionary are key-value pairs</p></li>
@@ -871,6 +788,7 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">eng2sp</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 
@@ -915,11 +833,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="PythonContainers.html"
+       href="NumPy.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">🔬 Lab 1: Python Containers</p>
+        <p class="prev-next-title">➕ Numpy</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -941,19 +859,21 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting">String Formatting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-conditional-statements">Simplifying Conditional Statements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-multiple-lists">Iterating Through Multiple Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-1">Deliverable 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable-2">Deliverable 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pythonic-coding">Pythonic Coding</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-conditional-statements">Simplifying Conditional Statements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-multiple-lists">Iterating Through Multiple Lists</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-containers">Python Containers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

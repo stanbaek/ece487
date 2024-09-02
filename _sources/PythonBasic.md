@@ -35,9 +35,9 @@ The only way to learn a new programming language is by writing programs in it. -
     ```
 1. To exit the Python Shell, type `exit()` and press `Enter`, or use `Ctrl+z` and press `Enter`.
 
-### Running Python in Command Prompt (or Terminal for Mac)
+### Running Python in Command Prompt
 
-1. Open Command Prompt or PowerShell (or Terminal on Mac), and run `python` on Windows or `python3` on Mac. 
+1. Open Command Prompt or PowerShell (or Terminal on Mac and Ubuntu), and run `python` on Windows or `python3` on Mac. 
 1. This will open the Python Shell. 
 
 
@@ -105,7 +105,7 @@ Python's simple types are summarized in the following table:
     x <= y # x is less than or equal to y
     ```
 
-- Try the  following code in Python Console.
+- Try the following code in Python Console.
 
     ```python
     2+2
@@ -131,7 +131,6 @@ Python's simple types are summarized in the following table:
     print(not a==6 and b==6)
     print(not (a==6 and b==6))
     ```
-
 
 ### Working with Variables
 1. In Python, variables store values like strings or numbers. Strings are blocks of text, such as `"Stan Baek is the legendary pirate captain."` Numbers can be integers or decimals.

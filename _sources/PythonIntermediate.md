@@ -1,11 +1,11 @@
 # 🐍 Python Intermediate
 
+## Purpose
+This tutorial will introduce Pythonic and Python data containers, such as lists, tuples, and strings. 
 
+Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009
 
-
-
-
-### String Formatting
+## String Formatting
 - There are multiple ways to format strings in Python. Here are a few examples:
 
     ```python
@@ -44,6 +44,23 @@
     The legendary pirate captain is   726.2500 years old.
     ```
 
+## Pythonic Coding
+
+`"Pythonic"` coding refers to writing code in a way that is idiomatic and aligns with the principles and style of the Python programming language. It emphasizes readability, simplicity, and elegance, often leveraging Python’s unique features and conventions. 
+
+Here's a simple example:
+
+- Non-Pythonic Code:
+    ```Python
+    squares = []
+    for i in range(10):
+        squares.append(i * i)
+    ```
+- Pythonic Code:
+    ```Python
+    squares = [i * i for i in range(10)]
+    ```
+
 ### Simplifying Conditional Statements
 1. Consider the following `if-elif-else` statement:
     ```Python
@@ -65,8 +82,7 @@
     else:    
         print("It is an invalid play")
     ```
-
-3. Further simplified using Python's `in` keyword:
+1. You can also use more `Pythonic` code to further simplify it using Python's `in` keyword:
     ```Python
     hand = input("What would you like to play? ")  # This is Pythonic
     if hand in  ("Rock", "Paper", "Scissors"):  
@@ -74,8 +90,7 @@
     else:    
         print("It is an invalid play")    
     ```
-4. The ternary operator is a way of writing conditionals in Python. 
-
+1. The ternary operator is a way of writing conditionals in Python. 
     ```Python
     y = 1
 
@@ -85,22 +100,22 @@
         x = 0
     print(x)
     ```
-1. The code can be simplified by
+1. The code can be simplified using `Pythonic` by
     ```Python
     x = 1 if y == 1 else 0  # This is Pythonic
     print(x)
     ```
 
+### Loops
 
-
-
-
-
-1. You can also use `enumerate()` for more Pythonic code:
+1. If you would like to use index in a `for-loop`:
     ```Python
+    # indexing using for loops
     names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne', 'Dr. Baek']
-    for index, name in enumerate(names):
+    index = 0
+    for name in names:
         print(index, name)
+        index += 1
     ```
 1. This will print
     ```
@@ -110,7 +125,14 @@
     3 Bruce Wayne
     4 Dr. Baek
     ```
-1. You can start the index from 1:
+1. You can also use `enumerate()` for more `Pythonic` code:
+    ```Python
+    names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne', 'Dr. Baek']
+    for index, name in enumerate(names):
+        print(index, name)
+    ```
+1. This will print the same.
+1. You can also start the index from 1:
     ```Python
     names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne', 'Dr. Baek']
     for index, name in enumerate(names, start=1):
@@ -125,230 +147,55 @@
     5 Dr. Baek
     ```
 
-
-
-
-
-```Python
-# indexing using for loops
-index = 0
-for name in names:
-    print(index, name)
-    index += 1
-```
-
-It will print
-```
-0 Peter Parker
-1 Clark Kent
-2 Wade Wilson
-3 Bruce Wayne
-4 Dr. Baek
-```
-
-```Python
-# Pythonic with enumerate
-for index, name in enumerate(names):
-    print(index, name)
-```
-
-It will print
-```
-0 Peter Parker
-1 Clark Kent
-2 Wade Wilson
-3 Bruce Wayne
-4 Dr. Baek
-```
-
-
-```Python
-# the index can start with 1 
-for index, name in enumerate(names, start=1):
-    print(index, name)
-```
-
-It will print
-```
-1 Peter Parker
-2 Clark Kent
-3 Wade Wilson
-4 Bruce Wayne
-5 Dr. Baek
-```
-
-
-
-
-
-
-
-
-
-
-
 ### Iterating Through Multiple Lists
-- You can iterate through multiple lists using `zip()`:
-
-
-
+1. You can iterate through multiple lists:
     ```Python
     heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman', 'Pirate Captain']
     for index, name in enumerate(names):
         hero = heroes[index]
         print(f'{name} is actually {hero}')
     ```
-
-It will print
-```
-Peter Parker is actually Spiderman
-Clark Kent is actually Superman
-Wade Wilson is actually Deadpool
-Bruce Wayne is actually Batman
-Dr. Baek is actually Pirate Captain
-```
-
-
-```Python
-# Pythonic with zip
-for name, hero in zip(names, heroes):
-    print(f'{name} is actually {hero}')
-```
-
-It will print
-```
-Peter Parker is actually Spiderman
-Clark Kent is actually Superman
-Wade Wilson is actually Deadpool
-Bruce Wayne is actually Batman
-Dr. Baek is actually Pirate Captain
-```
-
-```Python
-universes = ['Marvel', 'DC', 'Marvel', 'DC', 'USAFA']
-for name, hero, universe in zip(names, heroes, universes):
-    print(f'{name} is actually {hero} from {universe}')
-```
-
-It will print
-```
-Peter Parker is actually Spiderman from Marvel
-Clark Kent is actually Superman from DC
-Wade Wilson is actually Deadpool from Marvel
-Bruce Wayne is actually Batman from DC
-Dr. Baek is actually Pirate Captain from USAFA
-```
-
-```Python
-example_string = "Hello World"
-for c in example_string:
-    print(c)
-```
-
-It will print
-```
-H
-e
-l
-l
-o
- 
-W
-o
-r
-l
-d
-```
+1. It will print
+    ```
+    Peter Parker is actually Spiderman
+    Clark Kent is actually Superman
+    Wade Wilson is actually Deadpool
+    Bruce Wayne is actually Batman
+    Dr. Baek is actually Pirate Captain
+    ```
+1. You can `the Pythonic` style to iterate through multiple lists using `zip()`:
+    ```Python
+    # Pythonic with zip
+    for name, hero in zip(names, heroes):
+        print(f'{name} is actually {hero}')
+    ```
+1. This will print
+    ```
+    Peter Parker is actually Spiderman
+    Clark Kent is actually Superman
+    Wade Wilson is actually Deadpool
+    Bruce Wayne is actually Batman
+    Dr. Baek is actually Pirate Captain
+    ```
+1. Another example:
+    ```Python
+    universes = ['Marvel', 'DC', 'Marvel', 'DC', 'USAFA']
+    for name, hero, universe in zip(names, heroes, universes):
+        print(f'{name} is actually {hero} from {universe}')
+    ```
+1. This will print
+    ```
+    Peter Parker is actually Spiderman from Marvel
+    Clark Kent is actually Superman from DC
+    Wade Wilson is actually Deadpool from Marvel
+    Bruce Wayne is actually Batman from DC
+    Dr. Baek is actually Pirate Captain from USAFA
+    ```
 
 
-```Python
-animals = list()
-# appending to lists in for loop
-for value in ['Horse','Mouse','Aardvark']:
-    animals.append(value)
-    
-print(animals)
-```
+## Python Containers
 
-It will print
-```
-['Horse', 'Mouse', 'Aardvark']
-```
-
-
-
-```Python
-# manipulating lists using for loops
-for value in ['a','n','i','m','a','l','s']:
-    print(value.upper())
-```
-
-It will print
-```
-A
-N
-I
-M
-A
-L
-S
-```
-
-
-## Deliverables
-
-### Deliverable 1
-Write a Python script that computes square roots using the Newton's method of successive approximation, which says that whenever we have a guess $y$ for the value of the square root of a number $x$, we can perform a simple manipulation to get a better guess by averaging $y$ with $x/y$. For example we can compute the square root of 2 as shown below
-
-
-| Guess    | Quotient          | Average                    |
-|:--------:|:-----------------:|:--------------------------:|
-| $1$      | $2/1=2$           | $(2+1)/2=1.5$              | 
-| $1.5$    | $2/1.5=1.333$     | $(1.333+1.5)/2=1.4176$     |
-| $1.4176$ | $2/1.4176=1.4188$ | $(1.4188+1.4176)/2=1.4142$ |                  
-| $1.4142$ | $\cdots$          |                            |
-| $\vdots$ |                   |                            | 
-
-You need to iterate until $|y^2 - x| < \epsilon$, where $\epsilon = 10^{-9}$ is the tolerance. You are not allowed to use any functions in the `math` module except `math.fabs` for the absolute values.  
-
-### Deliverable 2
-Write the `num_vowels` function inside `vowels.py` that takes a string argument and returns the number of lowercase vowels in the string.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Purpose
-This tutorial will introduce Python data containers, such as lists, tuples, and strings. 
-
-Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009
-
-
-<hr>
-
-## Strings
+### Strings
 
 To create string literals, enclose them in single, double, or triple quotes as follows
 
@@ -390,7 +237,7 @@ z = int(x)+int(y)
 print(z)  # what does this print?
 ```
 
-## Lists
+### Lists
 Lists are sequences of arbitrary objects. You create a list by enclosing values in square brackets, as follows:
 
 ```python
@@ -470,7 +317,7 @@ list_b.append('.')
 print(list_b)
 ```
 
-## Tuples
+### Tuples
 To create sinple data structures, you can pack a collection of values together into a single object using a *tuple*. You can create a tuple by enclosing group of values in parentheses like this: 
 
 ```python
@@ -479,7 +326,7 @@ address = ('www.python.org', 80)
 person = ("Stan", "Baek", "stanley.baek@afacademy")
 ```
 
-Python often recognizes that a tuple is intended enve if the parentheses are missing
+Python often recognizes that a tuple is intended even if the parentheses are missing
 
 ```python
 stock = "GOOG", 100, 490.10
@@ -510,14 +357,18 @@ host, port = address
 first_name, last_name, phone = person
 ```
 
-Although tuples support most of the same operations as lists, such as indexing, slicing, and concatenation, the contents of a utple cannot be modified after creation.  That is, you cannot replace, delete, or append new elements to an exisiting tuple. 
+Although tuples support most of the same operations as lists, such as indexing, slicing, and concatenation, the contents of a tuple cannot be modified after creation.  That is, you cannot replace, delete, or append new elements to an exisiting tuple. 
 
 ```python
 print(stock[1]) 
 stock[1] = 200  # error
 ```
 
-## Dictionaries
+```{note}
+Python tuples and strings are immutable. This means that once it is created, its contents cannot be changed—elements cannot be added, removed, or altered.  On the other hand, Python lists are mutable.
+```
+
+### Dictionaries
 - In Python, a dictionary (or dict) is mapping between a set of indices (keys) and a set of values
 - The items in a dictionary are key-value pairs
 - Keys can be any Python data type
