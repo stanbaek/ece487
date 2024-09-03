@@ -1,12 +1,12 @@
 # 🐍 Python Intermediate
 
 ## Purpose
-This tutorial will introduce Pythonic and Python data containers, such as lists, tuples, and strings. 
+This tutorial introduces Pythonic coding practices and key Python data containers such as strings, lists, tuples, and dictionaries.
 
-Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009
+Reference: D. Beazley, _Python Essential Reference_, 4th ed, Addison Wesley, 2009
 
 ## String Formatting
-- There are multiple ways to format strings in Python. Here are a few examples:
+- Python offers multiple ways to format strings. Here are some common methods:
 
     ```python
     title = "The legendary pirate captain"
@@ -29,7 +29,7 @@ Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009
     print(f"{title} is {age:.4f} years old.")
     print(f"{title} is {age:10.4f} years old.")
     ```
-
+- Output:
     ```
     The legendary pirate captain is 726.250000 years old.
     The legendary pirate captain is 726.2500 years old.
@@ -46,23 +46,23 @@ Reference: D. Beazley, Python Essential Reference, 4th ed, Addison Wesley, 2009
 
 ## Pythonic Coding
 
-`"Pythonic"` coding refers to writing code in a way that is idiomatic and aligns with the principles and style of the Python programming language. It emphasizes readability, simplicity, and elegance, often leveraging Python’s unique features and conventions. 
+`"Pythonic"` refers to writing code in a way that is idiomatic and aligns with the principles and style of the Python programming language. It emphasizes readability, simplicity, and elegance, often leveraging Python’s unique features and conventions. 
 
-Here's a simple example:
+### Example: List Comprehensions
 
-- Non-Pythonic Code:
+1. Non-Pythonic:
     ```Python
     squares = []
     for i in range(10):
         squares.append(i * i)
     ```
-- Pythonic Code:
+1. Pythonic:
     ```Python
     squares = [i * i for i in range(10)]
     ```
 
 ### Simplifying Conditional Statements
-1. Consider the following `if-elif-else` statement:
+1. Consider the following code:
     ```Python
     hand = input("What would you like to play? ")
     if hand == "Rock":
@@ -82,7 +82,7 @@ Here's a simple example:
     else:    
         print("It is an invalid play")
     ```
-1. You can also use more `Pythonic` code to further simplify it using Python's `in` keyword:
+1. This code can be further simplified using Python's `in` keyword:
     ```Python
     hand = input("What would you like to play? ")  # This is Pythonic
     if hand in  ("Rock", "Paper", "Scissors"):  
@@ -90,7 +90,11 @@ Here's a simple example:
     else:    
         print("It is an invalid play")    
     ```
-1. The ternary operator is a way of writing conditionals in Python. 
+
+### Ternary Operator
+The ternary operator allows concise conditional assignments:
+
+1. Consider the following code:
     ```Python
     y = 1
 
@@ -108,7 +112,7 @@ Here's a simple example:
 
 ### Loops
 
-1. If you would like to use index in a `for-loop`:
+1. If you would like to use index in a loop:
     ```Python
     # indexing using for loops
     names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne', 'Dr. Baek']
@@ -163,20 +167,13 @@ Here's a simple example:
     Bruce Wayne is actually Batman
     Dr. Baek is actually Pirate Captain
     ```
-1. You can `the Pythonic` style to iterate through multiple lists using `zip()`:
+1. You can the `Pythonic` style to iterate through multiple lists using `zip()`:
     ```Python
     # Pythonic with zip
     for name, hero in zip(names, heroes):
         print(f'{name} is actually {hero}')
     ```
-1. This will print
-    ```
-    Peter Parker is actually Spiderman
-    Clark Kent is actually Superman
-    Wade Wilson is actually Deadpool
-    Bruce Wayne is actually Batman
-    Dr. Baek is actually Pirate Captain
-    ```
+1. This will print the same.
 1. Another example:
     ```Python
     universes = ['Marvel', 'DC', 'Marvel', 'DC', 'USAFA']
@@ -193,179 +190,155 @@ Here's a simple example:
     ```
 
 
-## Python Containers
+## Python Data Containers
 
 ### Strings
 
-To create string literals, enclose them in single, double, or triple quotes as follows
+1. Strings are created by enclosing characters in single, double, or triple quotes:
+    ```python
+    a = "Hellow World"
+    b = 'Python is groovy'
+    c = """Computer says 'No'"""
+    print(a, b, c)
+    ```
 
-```python
-a = "Hellow World"
-b = 'Python is groovy'
-c = """Computer says 'No'"""
-print(a)
-print(b)
-print(c)
-```
+1. The same type of quote used to start a string must be used to terminate it.  Triple-quoted strings capture all the text that appears prior to the terminating triple quote, as opposed to single- and double-quoted strings, which must be  specified on one logical line.  Triple-quoted strings are useful when the contents of a string literal span multiple lines of text such as the following:
 
-The same type of quote used to start a string must be used to terminate it.  Triple-quoted strings capture all the text that appears prior to the terminating triple quote, as opposed to single- and double-quoted strings, which must be  specified on one logical line.  Triple-quoted strings are useful when the contents of a string literal span multiple lines of text such as the following:
+    ```python
+    print('''Content-type: text/html
 
-```python
-print('''Content-type: text/html
+    <h1> Hello World </h1>
+    Click <a href="http://www.python.org">here</a>.
+    ''')
+    ```
 
-<h1> Hello World </h1>
-Click <a href="http://www.python.org">here</a>.
-''')
-```
+1. Strings are stored as sequences of characters indexed by integers starting at zero
 
-Strings are stored as sequences of characters indexed by integers starting at zero
+    ```python
+    a = "Hello World"
+    print(a[0])   # First character
+    print(a[:5])  # Slice: 'Hello'  
+    print(a[6:])  # Slice: 'World'
+    print(a[3:8]) # Slice: 'lo Wo' 
+    ```
 
-```python
-a = "Hello World"
-print(a[4])
-print(a[:5])
-print(a[6:])
-print(a[3:8])
-```
-
-```python
-x = "37"
-y = "42"
-z = x+y
-print(z) # what does this print?  why?
-z = int(x)+int(y)
-print(z)  # what does this print?
-```
+1. Try this:
+    ```python
+    x = "37"
+    y = "42"
+    z = x+y
+    print(z) # what does this print?  why?
+    z = int(x)+int(y)
+    print(z)  # what does this print?
+    ```
 
 ### Lists
-Lists are sequences of arbitrary objects. You create a list by enclosing values in square brackets, as follows:
+1. Lists are `mutable` sequences of objects, created with square brackets:
+    ```python
+    names = ["Dave", "Mark", "Ann", "Phil"]
+    print(names)
+    ```
+1. Lists are indexed by integers, starting with zero. Use the indexing operator to access and modify individual items of the list:
+    ```python
+    a = names[2]
+    print(a)
+    names[0] = "Jeff"
+    names.append("Paula")
+    names.insert(2, "Thomas")
+    print(names)
+    ```
+1. Lists can be sliced and concatenated using:
+    ```Python
+    x[start:stop:stride]
+    ```
+1. For example,
+    ```python
+    b = names[0:2]
+    print(b)
+    c = names[2:]
+    print(c)
+    names[1] = 'Jeff'
+    print(names)
+    names[0:2] = ['Dave', 'Mark', 'Jeff']
+    print(names)
+    ```
+1. Use the plus `+` operator to concatenate lists: 
+    ```python
+    a = [1,2,3]+[4,5,6]
+    print(a)
+    ```
+1. An empty list can be created by one of two ways
+    ```python
+    names = []
+    print(names)
+    names = list()
+    print(names)
+    ```
+1. Lists can contain any kind of Python object, including other lists, as in the following example:
+    ```python
+    a = [1, "Dave", 3.14, ["Mark", 7, 9, [0, 101]], 10]
+    ```
+1. Items contained in nested lists are accessed by applying more than one indexing operation, as follows:
 
-```python
-names = ["Dave", "Mark", "Ann", "Phil"]
-print(names)
-```
-
-Lists are indexed by integers, starting with zero. Use the indexing operator to access and modify individual items of the list:
-
-```python
-a = names[2]
-print(a)
-names[0] = "Jeff"
-names.append("Paula")
-names.insert(2, "Thomas")
-print(names)
-```
-
-Lists can be sliced:
-```Python
-x[start:stop:stride]
-```
-
-```python
-b = names[0:2]
-print(b)
-c = names[2:]
-print(c)
-names[1] = 'Jeff'
-print(names)
-names[0:2] = ['Dave', 'Mark', 'Jeff']
-print(names)
-```
-
-Use the plus `+` operator to concatenate lists: 
-
-```python
-a = [1,2,3]+[4,5,6]
-print(a)
-```
-
-An empty list can be created bin one of two ways
-
-```python
-names = []
-print(names)
-names = list()
-print(names)
-```
-
-Lists can contain any kind of Python object, including other lists, as in the following example:
-
-```python
-a = [1, "Dave", 3.14, ["Mark", 7, 9, [0, 101]], 10]
-```
-
-Items contained in nested lists are accessed by applying more than one indexing operation, as follows:
-
-```python
-print(a[1])
-print(a[3])
-print(a[3][1])
-print(a[3][3][1])
-```
-
-Objects can be inserted and appended to a list.
-
-```python
-# List methods (insert)
-list_b.insert(2,'python')
-print(list_b)
-```
-
-```python
-# List methods (append)
-list_b.append('.')
-print(list_b)
-```
+    ```python
+    print(a[1])
+    print(a[3])
+    print(a[3][1])
+    print(a[3][3][1])
+    ```
+1. Objects can be inserted and appended to a list.
+    ```python
+    # List methods (insert)
+    list_b.insert(2,'python')
+    print(list_b)
+    # List methods (append)
+    list_b.append('.')
+    print(list_b)
+    ```
 
 ### Tuples
-To create sinple data structures, you can pack a collection of values together into a single object using a *tuple*. You can create a tuple by enclosing group of values in parentheses like this: 
+1. To create simple data structures, you can pack a collection of values together into a single object using a *tuple*. You can create a tuple by enclosing group of values in parentheses like this: 
 
-```python
-stock = ("GOOG", 100, 490.10)
-address = ('www.python.org', 80)
-person = ("Stan", "Baek", "stanley.baek@afacademy")
-```
+    ```python
+    stock = ("GOOG", 100, 490.10)
+    address = ('www.python.org', 80)
+    person = ("Stan", "Baek", "stanley.baek@afacademy")
+    ```
+1. Python often recognizes that a tuple is intended even if the parentheses are missing
+    ```python
+    stock = "GOOG", 100, 490.10
+    address = 'www.python.org', 80
+    person = "Stan", "Baek", "stanley.baek@afacademy"
+    ```
+1. For completeness, 0- and 1-element tuples can be defined, but have special syntax:
+    ```python
+    a = ()    # 0-tuple, empty tuple
+    b = (1,)  # 1-tuple  
+    c = 1,    # 1-tuple
+    print(type(a))
+    print(type(b))
+    print(type(c))
+    b = (1)   # not a tuple
+    c = 1     # not a tuple
+    print(type(b))
+    print(type(c))
+    ```
 
-Python often recognizes that a tuple is intended even if the parentheses are missing
+1. The values in a tuple can be extracted by numerical index just like a list. However, it is more common to unpack tuples into a set of variables like this
+    ```python
+    name, shares, price = stock
+    host, port = address
+    first_name, last_name, phone = person
+    ```
+1. Although tuples support most of the same operations as lists, such as indexing, slicing, and concatenation, the contents of a tuple `cannot be modified` after creation.  That is, you cannot replace, delete, or append new elements to an exisiting tuple. 
 
-```python
-stock = "GOOG", 100, 490.10
-address = 'www.python.org', 80
-person = "Stan", "Baek", "stanley.baek@afacademy"
-```
-
-For completeness, 0- and 1-element tuples can be defined, but have special syntax:
-
-```python
-a = ()    # 0-tuple, empty tuple
-b = (1,)  # 1-tuple  
-c = 1,    # 1-tuple
-print(type(a))
-print(type(b))
-print(type(c))
-b = (1)
-c = 1
-print(type(b))
-print(type(c))
-```
-
-The values in a tuple can be extracted by numerical index just like a list. However, it is more common to unpack tuples into a set of variables like this
-
-```python
-name, shares, price = stock
-host, port = address
-first_name, last_name, phone = person
-```
-
-Although tuples support most of the same operations as lists, such as indexing, slicing, and concatenation, the contents of a tuple cannot be modified after creation.  That is, you cannot replace, delete, or append new elements to an exisiting tuple. 
-
-```python
-print(stock[1]) 
-stock[1] = 200  # error
-```
+    ```python
+    print(stock[1]) 
+    stock[1] = 200  # error
+    ```
 
 ```{note}
-Python tuples and strings are immutable. This means that once it is created, its contents cannot be changed—elements cannot be added, removed, or altered.  On the other hand, Python lists are mutable.
+Python tuples and strings are `immutable`. This means that once it is created, its contents cannot be changed — elements cannot be added, removed, or altered.  On the other hand, Python lists are `mutable`.
 ```
 
 ### Dictionaries
@@ -374,21 +347,22 @@ Python tuples and strings are immutable. This means that once it is created, its
 - Keys can be any Python data type
 - Dictionaries are unordered
 
-```python
-# Dictionaries
-eng2sp = {}
-eng2sp['one'] = 'uno'
-print(eng2sp)
-```
-
-```python
-eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
-print(eng2sp)
-```
-
-```python
-# keys vs values
-print(eng2sp.keys())
-print(eng2sp.values())
-```
+1. We can create a dictionary using curly braces:
+    ```python
+    eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+    print(eng2sp['one'])  # Output: uno
+    ```
+1. An empty dictionary can be created:
+    ```python
+    # Dictionaries
+    eng2sp = {}
+    eng2sp['one'] = 'uno'
+    print(eng2sp)
+    ```
+1. Keys can be retrieved using `.keys()` and values using `.values()`:
+    ```python
+    # keys vs values
+    print(eng2sp.keys())
+    print(eng2sp.values())
+    ```
 
