@@ -501,20 +501,23 @@ document.write(`
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>A Python <code class="docutils literal notranslate"><span class="pre">list</span></code> cannot directly handle a mathematical operations, while NumPy <code class="docutils literal notranslate"><span class="pre">array</span></code> can.  This is one of the main differences between a <code class="docutils literal notranslate"><span class="pre">list</span></code> and <code class="docutils literal notranslate"><span class="pre">array</span></code>. While you can store an integer or float in a list, you can’t really do mathematical operations in it.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># np array</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<p>A key difference between a Python list and a NumPy array is how they handle mathematical operations. While both can store numbers like integers or floats, you cannot perform element-wise mathematical operations directly on a list. In contrast, NumPy arrays are designed for such operations.</p>
+</div>
+<p>For example, with a NumPy array, you can perform operations like addition, multiplication, and exponentiation directly, while with a Python list, these operations do not behave as expected:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># NumPy array</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span>   <span class="c1"># [2 4 6]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>   <span class="c1"># [3 6 9]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># [1 4 9]</span>
 
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># python list</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># Error</span>
+<span class="c1"># Python list</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># [1, 2, 3, 1, 2, 3] (concatenation, not addition)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>   <span class="c1"># [1, 2, 3, 1, 2, 3, 1, 2, 3] (repetition, not multiplication)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Error: unsupported operand type(s) for ** or pow()</span>
 </pre></div>
 </div>
-</div>
+<p>NumPy arrays are optimized for numerical and matrix computations, making them far more efficient for mathematical operations compared to Python lists.</p>
 </section>
 <section id="indexing-slicing-and-iterating">
 <h2>Indexing, Slicing and Iterating<a class="headerlink" href="#indexing-slicing-and-iterating" title="Permalink to this heading">#</a></h2>

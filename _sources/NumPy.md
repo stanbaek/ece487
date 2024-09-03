@@ -121,20 +121,26 @@ a += b  # b is not automatically converted to integer type
 ```
 
 ```{important}
-A Python `list` cannot directly handle a mathematical operations, while NumPy `array` can.  This is one of the main differences between a `list` and `array`. While you can store an integer or float in a list, you can’t really do mathematical operations in it.
+A key difference between a Python list and a NumPy array is how they handle mathematical operations. While both can store numbers like integers or floats, you cannot perform element-wise mathematical operations directly on a list. In contrast, NumPy arrays are designed for such operations.
+```
+
+For example, with a NumPy array, you can perform operations like addition, multiplication, and exponentiation directly, while with a Python list, these operations do not behave as expected:
 
 ```python
-import numpy as np
-a = np.array([1,2,3])  # np array
-print(a+a)
-print(a*3)
-print(a**2)
+# NumPy array
+a = np.array([1, 2, 3])
+print(a + a)   # [2 4 6]
+print(a * 3)   # [3 6 9]
+print(a ** 2)  # [1 4 9]
 
-b = [1,2,3] # python list
-print(b+b)
-print(b*3)
-print(b**2) # Error
+# Python list
+b = [1, 2, 3]
+print(b + b)   # [1, 2, 3, 1, 2, 3] (concatenation, not addition)
+print(b * 3)   # [1, 2, 3, 1, 2, 3, 1, 2, 3] (repetition, not multiplication)
+print(b ** 2)  # Error: unsupported operand type(s) for ** or pow()
 ```
+NumPy arrays are optimized for numerical and matrix computations, making them far more efficient for mathematical operations compared to Python lists.
+
 
 ## Indexing, Slicing and Iterating
 NumPy arrays can be indexed and sliced similarly to Python lists:
