@@ -236,7 +236,7 @@ print(w)
 print(v) # each column of v is a normlized eigenvector associated with w in the same order. 
 ```
 
-## Logic Functions
+## Logical Functions
 NumPy includes several logical functions that can be applied element-wise or to entire arrays:
 
 Reference: `https://numpy.org/doc/stable/reference/routines.logic.html`
