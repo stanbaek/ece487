@@ -1,25 +1,6 @@
----
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.16.4
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
----
+# 🔬 Lab 1: Least Squares 
 
-# Lab 2: Least Squares 
-
-
-**A note on this document**
-This document is known as a Jupyter notebook; it allows text and executable code to coexist in a very easy-to-read format. Blocks can contain text or executable code. For blocks containing code, press `Shift + Enter`, `Ctrl+Enter`, or click the arrow on the block to run the code. Earlier blocks of code need to be run for the later blocks of code to work.
-
-
-## Least Sqaures Regression
+## Least Sqaures Estimation
 
 We need to solve a least squares regression problem to find a linear equation that best fits the measured data. Let the measured data is given by $\mathbf{y} = (y_1, y_2, \cdots, y_n)$ and the corresponding values are given by $\mathbf{x} = (x_1, x_2, \cdots, x_n)$.
 
