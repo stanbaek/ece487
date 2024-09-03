@@ -156,7 +156,7 @@ Skip this section and go [here](CloneRepo) if you already have set up the SSH co
 1. Create a virtual environment for Python typing in the first few letters of `Python: Create Environment` in the `Show All Commands` menu and select it.
 1. Choose `Venv` to create a virtual environment.  
 1. Select the Python path that you want to use.  
-1. Choose `requirements.txt` to install the Python packages for this course.
+1. Choose `requirements.txt` (`requirements_linux.txt` for Mac or Linux users) to install the Python packages for this course.
 1. Wait for a few minutes until all the packages are installed.
 1. Click the gear icon at the bottom-left corner and select `Settings`. 
 1. Select the `workspace` tab and click the page icon at the top-right corner. This will open `settings.json` 
