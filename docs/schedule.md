@@ -22,8 +22,8 @@ Reading:
 |8     | Least Square Estimate         |             | B:1.1          
 |9     | Special Topic                 | HW4         |           
 |10    | Lab1: Python & LSE            |             |      
-|11    | Joint Distribution            | HW5         | S:2.1-2.4,2.7-2.8       
-|12    | Conditional Distribution      | Lab1        | S:2.9-2.10,M:2.1-2.2,B: 1.2
+|11    | Joint Distributions           | HW5         | S:2.1-2.4,2.7-2.8       
+|12    | Multivariate Gaussian         | Lab1        | S:2.9-2.10,M:2.1-2.2,B: 1.2
 |13    | Kalman Filter                 |             | [Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
 |14    | Kalman Filter                 | HW6         | [Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
 |15    | Kalman Filter                 |             | [Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
