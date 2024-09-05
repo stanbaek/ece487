@@ -18,8 +18,8 @@ Reading:
 |4     | Basis                         |             | [3Blue1Brown](https://www.youtube.com/watch?v=P2LTAUO1TdA)
 |5     | Eigenvalues & Eigenvectors    | HW2         | [3Blue1Brown](https://www.youtube.com/watch?v=PFDu9oVAE-g)
 |6     | Eigenvalues & Eigenvectors    |             |           
-|7     | Least Square Estimate         | HW3         | B:1.1          
-|8     | Least Square Estimate         |             | B:1.1          
+|7     | Least Squares Estimation      | HW3         | B:1.1          
+|8     | Least Squares Estimation      |             | B:1.1          
 |9     | Special Topic                 | HW4         |           
 |10    | Lab1: Python & LSE            |             |      
 |11    | Joint Distributions           | HW5         | S:2.1-2.4,2.7-2.8       
