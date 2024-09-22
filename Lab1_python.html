@@ -55,7 +55,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script src="_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -227,6 +226,37 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/stanbaek/ece487/blob/master/docs/Lab1_python.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -282,7 +312,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/Lab1_python.md" target="_blank"
+      <li><a href="_sources/Lab1_python.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +322,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -423,7 +453,9 @@ document.write(`
 </tbody>
 </table>
 <p>You need to iterate until <span class="math notranslate nohighlight">\(|y^2 - x| &lt; \epsilon\)</span>, where <span class="math notranslate nohighlight">\(\epsilon = 10^{-9}\)</span> is the tolerance. You are not allowed to use any functions in the <code class="docutils literal notranslate"><span class="pre">math</span></code> module except <code class="docutils literal notranslate"><span class="pre">math.fabs</span></code> for the absolute values.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">fabs</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">fabs</span>
 
 <span class="c1"># NOTE: DO NOT USE ANY OTHER FUNCTIONS IN THE MATH MODULE</span>
 
@@ -438,12 +470,16 @@ document.write(`
     <span class="k">return</span> <span class="n">guess</span>
 </pre></div>
 </div>
+</div>
+</div>
 <p>Test your function with the following code</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">343.23</span><span class="p">,</span> <span class="mf">1.09</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="mf">1e-6</span><span class="p">]</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">343.23</span><span class="p">,</span> <span class="mf">1.09</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="mf">1e-6</span><span class="p">]</span>
 <span class="n">initial_guess</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">tol</span> <span class="o">=</span> <span class="mf">1e-9</span>
 
-<span class="sd">&quot;&quot;&quot; This is not Pythonic and slow</span>
+<span class="sd">&quot;&quot;&quot; This is not Pythonian and slow</span>
 <span class="sd">for i in range(len(numbers)):</span>
 <span class="sd">    print(sqrt(numbers[i], initial_guess, tol))</span>
 <span class="sd">&quot;&quot;&quot;</span>
@@ -453,11 +489,27 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">initial_guess</span><span class="p">,</span> <span class="n">tol</span><span class="p">))</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7071067811873449
+1
+1.4142135623746899
+1.7320508075688772
+2.000000000000002
+18.526467553206142
+1.0900000000257766
+0.0010000001533016628
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="deliverable-2">
 <h2>Deliverable 2<a class="headerlink" href="#deliverable-2" title="Permalink to this heading">#</a></h2>
 <p>Write the <code class="docutils literal notranslate"><span class="pre">num_vowels</span></code> function that takes a string argument and returns the number of lowercase vowels in the string.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">num_vowels</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">num_vowels</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
     <span class="c1"># write your code here</span>
 
     <span class="c1"># solution</span>
@@ -468,8 +520,12 @@ document.write(`
     <span class="k">return</span> <span class="n">count</span>
 </pre></div>
 </div>
+</div>
+</div>
 <p>Test your function with the following code</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">quotes</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">quotes</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
 
 <span class="n">quotes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
     <span class="s1">&#39;When the homework is due in an hour, &quot;Do or do not, there is no try.&quot;&#39;</span>
@@ -516,10 +572,25 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="n">quote</span> <span class="o">+</span> <span class="s2">&quot; ==&gt; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_vowels</span><span class="p">(</span><span class="n">quote</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; vowels.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
-
-
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>When the homework is due in an hour, &quot;Do or do not, there is no try.&quot; ==&gt; 20 vowels.
+If you think this homework is too convoluted, I would say, &quot;I find your lack of faith disturbing.&quot; ==&gt; 27 vowels.
+If you still can&#39;t solve this homework, spell &quot;Expecto Patronum!&quot;  ==&gt; 16 vowels.
+Don’t worry if it doesn’t work right. If everything did, you’d be out of a job. ==&gt; 20 vowels.
+The best thing about a boolean is even if you are wrong, you are only off by a bit. ==&gt; 28 vowels.
+There are two ways to write error-free programs; only the third one works. (Alan J. Perlis) ==&gt; 24 vowels.
+One man’s crappy software is another man’s full-time job. (Jessica Gaston) ==&gt; 20 vowels.
+It’s not a bug – it’s an undocumented feature. ==&gt; 14 vowels.
+Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. ==&gt; 35 vowels.
+A good programmer is someone who always looks both ways before crossing a one-way street. (Doug Linder) ==&gt; 32 vowels.
+If debugging is the process of removing software bugs, then programming must be the process of putting them in. (Edsger Dijkstra) ==&gt; 32 vowels.
+In order to understand recursion, one must first understand recursion. ==&gt; 21 vowels.
+There are only two kinds of programming languages: those people always bitch about and those nobody uses. (Bjarne Stroustrup) ==&gt; 38 vowels.
+Carefully read comments, but do not always trust them. (Stan Baek) ==&gt; 17 vowels.
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
