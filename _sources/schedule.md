@@ -28,24 +28,24 @@ Reading:
 |14    | Recursive Estimation          |            |
 |15    | Recursive Estimation          |            |
 |16    | Kalman Filter                 | HW7        |[Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
-|17    | Kalman Filter                 |            |[Understanding KF](https://www.youtube.com/playlist?list=PLn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
-|18    | Statistical Inference         | HW8        | S:3.1-3.3, B: 3.2-3.3    
+|17    | Kalman Filter                 |            |
+|18    | Kalman Filter                 | HW8        |
 |19    | GR1 (L1-L17)                  |            |    
 |20    | Project 1                     |            |     
-|21    | Prediction and Entropy        |            | S:3.4-3.5   
-|22    | Mutual Info and Loss Function | Proj1      | S:3.6-3.9  
-|23    | Lab2:                         | HW9        |    
-|24    | Supervised Learning           |            | S:4.1-4.3    
-|25    | Validation                    | Lab2       | S:4.4-4.6   
-|26    | Regularization                | HW10       | S:4.7-4.9   
-|27    | MAP                           |            | S:4.10-4.11   
-|28    | Lab3                          | HW11       | 
+|21    | Statistical Inference         |            | S:3.1-3.9, B: 3.2-3.3    
+|22    | Supervised Learning           | Proj1      | S:4.1-4.3 
+|23    | Validation                    | HW9        | S:4.4-4.6   
+|24    | Regularization                |            | S:4.7-4.9   
+|25    | MAP                           | HW10       | S:4.10-4.11   
+|26    | Lab2                          |            | 
+|27    | TBD                           | HW11       | 
+|28    | TBD                           |            | 
 |29    | Optimization Problem          |            | S:5.1-5.5 
-|30    | Convex Optimization           | Lab3       | S:5.6-5.7   
+|30    | Convex Optimization           | Lab2       | S:5.6-5.7   
 |31    | Gradient Descent              | HW12       | S:5.8-5.10   
-|32    | Lab4                          |            |    
+|32    | Lab3                          |            |    
 |33    | Back propagation              | HW13       |
-|34    | Neural Networks               | Lab4       |  
+|34    | Neural Networks               | Lab3       |  
 |35    | GR2                           |            |    
 |36    | Final Project                 |            |
 |37    | Final Project                 |            |
