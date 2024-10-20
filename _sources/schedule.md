@@ -32,17 +32,18 @@ Reading:
 |18    | Kalman Filter                 | HW8        |
 |19    | GR1 (L1-L17)                  |            |    
 |20    | Project 1                     |            |     
-|21    | Statistical Inference         |            | S:3.1-3.9, B: 3.2-3.3    
-|22    | Supervised Learning           | Proj1      | S:4.1-4.3 
-|23    | Validation                    | HW9        | S:4.4-4.6   
-|24    | Regularization                |            | S:4.7-4.9   
-|25    | MAP                           | HW10       | S:4.10-4.11   
-|26    | Lab2                          |            | 
-|27    | TBD                           | HW11       | 
-|28    | TBD                           |            | 
+|21    | Statistical Inference         |            | S:3.1-3.9, B:3.2-3.3    
+|22    | MLE                           | Proj1      | M:4.2 
+|23    | Linear Regression             | HW9        | S:4.1-4.3   
+|24    | Linear Regression             |            | M:11.2   
+|25    | Gradient Descent              |            | S:5.8-5.10   
+|      | TBA                           |            |
+|26    | Logistic Regression           | HW10       | S:4.10-4.11
+|27    | Regularization                |            | 
+|28    | Supervised Learning           | HW11       | S:4.1-4.3 
 |29    | Optimization Problem          |            | S:5.1-5.5 
-|30    | Convex Optimization           | Lab2       | S:5.6-5.7   
-|31    | Gradient Descent              | HW12       | S:5.8-5.10   
+|30    | Convex Optimization           |            | S:5.6-5.7   
+|31    | MAP                           | HW12       | S:5.8-5.10   
 |32    | Lab3                          |            |    
 |33    | Back propagation              | HW13       |
 |34    | Neural Networks               | Lab3       |  
