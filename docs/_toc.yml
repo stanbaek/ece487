@@ -21,6 +21,7 @@ parts:
   - file: PythonBasic.md
   - file: PythonIntermediate.md
   - file: NumPy.md
+  - file: mle.md
   - file: videos.md
   - file: Readings.md
   
