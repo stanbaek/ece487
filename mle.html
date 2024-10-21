@@ -445,8 +445,9 @@ document.write(`
 <li><p><strong>Interpretation</strong>: It answers the question: <em><strong>Given the model and parameters, what is the probability of observing this specific outcome?</strong></em></p></li>
 <li><p><strong>Example</strong>: Suppose you flip a biased coin with a known probability of heads <span class="math notranslate nohighlight">\(p = 0.7\)</span>. The probability of getting heads in a single flip is 0.7.</p></li>
 </ul>
-<p>In formula terms:
-$<span class="math notranslate nohighlight">\(P(X = x \mid \theta) \quad \text{(The probability of observing outcome } x \text{ given parameter } \theta)\)</span>$</p>
+<p>In formula terms:</p>
+<div class="math notranslate nohighlight">
+\[P(X = x \mid \theta) \quad \text{(The probability of observing outcome } x \text{ given parameter } \theta)\]</div>
 <p>where <span class="math notranslate nohighlight">\(X\)</span> is a random variable representing an outcome, and <span class="math notranslate nohighlight">\(\theta\)</span> is the fixed parameter (e.g., the bias of the coin).</p>
 </section>
 <section id="likelihood">
@@ -456,9 +457,10 @@ $<span class="math notranslate nohighlight">\(P(X = x \mid \theta) \quad \text{(
 <li><p><strong>Interpretation</strong>: It answers the question: <strong><em>Given this observed data, how likely is it that a particular set of parameters generated it?</em></strong></p></li>
 <li><p><strong>Example</strong>: Imagine you observe 7 heads out of 10 flips and want to estimate the probability <span class="math notranslate nohighlight">\(p\)</span> of heads for this biased coin. The likelihood function will give you the “likelihood” of different values of <span class="math notranslate nohighlight">\(p\)</span>, given that you’ve observed 7 heads in 10 flips. You would adjust <span class="math notranslate nohighlight">\(p\)</span> to find the value that maximizes this likelihood, using Maximum Likelihood Estimation (MLE).</p></li>
 </ul>
-<p>In formula terms:
-$<span class="math notranslate nohighlight">\(L(\theta \mid \mathcal{D}) = P(\mathcal{D} \mid \theta) \quad \text{(The likelihood of parameter } \theta \text{ given the data } \mathcal{D})\)</span><span class="math notranslate nohighlight">\(
-where \)</span>\mathcal{D} =(y_1, y_2, …, y_n)<span class="math notranslate nohighlight">\( is the observed data, and \)</span>\theta$ is the variable parameter to be estimated.</p>
+<p>In formula terms:</p>
+<div class="math notranslate nohighlight">
+\[L(\theta \mid \mathcal{D}) = P(\mathcal{D} \mid \theta) \quad \text{(The likelihood of parameter } \theta \text{ given the data } \mathcal{D})\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathcal{D} =(y_1, y_2, ..., y_n)\)</span> is the observed data, and <span class="math notranslate nohighlight">\(\theta\)</span> is the variable parameter to be estimated.</p>
 </section>
 <section id="key-differences">
 <h3>3. Key Differences:<a class="headerlink" href="#key-differences" title="Permalink to this heading">#</a></h3>

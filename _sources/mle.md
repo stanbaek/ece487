@@ -36,6 +36,7 @@ In summary, the likelihood function is the probability of the observed data trea
 - **Example**: Suppose you flip a biased coin with a known probability of heads $p = 0.7$. The probability of getting heads in a single flip is 0.7.
 
 In formula terms:
+
 $$P(X = x \mid \theta) \quad \text{(The probability of observing outcome } x \text{ given parameter } \theta)$$
 
 where $X$ is a random variable representing an outcome, and $\theta$ is the fixed parameter (e.g., the bias of the coin).
@@ -46,7 +47,9 @@ where $X$ is a random variable representing an outcome, and $\theta$ is the fixe
 - **Example**: Imagine you observe 7 heads out of 10 flips and want to estimate the probability $p$ of heads for this biased coin. The likelihood function will give you the "likelihood" of different values of $p$, given that you've observed 7 heads in 10 flips. You would adjust $p$ to find the value that maximizes this likelihood, using Maximum Likelihood Estimation (MLE).
 
 In formula terms:
+
 $$L(\theta \mid \mathcal{D}) = P(\mathcal{D} \mid \theta) \quad \text{(The likelihood of parameter } \theta \text{ given the data } \mathcal{D})$$
+
 where $\mathcal{D} =(y_1, y_2, ..., y_n)$ is the observed data, and $\theta$ is the variable parameter to be estimated.
 
 ### 3. Key Differences:
