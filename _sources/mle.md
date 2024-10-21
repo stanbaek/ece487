@@ -1,8 +1,11 @@
 # Maximum Likelihood Estimation (MLE)
 
+
+## Likelihood function
+
 The **likelihood function** is a fundamental concept in statistical inference and is defined as a function that measures how well a set of parameters explains a given set of data. Specifically, for a set of observed data and a statistical model with certain parameters, the likelihood function gives the probability (or probability density) of observing the data, viewed as a function of the parameters.
 
-## Definition
+### Definition
 
 For a set of observed data $\mathcal{D} = (y_1, y_2, ..., y_n)$ and a statistical model with a probability distribution $f(y \mid \theta)$ parameterized by $\theta$, the **likelihood function** $L(\theta \mid \mathcal{D})$ is:
 
@@ -27,7 +30,7 @@ In summary, the likelihood function is the probability of the observed data trea
 
 **Likelihood** and **probability** are related concepts but serve different purposes in statistics and have distinct interpretations:
 
-### 1. **Probability**:
+### 1. Probability:
 - **Definition**: Probability measures the chance that a certain event or outcome will occur, given a fixed model and parameters.
 - **Interpretation**: It answers the question: _**Given the model and parameters, what is the probability of observing this specific outcome?**_
 - **Example**: Suppose you flip a biased coin with a known probability of heads $p = 0.7$. The probability of getting heads in a single flip is 0.7.
@@ -37,7 +40,7 @@ $$P(X = x \mid \theta) \quad \text{(The probability of observing outcome } x \te
 
 where $X$ is a random variable representing an outcome, and $\theta$ is the fixed parameter (e.g., the bias of the coin).
 
-### 2. **Likelihood**:
+### 2. Likelihood:
 - **Definition**: Likelihood measures how well a particular set of parameters explains the observed data. It is viewed as a function of the parameters, given the data.
 - **Interpretation**: It answers the question: **_Given this observed data, how likely is it that a particular set of parameters generated it?_**
 - **Example**: Imagine you observe 7 heads out of 10 flips and want to estimate the probability $p$ of heads for this biased coin. The likelihood function will give you the "likelihood" of different values of $p$, given that you've observed 7 heads in 10 flips. You would adjust $p$ to find the value that maximizes this likelihood, using Maximum Likelihood Estimation (MLE).
@@ -71,13 +74,13 @@ In short, **probability** is about predicting outcomes from known parameters, wh
 
 To estimate the **mean** and **standard deviation** of a set of data $\mathcal{D} = \{y_1, y_2, \dots, y_N\}$, assuming that the $y$'s are drawn from a Gaussian (normal) distribution, we can use **Maximum Likelihood Estimation (MLE)**.
 
-### 1. **Problem Setup:**
+### 1. Problem Setup:
 
 Assume that the data $\mathcal{D} = \{y_1, y_2, \dots, y_N\}$ comes from a Gaussian distribution with unknown mean $\mu$ and unknown standard deviation $\sigma$. The probability density function (PDF) for a normal distribution is:
 
 $$f(y_i \mid \mu, \sigma) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left( -\frac{(y_i - \mu)^2}{2\sigma^2} \right)$$
 
-### 2. **Likelihood Function:**
+### 2. Likelihood Function:
 
 The likelihood function $L(\mu, \sigma \mid \mathcal{D})$ for the Gaussian distribution, given the data $\mathcal{D}$, is the product of the probabilities (or densities) of each individual observation $y_i$ under the Gaussian model:
 
@@ -87,7 +90,7 @@ Substituting the PDF of the Gaussian distribution:
 
 $$L(\mu, \sigma \mid \mathcal{D}) = \prod_{i=1}^{N} \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left( -\frac{(y_i - \mu)^2}{2\sigma^2} \right)$$
 
-### 3. **Log-Likelihood Function:**
+### 3. Log-Likelihood Function:
 
 It is common to maximize the **log-likelihood** instead of the likelihood, as it simplifies the math (turning products into sums). The log-likelihood function $LL(\mu, \sigma \mid \mathcal{D})$ is:
 
@@ -137,7 +140,7 @@ Thus, the MLE estimate for $\sigma^2$ is the **sample variance**. Taking the squ
 
 $$\hat{\sigma} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{\mu})^2}$$
 
-### 5. **Summary of MLE Estimates:**
+### 5. Summary of MLE Estimates:
 
 - The **MLE estimate for the mean $\mu$** is: 
     $$\hat{\mu} = \frac{1}{N} \sum_{i=1}^{N} y_i \quad \text{(the sample mean)}$$ 
