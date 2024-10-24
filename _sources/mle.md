@@ -66,25 +66,12 @@ where $\mathcal{D} =(y_1, y_2, ..., y_n)$ is the observed data, and $\theta$ is 
    - **Probability** is typically used in _forward_ problems where you're predicting outcomes based on a model (e.g., predicting the probability of heads in a coin flip).
    - **Likelihood** is used in parameter _estimation_ (e.g., finding the value of $p$ in a coin-flip experiment that best explains the observed data).
 
-4. **Summary**
-    - **Probability** is forward-looking: If you know the parameters of a situation, you can calculate the probability of various outcomes. It's like saying, "Given that the die is fair, what is the chance I'll roll a six?"
-    - **Likelihood** is reverse-engineering: Given an outcome, likelihood tells us how plausible different parameter values are. It's like saying, "Given that I rolled a six, how plausible is it that my die is fair?"
-    - So, when you toss a coin, the probability tells you the chance of heads or tails. But if you get ten heads in a row, likelihood helps you figure out if the coin is fair or biased.
-
-
 ### 4. Example:
 
 - **Probability**: Given a coin with $p = 0.7$ (where $p$ is the fixed probability of heads), the probability of flipping 7 heads out of 10 flips is computed based on this known $p$.
 - **Likelihood**: If you observe 7 heads out of 10 flips and don't know $p$, the likelihood function tells you how likely different values of $p$ are, given this outcome. You might use MLE to estimate the most likely value of $p$.
 
 In short, **probability** is about predicting outcomes from known parameters, while **likelihood** is about estimating parameters from observed outcomes.
-
-### 5. Likelihood in MLE
-
-In the context of Maximum Likelihood Estimation (MLE), likelihood is a function that measures how well a particular set of parameters explains the observed data. Given observed data points, the likelihood function evaluates the plausibility of different parameter values of a statistical model. MLE aims to find the parameter values that maximize this likelihood function, effectively making the observed data most probable under those parameters.
-
-So, imagine you have data on how often students pass an exam based on study hours. The likelihood function helps you figure out the parameters (like the average study hours) that make your observed data (exam pass rates) most likely.
-
 
 ## MLE Example
 

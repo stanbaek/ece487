@@ -384,7 +384,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#likelihood">2. Likelihood:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">3. Key Differences:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Example:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#likelihood-in-mle">5. Likelihood in MLE</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mle-example">MLE Example</a><ul class="nav section-nav flex-column">
@@ -484,13 +483,6 @@ document.write(`
 <li><p><strong>Likelihood</strong> is used in parameter <em>estimation</em> (e.g., finding the value of <span class="math notranslate nohighlight">\(p\)</span> in a coin-flip experiment that best explains the observed data).</p></li>
 </ul>
 </li>
-<li><p><strong>Summary</strong></p>
-<ul class="simple">
-<li><p><strong>Probability</strong> is forward-looking: If you know the parameters of a situation, you can calculate the probability of various outcomes. It’s like saying, “Given that the die is fair, what is the chance I’ll roll a six?”</p></li>
-<li><p><strong>Likelihood</strong> is reverse-engineering: Given an outcome, likelihood tells us how plausible different parameter values are. It’s like saying, “Given that I rolled a six, how plausible is it that my die is fair?”</p></li>
-<li><p>So, when you toss a coin, the probability tells you the chance of heads or tails. But if you get ten heads in a row, likelihood helps you figure out if the coin is fair or biased.</p></li>
-</ul>
-</li>
 </ol>
 </section>
 <section id="id1">
@@ -500,11 +492,6 @@ document.write(`
 <li><p><strong>Likelihood</strong>: If you observe 7 heads out of 10 flips and don’t know <span class="math notranslate nohighlight">\(p\)</span>, the likelihood function tells you how likely different values of <span class="math notranslate nohighlight">\(p\)</span> are, given this outcome. You might use MLE to estimate the most likely value of <span class="math notranslate nohighlight">\(p\)</span>.</p></li>
 </ul>
 <p>In short, <strong>probability</strong> is about predicting outcomes from known parameters, while <strong>likelihood</strong> is about estimating parameters from observed outcomes.</p>
-</section>
-<section id="likelihood-in-mle">
-<h3>5. Likelihood in MLE<a class="headerlink" href="#likelihood-in-mle" title="Permalink to this heading">#</a></h3>
-<p>In the context of Maximum Likelihood Estimation (MLE), likelihood is a function that measures how well a particular set of parameters explains the observed data. Given observed data points, the likelihood function evaluates the plausibility of different parameter values of a statistical model. MLE aims to find the parameter values that maximize this likelihood function, effectively making the observed data most probable under those parameters.</p>
-<p>So, imagine you have data on how often students pass an exam based on study hours. The likelihood function helps you figure out the parameters (like the average study hours) that make your observed data (exam pass rates) most likely.</p>
 </section>
 </section>
 <section id="mle-example">
@@ -662,7 +649,6 @@ $<span class="math notranslate nohighlight">\(\hat{\sigma} = \sqrt{\frac{1}{N} \
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#likelihood">2. Likelihood:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">3. Key Differences:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Example:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#likelihood-in-mle">5. Likelihood in MLE</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mle-example">MLE Example</a><ul class="nav section-nav flex-column">
