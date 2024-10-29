@@ -37,15 +37,14 @@ Reading:
 |23    | Linear Regression             | HW9        | S:4.1-4.3   
 |24    | Linear Regression             |            | M:11.2   
 |25    | Gradient Descent              |            | S:5.8-5.10   
-|      | TBA                           |            |
-|26    | Logistic Regression           | HW10       | S:4.10-4.11
-|27    | Regularization                |            | 
-|28    | Supervised Learning           | HW11       | S:4.1-4.3 
-|29    | Optimization Problem          |            | S:5.1-5.5 
-|30    | Convex Optimization           |            | S:5.6-5.7   
-|31    | MAP                           | HW12       | S:5.8-5.10   
+|26    | Logistic Regression           |            | S:6.3, B:4.3
+|27    | Naive Bayes                   | HW10       | M:9.3
+|28    | Assessment & Validation       |            | S:4.4-4.6
+|29    | MAP & Regularization          | HW11       | S:4.7-4.11
+|30    | Optimization Problem          |            | S:5.1-5.5 
+|31    | Convex Optimization           |            | S:5.6-5.7   
 |32    | Lab3                          |            |    
-|33    | Back propagation              | HW13       |
+|33    | Back propagation              | HW13       | S:5.14-5.15
 |34    | Neural Networks               | Lab3       |  
 |35    | GR2                           |            |    
 |36    | Final Project                 |            |
