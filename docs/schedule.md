@@ -42,12 +42,12 @@ Reading:
 |28    | Assessment & Validation       |            | S:4.4-4.6
 |29    | MAP                           |            | S:4.7-4.11
 |30    | Regularization                | HW11       | S:4.7-4.11
-|31    | Optimization Problem          |            | S:5.1-5.5 
-|32    | Convex Optimization           | HW12       | S:5.6-5.7   
-|33    | Back propagation              |            | S:5.14-5.15
-|34    | Neural Networks               | HW13       |  
+|31    | SVM                           |            |  
+|32    | Back propagation              | HW12       | S:5.14-5.15
+|33    | Neural Networks               |            |  
+|34    | Lab2                          | HW13       |    
 |35    | GR2                           |            |    
-|36    | Final Project                 |            |
+|36    | Final Project                 | Lab2       |
 |37    | Final Project                 |            |
 |      | Thanksgiving Break            |            |
 |38    | Final Project                 |            |
