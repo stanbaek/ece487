@@ -43,11 +43,11 @@ Reading:
 |29    | MAP                           |            | S:4.7-4.11
 |30    | Regularization                | HW11       | S:4.7-4.11
 |31    | SVM                           |            |  
-|32    | Back propagation              | HW12       | S:5.14-5.15
-|33    | Neural Networks               |            |  
-|34    | Lab2                          | HW13       |    
+|32    | Snow-Day                      | HW12       | S:5.14-5.15
+|33    | Neural Networks               |            | S:6.4 
+|34    | Back propagation              | HW13       | S:5.14-5.15
 |35    | GR2                           |            |    
-|36    | Final Project                 | Lab2       |
+|36    | Final Project                 | HW14       |
 |37    | Final Project                 |            |
 |      | Thanksgiving Break            |            |
 |38    | Final Project                 |            |
