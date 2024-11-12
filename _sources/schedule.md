@@ -40,14 +40,14 @@ Reading:
 |26    | Logistic Regression           |            | S:6.3, B:4.3
 |27    | Naive Bayes                   | HW10       | M:9.3
 |28    | Assessment & Validation       |            | S:4.4-4.6
-|29    | MAP & Regularization          | HW11       | S:4.7-4.11
-|30    | Optimization Problem          |            | S:5.1-5.5 
-|31    | Convex Optimization           |            | S:5.6-5.7   
-|32    | Lab3                          |            |    
-|33    | Back propagation              | HW13       | S:5.14-5.15
-|34    | Neural Networks               | Lab3       |  
+|29    | MAP                           |            | S:4.7-4.11
+|30    | Regularization                | HW11       | S:4.7-4.11
+|31    | SVM                           |            |  
+|32    | Snow-Day                      | HW12       | S:5.14-5.15
+|33    | Neural Networks               |            | S:6.4 
+|34    | Back propagation              | HW13       | S:5.14-5.15
 |35    | GR2                           |            |    
-|36    | Final Project                 |            |
+|36    | Final Project                 | HW14       |
 |37    | Final Project                 |            |
 |      | Thanksgiving Break            |            |
 |38    | Final Project                 |            |
