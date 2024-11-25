@@ -405,17 +405,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-bunch-in-sklearn">What is <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-characteristics-of-bunch">Key Characteristics of <code class="docutils literal notranslate"><span class="pre">Bunch</span></code>:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-iris-dataset-as-an-example">Using the Iris Dataset as an Example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-usage-with-the-iris-dataset">Practical Usage with the Iris Dataset</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-bunch-to-a-pandas-dataframe"><strong>1. Converting <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to a Pandas DataFrame</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-data"><strong>2. Visualizing the Data</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-simple-classifier"><strong>3. Building a Simple Classifier</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-bunch-in-sklearn">What is <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-characteristics-of-bunch">Key Characteristics of <code class="docutils literal notranslate"><span class="pre">Bunch</span></code>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-iris-dataset-as-an-example">Using the Iris Dataset as an Example</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-usage-with-the-iris-dataset">Practical Usage with the Iris Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-bunch-to-a-pandas-dataframe"><strong>1. Converting <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to a Pandas DataFrame</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-data"><strong>2. Visualizing the Data</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-simple-classifier"><strong>3. Building a Simple Classifier</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-using-bunch-in-sklearn">Benefits of Using <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-using-bunch-in-sklearn">Benefits of Using <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -433,9 +435,8 @@ document.write(`
 <h2>What is <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>?<a class="headerlink" href="#what-is-bunch-in-sklearn" title="Permalink to this heading">#</a></h2>
 <p>A <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> is a dictionary-like object used to hold datasets in a structured format. It is returned by functions like <code class="docutils literal notranslate"><span class="pre">datasets.load_iris()</span></code> and other dataset loaders in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>. The <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> object behaves like a dictionary but provides attribute-style access to its keys, making it user-friendly and intuitive.</p>
 <hr class="docutils" />
-</section>
 <section id="key-characteristics-of-bunch">
-<h2>Key Characteristics of <code class="docutils literal notranslate"><span class="pre">Bunch</span></code>:<a class="headerlink" href="#key-characteristics-of-bunch" title="Permalink to this heading">#</a></h2>
+<h3>Key Characteristics of <code class="docutils literal notranslate"><span class="pre">Bunch</span></code>:<a class="headerlink" href="#key-characteristics-of-bunch" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><strong>Dictionary-Like Behavior</strong>:<br />
 You can access its elements using dictionary syntax (<code class="docutils literal notranslate"><span class="pre">bunch['key']</span></code>).</p></li>
@@ -455,10 +456,10 @@ A <code class="docutils literal notranslate"><span class="pre">Bunch</span></cod
 <li><p><strong>Convenience for Machine Learning</strong>:<br />
 The structured nature of a <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> makes it easy to manipulate datasets and integrate them into workflows for machine learning and data analysis.</p></li>
 </ol>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="using-the-iris-dataset-as-an-example">
-<h2>Using the Iris Dataset as an Example<a class="headerlink" href="#using-the-iris-dataset-as-an-example" title="Permalink to this heading">#</a></h2>
+<h3>Using the Iris Dataset as an Example<a class="headerlink" href="#using-the-iris-dataset-as-an-example" title="Permalink to this heading">#</a></h3>
 <p>Let’s explore the <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> object returned by <code class="docutils literal notranslate"><span class="pre">datasets.load_iris()</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -568,12 +569,12 @@ latter are NOT linearly separable from each other.
 </div>
 </div>
 </div>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="practical-usage-with-the-iris-dataset">
-<h2>Practical Usage with the Iris Dataset<a class="headerlink" href="#practical-usage-with-the-iris-dataset" title="Permalink to this heading">#</a></h2>
+<h3>Practical Usage with the Iris Dataset<a class="headerlink" href="#practical-usage-with-the-iris-dataset" title="Permalink to this heading">#</a></h3>
 <section id="converting-bunch-to-a-pandas-dataframe">
-<h3><strong>1. Converting <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to a Pandas DataFrame</strong><a class="headerlink" href="#converting-bunch-to-a-pandas-dataframe" title="Permalink to this heading">#</a></h3>
+<h4><strong>1. Converting <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to a Pandas DataFrame</strong><a class="headerlink" href="#converting-bunch-to-a-pandas-dataframe" title="Permalink to this heading">#</a></h4>
 <p>You can convert the <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> into a more familiar tabular format for easier analysis:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
@@ -593,7 +594,7 @@ latter are NOT linearly separable from each other.
 </section>
 <hr class="docutils" />
 <section id="visualizing-the-data">
-<h3><strong>2. Visualizing the Data</strong><a class="headerlink" href="#visualizing-the-data" title="Permalink to this heading">#</a></h3>
+<h4><strong>2. Visualizing the Data</strong><a class="headerlink" href="#visualizing-the-data" title="Permalink to this heading">#</a></h4>
 <p>Using the converted DataFrame, we can visualize the features and relationships in the Iris dataset:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -606,7 +607,7 @@ latter are NOT linearly separable from each other.
 </section>
 <hr class="docutils" />
 <section id="building-a-simple-classifier">
-<h3><strong>3. Building a Simple Classifier</strong><a class="headerlink" href="#building-a-simple-classifier" title="Permalink to this heading">#</a></h3>
+<h4><strong>3. Building a Simple Classifier</strong><a class="headerlink" href="#building-a-simple-classifier" title="Permalink to this heading">#</a></h4>
 <p>We can directly use the <code class="docutils literal notranslate"><span class="pre">data</span></code> and <code class="docutils literal notranslate"><span class="pre">target</span></code> from the <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to build a machine learning model:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -626,11 +627,11 @@ latter are NOT linearly separable from each other.
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
 </pre></div>
 </div>
+</section>
+</section>
 <hr class="docutils" />
-</section>
-</section>
 <section id="benefits-of-using-bunch-in-sklearn">
-<h2>Benefits of Using <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>:<a class="headerlink" href="#benefits-of-using-bunch-in-sklearn" title="Permalink to this heading">#</a></h2>
+<h3>Benefits of Using <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>:<a class="headerlink" href="#benefits-of-using-bunch-in-sklearn" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><strong>Organized Access</strong>:<br />
 The <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> structure keeps all relevant components of a dataset (features, labels, metadata) neatly organized in one object.</p></li>
@@ -641,11 +642,12 @@ Attribute-style access reduces boilerplate code, making it easier to explore and
 <li><p><strong>Standardization</strong>:<br />
 Since all <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> datasets use the <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> format, you can follow consistent workflows regardless of the dataset.</p></li>
 </ol>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="summary">
-<h2>Summary:<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<h3>Summary:<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> object in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> provides a structured, dictionary-like interface for handling datasets. Its ability to store both data and metadata makes it a powerful tool for machine learning workflows. By converting it into other formats (like Pandas DataFrame) or directly using its attributes, you can easily integrate the dataset into preprocessing pipelines and model training.</p>
+</section>
 </section>
 </section>
 
@@ -716,17 +718,19 @@ Since all <code class="docutils literal notranslate"><span class="pre">sklearn</
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-bunch-in-sklearn">What is <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-characteristics-of-bunch">Key Characteristics of <code class="docutils literal notranslate"><span class="pre">Bunch</span></code>:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-iris-dataset-as-an-example">Using the Iris Dataset as an Example</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-usage-with-the-iris-dataset">Practical Usage with the Iris Dataset</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-bunch-to-a-pandas-dataframe"><strong>1. Converting <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to a Pandas DataFrame</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-data"><strong>2. Visualizing the Data</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-simple-classifier"><strong>3. Building a Simple Classifier</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-bunch-in-sklearn">What is <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-characteristics-of-bunch">Key Characteristics of <code class="docutils literal notranslate"><span class="pre">Bunch</span></code>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-iris-dataset-as-an-example">Using the Iris Dataset as an Example</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-usage-with-the-iris-dataset">Practical Usage with the Iris Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-bunch-to-a-pandas-dataframe"><strong>1. Converting <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to a Pandas DataFrame</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-data"><strong>2. Visualizing the Data</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-simple-classifier"><strong>3. Building a Simple Classifier</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-using-bunch-in-sklearn">Benefits of Using <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-using-bunch-in-sklearn">Benefits of Using <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> in <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
