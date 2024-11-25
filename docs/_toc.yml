@@ -9,6 +9,7 @@ parts:
   - file: syllabus.md
   - file: schedule.md
   - file: SoftwareSetup.md
+  - file: faq.md
   - url: https://stanbaek.github.io/NoPointer.html
     title: No Pointers in Python?
 
@@ -22,6 +23,7 @@ parts:
   - file: PythonIntermediate.md
   - file: NumPy.md
   - file: mle.md
+  - file: sklearn.ipynb
   - file: videos.md
   - file: Readings.md
   
