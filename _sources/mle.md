@@ -1,4 +1,4 @@
-# Maximum Likelihood Estimation (MLE)
+# MLE
 
 
 ## Likelihood function
