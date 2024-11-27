@@ -24,6 +24,7 @@ parts:
   - file: NumPy.md
   - file: mle.md
   - file: sklearn.ipynb
+  - file: Classification.ipynb
   - file: videos.md
   - file: Readings.md
   
