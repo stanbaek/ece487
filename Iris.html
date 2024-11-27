@@ -408,6 +408,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes-classifier">Naive Bayes Classifier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-vector-machine-svm-classifier">Support Vector Machine (SVM) Classifier</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-kernels-in-svms">Understanding Kernels in SVMs</a></li>
@@ -427,12 +428,14 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="iris-flowers">
 <h1>Iris Flowers<a class="headerlink" href="#iris-flowers" title="Permalink to this heading">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 <p>In classification problems, the output space consists of a set of <span class="math notranslate nohighlight">\(C\)</span> labels, which are referred to as <code class="docutils literal notranslate"><span class="pre">classes</span></code>. These labels form a set denoted as <span class="math notranslate nohighlight">\(\mathcal{Y} = \{1, 2, \ldots, C\}\)</span>. The goal in such problem is to predict the correct label for a given input, a task widely known as <code class="docutils literal notranslate"><span class="pre">pattern</span> <span class="pre">recognition</span></code>.</p>
 <p>In cases where there are only two possible classes, the labels are typically represented as <span class="math notranslate nohighlight">\(y \in \{0, 1\}\)</span> or  <span class="math notranslate nohighlight">\(y \in \{-1, +1\}\)</span>. This specific type of classification is called binary classification.</p>
 <p>As an example of a classification task, consider classifying Iris flowers into one of three subspecies: Setosa, Versicolor, and Virginica. The image below illustrates an example from each class.</p>
-<a class="reference internal image-reference" href="_images/iris.png"><img alt="_images/iris.png" class="align-center" src="_images/iris.png" style="width: 600px;" /></a>
-<p>Three types of Iris flowers: Setosa (left), Versicolor (center), and Virginica (right).
-<br></p>
+<div><img src="./figures/iris.png" width="600"/></div>
+Three types of Iris flowers: Setosa (left), Versicolor (center), and Virginica (right).
+<br>
 <p>The features in the Iris dataset are: sepal length, sepal width, petal length, and petal width. These features are used to classify the flowers into one of three subspecies: Setosa, Versicolor, or Virginica.</p>
 <p>The following code demonstrates how to load the Iris dataset using the sklearn library:</p>
 <div class="cell docutils container">
@@ -695,6 +698,7 @@ Testing set size: 30 samples
 </div>
 </div>
 </div>
+</section>
 <section id="naive-bayes-classifier">
 <h2>Naive Bayes Classifier<a class="headerlink" href="#naive-bayes-classifier" title="Permalink to this heading">#</a></h2>
 <p>The Naive Bayes method is a probabilistic classifier based on Bayes’ Theorem. It assumes that features are independent given the class label. Since the Iris dataset consists of continuous, real-valued features, we use the <code class="docutils literal notranslate"><span class="pre">Gaussian</span></code> Naive Bayes classifier, which assumes the feature values are normally distributed.</p>
@@ -950,6 +954,7 @@ Mean accuracy: 0.9666666666666668
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes-classifier">Naive Bayes Classifier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support-vector-machine-svm-classifier">Support Vector Machine (SVM) Classifier</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-kernels-in-svms">Understanding Kernels in SVMs</a></li>
