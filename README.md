@@ -18,3 +18,11 @@ ECE487 Machine Learning Course Web
 
 ### Convert Jupyter notebooks to markdown files
 - jupytext notebook.ipynb --to md
+
+
+### To remove version constraints
+
+To remove version constraints from a requirements.txt file (e.g., turning numpy==1.23.4 into numpy), you can use a simple shell command or Python script.
+```bash
+sed -E 's/[<=>~!]=?.*//' requirements.txt > requirements_no_versions.txt
+```
