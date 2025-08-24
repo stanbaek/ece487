@@ -15,7 +15,7 @@ Don’t worry if it doesn’t work right. If everything did, you’d be out of a
 ### Create a Repository within the GitHub Classroom
 
 1. If you don't already have a <a href="https://github.com/" target="_blank">GitHub</a> account, go ahead and create one.
-1. Once you have your account, browse to <a href="https://classroom.github.com/a/_D0KthO4/" target="_blank">ECE487 Classroom</a>.
+1. Once you have your account, browse to <a href="https://classroom.github.com/a/UkcATx9Y" target="_blank">ECE487 Classroom</a>.
 1. Select `Accept this assignment`.
 1. Browse to your repository. Note the URL for your repository (save this link; it is the best way to check if your repo is updated).
 1. Go to `Settings` and change your repository name to `ece487-YourLastName`, e.g., `ece487-baek`.
@@ -115,7 +115,7 @@ Skip this section and go [here](CloneRepo) if you already have set up the SSH co
 1. Add the instructor's repository as another remote source:
 
     ```bash
-    git remote add upstream https://github.com/ECE487/ece487-classroom-ece487_wksp.git
+    git remote add upstream https://github.com/ECE487/ece487_ws_2025.git
     ```
 1. Verify the upstream repository has been added by typing `git remote -v` and press Enter.  You should now see two additional lines indicating `upstream` is the original repository you forked from.
 
@@ -141,7 +141,7 @@ Skip this section and go [here](CloneRepo) if you already have set up the SSH co
 
 ### Install and Configure VS Code
 
-1. Download <a href="https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe">Python 3.10.11</a>. Run the file and follow the installation steps. Make sure to check the box that says `Add Python to PATH!`
+1. Download <a href="https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe">Python 3.12.10</a>. Run the file and follow the installation steps. Make sure to check the box that says `Add Python to PATH!`
 1. Download and install <a href="https://code.visualstudio.com/download" target="_blank">VS Code</a>. Choose the appropriate version for your operating system. 
 1. During installation, ensure that you check the last four boxes (see image below) to integrate VS Code with Python and Git.
 
@@ -202,7 +202,7 @@ It is your responsibility to verify that your files have been successfully pushe
 Take screenshots of the following and submit them via Gradescope.  Use `Snip & Sketch` (Win+Shift+S) on Windows 10 or `Shift+CMD+4` in Mac to capture the screenshots. Save them in `png` or `jpg` format.  
 
 ```{warning}
-Do **not** take pictures of your computer screen using a mobile device or camera. Doing so will indicate a lack of understanding of sampling aliasing (covered in ECE215 & ECE333), and you will lose 30 points. Yes, I’m serious about this.
+Do **not** take pictures of your computer screen using a mobile device or camera. Doing so will indicate a lack of understanding of sampling aliasing (covered in ECE215, ECE382 & ECE333), and you will lose 30 points. Yes, I’m serious about this.
 ```
 
 ### Deliverable 1
