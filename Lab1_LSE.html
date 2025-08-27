@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>🔬 Lab 1: Least Squares &#8212; Advanced Robotics</title>
   
@@ -14,60 +15,63 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script src="_static/tabs.js?v=3ee01567"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/tabs.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lab1_LSE';</script>
-    <script src="_static/custom.js?v=1edcccc4"></script>
-    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="🐍 Python Basic" href="PythonBasic.html" />
-    <link rel="prev" title="🙋 FAQ" href="faq.html" />
+    <link rel="prev" title="🔨 Software Setup" href="SoftwareSetup.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -77,23 +81,19 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -115,20 +115,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -143,13 +135,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="intro.html">
-  
   
   
   
@@ -159,23 +147,12 @@
       
     
     
-    <img src="_static/ece487.png" class="logo__image only-light" alt="Advanced Robotics - Home"/>
-    <script>document.write(`<img src="_static/ece487.png" class="logo__image only-dark" alt="Advanced Robotics - Home"/>`);</script>
+    <img src="_static/ece487.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/ece487.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -189,9 +166,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="syllabus.html">📌 Syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="schedule.html">📆 Course Schedule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="AI_policy.html">🤖 AI Usage Policy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SoftwareSetup.html">🔨 Software Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">🙋 FAQ</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://stanbaek.github.io/NoPointer.html">No Pointers in Python?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Labs</span></p>
@@ -203,9 +178,7 @@
 <li class="toctree-l1"><a class="reference internal" href="PythonBasic.html">🐍 Python Basic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PythonIntermediate.html">🐍 Python Intermediate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NumPy.html">➕ NumPy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mle.html">MLE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sklearn.html">🔬 Scikit-Learn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Classification.html">Classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mle.html">Maximum Likelihood Estimation (MLE)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">🎥 Videos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Readings.html">📃 Readings</a></li>
 </ul>
@@ -223,7 +196,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -232,14 +205,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -264,14 +237,14 @@
       
       <li><a href="https://colab.research.google.com/github/stanbaek/ece487/blob/master/docs/Lab1_LSE.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
+   title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="Colab logo" src="_static/images/logo_colab.png">
+    <img src="_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -392,28 +365,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -457,27 +428,27 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lab-1-least-squares">
-<h1>🔬 Lab 1: Least Squares<a class="headerlink" href="#lab-1-least-squares" title="Link to this heading">#</a></h1>
+<h1>🔬 Lab 1: Least Squares<a class="headerlink" href="#lab-1-least-squares" title="Permalink to this heading">#</a></h1>
 <p>Before starting this lab, please review the following tutorials: Python Basic, Python Intermediate, and Numpy.</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="PythonBasic.html"><span class="std std-doc">Python Basic</span></a>: While you may already be familiar with much of this material, it’s recommended to review it as a refresher.</p></li>
-<li><p><a class="reference internal" href="PythonIntermediate.html"><span class="std std-doc">Python Intermediate</span></a>: Go through this tutorial carefully. Many past ECE487 cadets lacked familiarity with the topics covered here.</p></li>
-<li><p><a class="reference internal" href="NumPy.html"><span class="std std-doc">NumPy</span></a>: We will be using NumPy extensively in this class. A solid understanding of this tutorial is highly recommended.</p></li>
+<li><p><a class="reference internal" href="PythonBasic.html"><span class="doc std std-doc">Python Basic</span></a>: While you may already be familiar with much of this material, it’s recommended to review it as a refresher.</p></li>
+<li><p><a class="reference internal" href="PythonIntermediate.html"><span class="doc std std-doc">Python Intermediate</span></a>: Go through this tutorial carefully. Many past ECE487 cadets lacked familiarity with the topics covered here.</p></li>
+<li><p><a class="reference internal" href="NumPy.html"><span class="doc std std-doc">NumPy</span></a>: We will be using NumPy extensively in this class. A solid understanding of this tutorial is highly recommended.</p></li>
 </ul>
 <section id="least-sqaures-estimation">
-<h2>Least Sqaures Estimation<a class="headerlink" href="#least-sqaures-estimation" title="Link to this heading">#</a></h2>
+<h2>Least Sqaures Estimation<a class="headerlink" href="#least-sqaures-estimation" title="Permalink to this heading">#</a></h2>
 <p>In this lab, we will solve a least squares regression problem to find the best-fit linear equation for a set of measured data. Let the measured data be represented by <span class="math notranslate nohighlight">\(\mathbf{t} = (t_1, t_2, \cdots, t_n)\)</span>, with corresponding input values <span class="math notranslate nohighlight">\(\mathbf{x} = (x_1, x_2, \cdots, x_n)\)</span>.</p>
 <p>Our goal is to find <span class="math notranslate nohighlight">\(w_1\)</span> and <span class="math notranslate nohighlight">\(w_0\)</span> such that the equation <span class="math notranslate nohighlight">\(t = w_1x + w_0\)</span> best approximates the linear relationship between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>.</p>
 <section id="plotting-the-data">
-<h3>Plotting the Data<a class="headerlink" href="#plotting-the-data" title="Link to this heading">#</a></h3>
+<h3>Plotting the Data<a class="headerlink" href="#plotting-the-data" title="Permalink to this heading">#</a></h3>
 <p>First, let’s visualize the data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">])</span>
@@ -499,7 +470,7 @@ document.write(`
 </div>
 </section>
 <section id="linear-equation-in-matrix-form">
-<h3>Linear Equation in Matrix Form<a class="headerlink" href="#linear-equation-in-matrix-form" title="Link to this heading">#</a></h3>
+<h3>Linear Equation in Matrix Form<a class="headerlink" href="#linear-equation-in-matrix-form" title="Permalink to this heading">#</a></h3>
 <p>We can express the linear equation in matrix form as <span class="math notranslate nohighlight">\(t = \mathbf{c} \cdot \mathbf{w}\)</span>, where:</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{c} = \begin{bmatrix} x &amp; 1 \end{bmatrix}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{w} = \begin{bmatrix} w_1 \ w_0 \end{bmatrix}\)</span>. This gives us:</p>
 <p><span class="math notranslate nohighlight">\(t = w_1x + w_0 = \begin{bmatrix} x &amp; 1 \end{bmatrix} \begin{bmatrix} w_1 \ w_0 \end{bmatrix} = \mathbf{c} \cdot \mathbf{w}\)</span>.</p>
@@ -510,7 +481,7 @@ document.write(`
 <p><span class="math notranslate nohighlight">\(\mathbf{C} = \begin{bmatrix} x_1 &amp; 1 \ x_2 &amp; 1 \ x_3 &amp; 1 \ x_4 &amp; 1 \end{bmatrix} = \begin{bmatrix} 0 &amp; 1 \ 1 &amp; 1 \ 2 &amp; 1 \ 3 &amp; 1 \end{bmatrix}\)</span>.</p>
 </section>
 <section id="creating-the-matrix-mathbf-c">
-<h3>Creating the Matrix <span class="math notranslate nohighlight">\(\mathbf{C}\)</span><a class="headerlink" href="#creating-the-matrix-mathbf-c" title="Link to this heading">#</a></h3>
+<h3>Creating the Matrix <span class="math notranslate nohighlight">\(\mathbf{C}\)</span><a class="headerlink" href="#creating-the-matrix-mathbf-c" title="Permalink to this heading">#</a></h3>
 <p>We can create the <span class="math notranslate nohighlight">\(C\)</span> matrix using <code class="docutils literal notranslate"><span class="pre">np.column_stack</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -531,7 +502,7 @@ document.write(`
 </div>
 </section>
 <section id="solving-for-mathbf-w-using-np-linalg-lstsq">
-<h3>Solving for <span class="math notranslate nohighlight">\(\mathbf{w}\)</span> Using np.linalg.lstsq<a class="headerlink" href="#solving-for-mathbf-w-using-np-linalg-lstsq" title="Link to this heading">#</a></h3>
+<h3>Solving for <span class="math notranslate nohighlight">\(\mathbf{w}\)</span> Using np.linalg.lstsq<a class="headerlink" href="#solving-for-mathbf-w-using-np-linalg-lstsq" title="Permalink to this heading">#</a></h3>
 <p>Next, we can use the np.linalg.lstsq function to solve for <span class="math notranslate nohighlight">\(\mathbf{w}\)</span>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -554,7 +525,7 @@ document.write(`
 <p><span class="math notranslate nohighlight">\(t = 0.96x - 0.89\)</span></p>
 </section>
 <section id="plotting-the-fitted-line">
-<h3>Plotting the Fitted Line<a class="headerlink" href="#plotting-the-fitted-line" title="Link to this heading">#</a></h3>
+<h3>Plotting the Fitted Line<a class="headerlink" href="#plotting-the-fitted-line" title="Permalink to this heading">#</a></h3>
 <p>Now, let’s plot the fitted line alongside the data points:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -578,9 +549,9 @@ document.write(`
 </section>
 </section>
 <section id="procedure">
-<h2>💻 Procedure<a class="headerlink" href="#procedure" title="Link to this heading">#</a></h2>
+<h2>💻 Procedure<a class="headerlink" href="#procedure" title="Permalink to this heading">#</a></h2>
 <section id="update-your-code">
-<h3>Update Your Code<a class="headerlink" href="#update-your-code" title="Link to this heading">#</a></h3>
+<h3>Update Your Code<a class="headerlink" href="#update-your-code" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Navigate to the ECE487 workspace, <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code>.</p></li>
 <li><p>Right-click on the <code class="docutils literal notranslate"><span class="pre">ece487_wksp</span></code> folder and choose <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">Here</span></code> from the menu.</p></li>
@@ -591,14 +562,14 @@ document.write(`
 </div>
 </section>
 <section id="galileis-falling-body-experiment">
-<h3>Galilei’s Falling Body Experiment<a class="headerlink" href="#galileis-falling-body-experiment" title="Link to this heading">#</a></h3>
+<h3>Galilei’s Falling Body Experiment<a class="headerlink" href="#galileis-falling-body-experiment" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">falling_body.ipynb</span></code> notebook in VS Code.</p></li>
 <li><p>Carefully review the contents of this notebook to understand the three different techniques used for curve fitting.</p></li>
 </ol>
 </section>
 <section id="deliverables">
-<h3>Deliverables<a class="headerlink" href="#deliverables" title="Link to this heading">#</a></h3>
+<h3>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Lab1_LSE.ipynb</span></code> notebook using VS Code.</p></li>
 <li><p>Follow the instructions within the notebook to complete your code.</p></li>
@@ -633,18 +604,19 @@ document.write(`
 
               
               
-              
-              
-                <footer class="prev-next-footer d-print-none">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="faq.html"
+       href="SoftwareSetup.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">🙋 FAQ</p>
+        <p class="prev-next-title">🔨 Software Setup</p>
       </div>
     </a>
     <a class="right-next"
@@ -656,7 +628,10 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -664,7 +639,6 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -707,7 +681,6 @@ By Stan Baek
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
       © Copyright 2022.
@@ -734,8 +707,8 @@ By Stan Baek
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

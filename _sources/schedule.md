@@ -21,13 +21,13 @@ Reading:
 |7  | Least Squares Estimation      |            |           
 |8  | Lab1: Python & LSE            | HW4        |      
 |9  | Joint Distributions           |            | 
-|10 | Multivariate Gaussian         | Lab1       | 
-|11 | Optimal Estimation            | HW5        | 
-|12 | Recursive Estimation          |            |
-|13 | Recursive Estimation          | HW6        |
-|14 | Kalman Filter                 |            |[Understanding KF](https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
+|10 | Multivariate Gaussian         | HW5        | 
+|11 | Optimal Estimation            |            | 
+|12 | Recursive Estimation          | HW6        |
+|13 | Recursive Estimation          |            |
+|14 | Kalman Filter                 | HW7        |[Understanding KF](https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
 |15 | Kalman Filter                 |            |
-|16 | Kalman Filter                 | HW7        |
+|16 | Kalman Filter                 | HW8        |
 |17 | GR1 (L1-L17)                  |            |    
 |18 | Project 1                     |            |     
 |19 |                               |            |     
