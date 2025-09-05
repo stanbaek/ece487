@@ -24,12 +24,12 @@ Reading:
 |10 | Multivariate Gaussian         | HW5        | 
 |11 | Optimal Estimation            |            | 
 |12 | Recursive Estimation          | HW6        |
-|13 | Recursive Estimation          |            |
-|14 | Kalman Filter                 | HW7        |[Understanding KF](https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
-|15 | Kalman Filter                 |            |
-|16 | Kalman Filter                 | HW8        |
+|13 | Kalman Filter                 |            |[Understanding KF](https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
+|14 | Kalman Filter                 | HW7        |
+|15 | Project 1                     |            |
+|16 |                               | HW8        |
 |17 | GR1 (L1-L17)                  |            |    
-|18 | Project 1                     |            |     
+|18 |                               |            |     
 |19 |                               |            |     
 |20 |                               | Proj1      |     
 |21 | Statistical Inference         |            | 
@@ -43,7 +43,7 @@ Reading:
 |29 | MAP                           |            | 
 |30 | Regularization                | HW11       | 
 |31 | SVM                           |            | 
-|32 | Snow-Day                      | HW12       | 
+|32 |                               | HW12       | 
 |33 | Neural Networks               |            | 
 |34 | Back propagation              | HW13       | 
 |35 | GR2                           |            | 
