@@ -43,7 +43,7 @@ Reading:
 |29 | MAP                           |            | 
 |30 | Regularization                | HW11       | 
 |31 | SVM                           |            | 
-|32 | Snow-Day                      | HW12       | 
+|32 |                               | HW12       | 
 |33 | Neural Networks               |            | 
 |34 | Back propagation              | HW13       | 
 |35 | GR2                           |            | 
