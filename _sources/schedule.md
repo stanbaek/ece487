@@ -48,6 +48,7 @@ Reading:
 |34 | Final Project                 |            | 
 |35 | GR2                           |            | 
 |36 | Final Project                 |            |
+|36 | Final Project                 |            |
 |37 | Final Project                 |            |
 |   | Thanksgiving Break            |            |
 |38 | Final Project                 |            |
