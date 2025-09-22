@@ -27,27 +27,27 @@ Reading:
 |13 | Kalman Filter                 |            |[Understanding KF](https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
 |14 | Kalman Filter                 | HW7        |
 |15 | Project 1                     |            |
-|16 |                               | HW8        |
-|17 | GR1 (L1-L17)                  |            |    
-|18 |                               |            |     
-|19 |                               |            |     
-|20 |                               | Proj1      |     
+|16 | Project 1                     | HW8        |
+|17 | GR1 (L1-L16 & HW1-HW8)        |            |    
+|18 | Conditional Independence      |            |     
+|19 | Maximum Likelihood Estimate   | Proj1      |     
+|20 | Maximum a Priori              | HW9        |     
 |21 | Statistical Inference         |            | 
-|22 | MLE                           |            | 
-|23 | Linear Regression             | HW9        | 
-|24 | Linear Regression             |            | 
+|22 |                               | HW10       | 
+|23 | Linear Regression             |            | 
+|24 | Linear Regression             | HW11       | 
 |25 | Gradient Descent              |            | 
-|26 | Logistic Regression           |            | 
-|27 | Naive Bayes                   | HW10       | 
+|26 | Logistic Regression           | HW12       | 
+|27 | Naive Bayes                   |            | 
 |28 | Assessment & Validation       |            | 
-|29 | MAP                           |            | 
-|30 | Regularization                | HW11       | 
+|29 |                               |            | 
+|30 | Regularization                |            | 
 |31 | SVM                           |            | 
-|32 |                               | HW12       | 
-|33 | Neural Networks               |            | 
-|34 | Back propagation              | HW13       | 
+|32 | Neural Networks               |            | 
+|33 | Back propagation              |            | 
+|34 | Final Project                 |            | 
 |35 | GR2                           |            | 
-|36 | Final Project                 | HW14       |
+|36 | Final Project                 |            |
 |37 | Final Project                 |            |
 |   | Thanksgiving Break            |            |
 |38 | Final Project                 |            |
