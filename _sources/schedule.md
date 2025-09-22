@@ -28,24 +28,24 @@ Reading:
 |14 | Kalman Filter                 | HW7        |
 |15 | Project 1                     |            |
 |16 | Project 1                     | HW8        |
-|17 | GR1 (L1-L17)                  |            |    
+|17 | GR1 (L1-L16 & HW1-HW8)        |            |    
 |18 | Conditional Independence      |            |     
-|19 | MLE                           | Proj1      |     
-|20 | MAP                           | HW9        |     
-|21 | Linear Regression             |            | 
-|22 | Linear Regression             | HW10       | 
-|23 | Gradient Descent              |            | 
-|24 | Logistic Regression           | HW11       | 
-|25 | Naive Bayes                   |            | 
-|26 | Assessment & Validation       | HW12       | 
-|27 | Regularization                |            | 
-|28 | SVM                           | HW13       | 
-|29 | Neural Networks               |            | 
-|30 | Back propagation              | HW14       | 
-|31 | Back propagation              |            | 
-|32 | Project 2                     |            | 
-|33 | Project 2                     |            | 
-|34 |                               |            | 
+|19 | Maximum Likelihood Estimate   | Proj1      |     
+|20 | Maximum a Priori              | HW9        |     
+|21 | Statistical Inference         |            | 
+|22 |                               | HW10       | 
+|23 | Linear Regression             |            | 
+|24 | Linear Regression             | HW11       | 
+|25 | Gradient Descent              |            | 
+|26 | Logistic Regression           | HW12       | 
+|27 | Naive Bayes                   |            | 
+|28 | Assessment & Validation       |            | 
+|29 |                               |            | 
+|30 | Regularization                |            | 
+|31 | SVM                           |            | 
+|32 | Neural Networks               |            | 
+|33 | Back propagation              |            | 
+|34 | Final Project                 |            | 
 |35 | GR2                           |            | 
 |36 | Final Project                 |            |
 |37 | Final Project                 |            |
