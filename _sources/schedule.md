@@ -29,16 +29,16 @@ Reading:
 |15 | Project 1                     |            |
 |16 | Project 1                     | HW8        |
 |17 | GR1 (L1-L16 & HW1-HW8)        |            |    
-|18 | Conditional Independence      |            |     
-|19 | Maximum Likelihood Estimate   | Proj1      |     
-|20 | Maximum a Priori              | HW9        |     
-|21 | Statistical Inference         |            | 
-|22 |                               | HW10       | 
-|23 | Linear Regression             |            | 
-|24 | Linear Regression             | HW11       | 
-|25 | Gradient Descent              |            | 
-|26 | Logistic Regression           | HW12       | 
-|27 | Naive Bayes                   |            | 
+|18 | Product Rule                  |            | 
+|19 | Bayes & Conditional Independence| Proj1     |     
+|20 | Maximum Likelihood Estimate   |            |     
+|21 | Maximum a Priori              | HW9        |     
+|22 | Statistical Inference         |            | 
+|23 | Linear Regression             | HW10       | 
+|24 | Linear Regression             |            | 
+|25 | Gradient Descent              | HW11       | 
+|26 | Logistic Regression           |            | 
+|27 | Naive Bayes                   | HW12       | 
 |28 | Assessment & Validation       |            | 
 |29 |                               |            | 
 |30 | Regularization                |            | 
