@@ -13,8 +13,7 @@
 - [Why Should We Pursue Human Intelligence With AI? by Rudy van Belkom](https://www.skeptic.com/reading_room/why-should-we-pursue-human-intelligence-with-artificial-intelligence/)
 
 
-- [AI Will Not Replace Artists. It Will Devalue Them. by Kate Brunotts](https://www.skeptic.com/reading_room/artificial-intelligence-will-not-replace-but-devalue-artists/#:~:text=Art%20will%20not%20be%20replaced,necessary%20part%20of%20their%20livelihood.)
-
+- [AI Will Not Replace Artists. It Will Devalue Them. by Kate Brunotts](https://archive.skeptic.com/archive/reading_room/artificial-intelligence-will-not-replace-but-devalue-artists/#:~:text=Art%20will%20not%20be%20replaced,necessary%20part%20of%20their%20livelihood.)
 
 - AI Are People, Too — It’s Time We Recognize Their Human Rights with Glenn Gohen (Video)
 <center>

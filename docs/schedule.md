@@ -32,22 +32,21 @@ Reading:
 |18 | Product Rule                  |            | 
 |19 | Bayes & Conditional Independence| Proj1     |     
 |20 | Maximum Likelihood Estimate   |            |     
-|21 | Maximum a Priori              | HW9        |     
-|22 | Statistical Inference         |            | 
-|23 | Linear Regression             | HW10       | 
+|21 | Maximum Likelihood Estimate   |            | 
+|22 | Special Topic                 | HW9        |
+|23 | Maximum a Priori              | HW10       |     
 |24 | Linear Regression             |            | 
-|25 | Gradient Descent              | HW11       | 
-|26 | Logistic Regression           |            | 
-|27 | Naive Bayes                   | HW12       | 
-|28 | Assessment & Validation       |            | 
-|29 |                               |            | 
+|25 | Linear Regression             | HW11       | 
+|26 | Gradient Descent              |            | 
+|27 | Logistic Regression           | HW12       | 
+|28 | Naive Bayes                   |            | 
+|29 | Assessment & Validation       | HW13       | 
 |30 | Regularization                |            | 
-|31 | SVM                           |            | 
+|31 | SVM                           | HW14       | 
 |32 | Neural Networks               |            | 
 |33 | Back propagation              |            | 
-|34 | Final Project                 |            | 
+|34 | Final Project                 | HW15       | 
 |35 | GR2                           |            | 
-|36 | Final Project                 |            |
 |36 | Final Project                 |            |
 |37 | Final Project                 |            |
 |   | Thanksgiving Break            |            |
