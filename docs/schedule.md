@@ -33,17 +33,17 @@ Reading:
 |19 | Bayes & Conditional Independence| Proj1     |     
 |20 | Maximum Likelihood Estimate   |            |     
 |21 | Maximum Likelihood Estimate   |            | 
-|22 | Special Topic                 | HW9        |
-|23 | Maximum a Priori              | HW10       |     
-|24 | Linear Regression             |            | 
-|25 | Linear Regression             | HW11       | 
-|26 | Gradient Descent              |            | 
-|27 | Logistic Regression           | HW12       | 
-|28 | Naive Bayes                   |            | 
-|29 | Assessment & Validation       | HW13       | 
-|30 | Regularization                |            | 
-|31 | SVM                           | HW14       | 
-|32 | Neural Networks               |            | 
+|22 | Special Topic (Col Trimble)   | HW9        |
+|23 | Maximum a Priori              |            |     
+|24 | Linear Regression             | HW10       | 
+|25 | Linear Regression             |            | 
+|26 | Gradient Descent              | HW11       | 
+|27 | Logistic Regression           |            | 
+|28 | Naive Bayes                   | HW12       | 
+|29 | Assessment & Validation       |            | 
+|30 | Regularization                | HW13       | 
+|31 | SVM                           |            | 
+|32 | Neural Networks               | HW14       | 
 |33 | Back propagation              |            | 
 |34 | Final Project                 | HW15       | 
 |35 | GR2                           |            | 
