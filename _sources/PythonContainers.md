@@ -1,4 +1,4 @@
-# 🔬 Lab 1: Python Containers
+# Python Containers
 
 ## Purpose
 This tutorial will introduce Python data containers, such as lists, tuples, and strings. 
