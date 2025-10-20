@@ -36,15 +36,15 @@ Reading:
 |22 | Special Topic (Col Trimble)   | HW9        |
 |23 | Maximum a Priori              |            |     
 |24 | Linear Regression             | HW10       | 
-|25 | Linear Regression             |            | 
-|26 | Gradient Descent              | HW11       | 
-|27 | Logistic Regression           |            | 
-|28 | Naive Bayes                   | HW12       | 
-|29 | Assessment & Validation       |            | 
-|30 | Regularization                | HW13       | 
-|31 | SVM                           |            | 
-|32 | Neural Networks               | HW14       | 
-|33 | Back propagation              |            | 
+|25 | Gradient Descent              |            | 
+|26 | Logistic Regression           | HW11       | 
+|27 | Naive Bayes                   |            | 
+|28 | Assessment & Validation       | HW12       | 
+|29 | Regularization                |            | 
+|30 | SVM                           | HW13       | 
+|31 | Neural Networks               |            | 
+|32 | Back propagation              | HW14       | 
+|33 | Final Project                 |            | 
 |34 | Final Project                 | HW15       | 
 |35 | GR2                           |            | 
 |36 | Final Project                 |            |
