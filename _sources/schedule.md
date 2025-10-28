@@ -44,8 +44,8 @@ Reading:
 |30 | SVM                           | HW13       | 
 |31 | Neural Networks               |            | 
 |32 | Back propagation              | HW14       | 
-|33 | Final Project                 | HW15       | 
-|34 | Final Project                 |            | 
+|33 | Final Project                 |            | 
+|34 | Final Project                 | HW15       | 
 |35 | GR2                           |            | 
 |36 | Final Project                 |            |
 |37 | Final Project                 |            |
