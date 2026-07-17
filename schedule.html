@@ -28,11 +28,11 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
@@ -405,13 +405,32 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>This schedule is subject to change as appropriate.</p>
 </div>
-<p><strong>Last Updated: 30 Jun 2024</strong></p>
+<p><strong>Last Updated: 16 Jul 2026</strong></p>
 <p>Reading:</p>
 <ul class="simple">
-<li><p>S: Simeone, Machine Learning for Engineers (Required)</p></li>
-<li><p>M: Murphy, Probabilistic Machine Learning (Optional)</p></li>
-<li><p>B: Biship, Pattern Recognition and Machine Learning (Optional)</p></li>
+<li><p>Jiang, Machine Learning Fundamentals (chapter/section numbers refer to this text)</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This schedule follows Hui Jiang’s <em>Machine Learning Fundamentals</em> in its own chapter/section order
+(Ch1 → Ch2.1-2.4 → Ch4 → Ch6 → Ch7 → Ch8 → Ch9 → Ch10), with Ch10 (Bayesian Decision Theory, MAP, MLE)
+taught last. We still do not cover the entire book — Ch5 (Statistical Learning Theory) and most of Ch11-15
+are skipped and left as optional reading, except the Naive Bayes case study pulled from Ch15.2.5.</p>
+<p>Lab1 (Python &amp; LSE) is now dropped entirely, along with the Least Squares Estimation lectures dropped
+earlier — this course no longer has a dedicated least-squares/Python lab; cadets first hit least-squares
+fitting in the Linear Regression lesson (Ch6.2) and get their Python practice through HW and the Final
+Project. Removing Lab1 shifted GR1 to <strong>L14</strong>, one lesson earlier than the previously requested L15-L18
+window — flag if you’d like it nudged back into that range (e.g. by re-splitting one more lesson elsewhere).</p>
+<p>Dropping Lab1 freed a slot, which went to un-combining “Learning Algorithms for Neural Networks” back into
+its two components — Loss &amp; Automatic Differentiation (Ch8.3.1-8.3.2) and SGD &amp; Backpropagation (Ch8.3.3) —
+since Ch8.3.2 (automatic differentiation) alone is a dense 12-page section. Everything from L27 (Heuristics
+and Tricks for Optimization) onward is unchanged from the previous revision, including GR2 at L35 and the
+Final Project fixed at 6 lessons (L36-41) with Thanksgiving Break between L37 and L38.</p>
+<p>Pacing is calibrated against this course’s own historical slide decks, corrected for the fact that each deck
+pairs a blank fill-in-the-blank slide with a filled-in version, plus an opening slide and an announcement slide
+that carry no new material. Counting only actual content slides (raw slide count / 2, minus 2), the historical
+median and mean are both <strong>14 content slides per 50-minute lesson</strong> across 28 prior lectures.</p>
+</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>Lsn</p></th>
@@ -429,166 +448,166 @@ document.write(`
 <tr class="row-odd"><td class="text-center"><p>2</p></td>
 <td><p>Intro to Machine Learning</p></td>
 <td><p>Cadet Intro</p></td>
-<td><p></p></td>
+<td><p>Ch1 Introduction</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>3</p></td>
-<td><p>Linear Algebra</p></td>
-<td><p>HW1</p></td>
+<td><p>Vectors &amp; Matrix Basics</p></td>
 <td><p></p></td>
+<td><p>Ch2.1 Linear Algebra</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>4</p></td>
-<td><p>Basis</p></td>
-<td><p>HW2</p></td>
-<td><p><a class="reference external" href="https://www.youtube.com/watch?v=P2LTAUO1TdA">3Blue1Brown</a></p></td>
+<td><p>Linear Maps &amp; Determinants</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>5</p></td>
+<td><p>Basis</p></td>
+<td><p>HW1</p></td>
+<td><p><a class="reference external" href="https://www.youtube.com/watch?v=P2LTAUO1TdA">3Blue1Brown</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>6</p></td>
 <td><p>Eigenvalues &amp; Eigenvectors</p></td>
 <td><p></p></td>
 <td><p><a class="reference external" href="https://www.youtube.com/watch?v=PFDu9oVAE-g">3Blue1Brown</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>6</p></td>
-<td><p>Least Squares Estimation</p></td>
-<td><p>HW3</p></td>
-<td><p></p></td>
-</tr>
 <tr class="row-even"><td class="text-center"><p>7</p></td>
-<td><p>Least Squares Estimation</p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p>Probability and Statistics</p></td>
+<td><p>HW2</p></td>
+<td><p>Ch2.2</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>8</p></td>
-<td><p>Lab1: Python &amp; LSE</p></td>
-<td><p>HW4</p></td>
+<td><p>Probability and Statistics: Distributions &amp; Transformations</p></td>
 <td><p></p></td>
+<td><p>Ch2.2</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>9</p></td>
-<td><p>Joint Distributions</p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p>Information Theory</p></td>
+<td><p>HW3</p></td>
+<td><p>Ch2.3</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>10</p></td>
-<td><p>Multivariate Gaussian</p></td>
-<td><p>HW5</p></td>
+<td><p>Mathematical Optimization</p></td>
 <td><p></p></td>
+<td><p>Ch2.4</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>11</p></td>
-<td><p>Optimal Estimation</p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p>Feature Extraction: PCA &amp; LDA</p></td>
+<td><p>HW4</p></td>
+<td><p>Ch4.1-4.2</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>12</p></td>
-<td><p>Recursive Estimation</p></td>
-<td><p>HW6</p></td>
-<td><p></p></td>
+<td><p>Feature Extraction: Nonlinear Methods</p></td>
+<td><p>HW5</p></td>
+<td><p>Ch4.3-4.4</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>13</p></td>
-<td><p>Kalman Filter</p></td>
+<td><p>GR1 Review</p></td>
 <td><p></p></td>
-<td><p><a class="reference external" href="https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr">Understanding KF</a></p></td>
+<td><p></p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>14</p></td>
-<td><p>Kalman Filter</p></td>
-<td><p>HW7</p></td>
+<td><p>GR1 (L1-L12 &amp; HW1-HW5)</p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>15</p></td>
-<td><p>Project 1</p></td>
+<td><p>Perceptron</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch6.1</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>16</p></td>
-<td><p>Project 1</p></td>
-<td><p>HW8</p></td>
+<td><p>Linear Regression</p></td>
 <td><p></p></td>
+<td><p>Ch6.2</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>17</p></td>
-<td><p>GR1 (L1-L16 &amp; HW1-HW8)</p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p>Minimum Classification Error</p></td>
+<td><p>HW6</p></td>
+<td><p>Ch6.3</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>18</p></td>
-<td><p>Product Rule</p></td>
+<td><p>Logistic Regression</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch6.4</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>19</p></td>
-<td><p>Bayes &amp; Conditional Independence</p></td>
-<td><p>Proj1</p></td>
-<td><p></p></td>
+<td><p>Support Vector Machines</p></td>
+<td><p>HW7</p></td>
+<td><p>Ch6.5</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>20</p></td>
-<td><p>Maximum Likelihood Estimate</p></td>
+<td><p>Support Vector Machines (Kernel &amp; Soft Margin)</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch6.5</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>21</p></td>
-<td><p>Maximum Likelihood Estimate</p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p>Learning Discriminative Models: Regularization</p></td>
+<td><p>HW8</p></td>
+<td><p>Ch7.1-7.2</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>22</p></td>
-<td><p>Special Topic (Col Trimble)</p></td>
-<td><p>HW9</p></td>
+<td><p>Neural Networks: Architecture</p></td>
 <td><p></p></td>
+<td><p>Ch8.1-8.2.1</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>23</p></td>
-<td><p>Maximum a Priori</p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p>Neural Network Structures: CNNs &amp; RNNs</p></td>
+<td><p>HW9</p></td>
+<td><p>Ch8.2.2-8.2.4</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>24</p></td>
-<td><p>Linear Regression</p></td>
-<td><p>HW10</p></td>
+<td><p>Neural Network Structures: Transformer</p></td>
 <td><p></p></td>
+<td><p>Ch8.2.5</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>25</p></td>
-<td><p>Gradient Descent</p></td>
+<td><p>Learning Algorithms: Loss &amp; Automatic Differentiation</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch8.3.1-8.3.2</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>26</p></td>
-<td><p>Logistic Regression</p></td>
-<td><p>HW11</p></td>
-<td><p></p></td>
+<td><p>Learning Algorithms: SGD &amp; Backpropagation</p></td>
+<td><p>HW10</p></td>
+<td><p>Ch8.3.3</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>27</p></td>
-<td><p>Naive Bayes</p></td>
+<td><p>Heuristics and Tricks for Optimization</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch8.4-8.5</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>28</p></td>
-<td><p>Assessment &amp; Validation</p></td>
-<td><p>HW12</p></td>
-<td><p></p></td>
+<td><p>Ensemble Learning: Decision Trees</p></td>
+<td><p>HW11</p></td>
+<td><p>Ch9.1</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>29</p></td>
-<td><p>Regularization</p></td>
+<td><p>Ensemble Learning: Bagging &amp; Boosting</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch9.2-9.3</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>30</p></td>
-<td><p>SVM</p></td>
-<td><p>HW13</p></td>
-<td><p></p></td>
+<td><p>Overview of Generative Models: Bayesian Decision Theory</p></td>
+<td><p>HW12</p></td>
+<td><p>Ch10.1-10.2</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>31</p></td>
-<td><p>Neural Networks</p></td>
+<td><p>Statistical Data Modeling: Plug-In MAP Decision Rule</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch10.3</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>32</p></td>
-<td><p>Back propagation</p></td>
-<td><p>HW14</p></td>
-<td><p></p></td>
+<td><p>Density Estimation: Maximum-Likelihood Estimation</p></td>
+<td><p>HW13</p></td>
+<td><p>Ch10.4</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>33</p></td>
-<td><p>Final Project</p></td>
+<td><p>Case Study: Naive Bayes Classifier</p></td>
 <td><p></p></td>
-<td><p></p></td>
+<td><p>Ch15.2.5</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>34</p></td>
-<td><p>Final Project</p></td>
-<td><p>HW15</p></td>
+<td><p>GR2 Review</p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>35</p></td>
@@ -622,6 +641,11 @@ document.write(`
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>40</p></td>
+<td><p>Final Project</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>41</p></td>
 <td><p>Final Project</p></td>
 <td><p>Final Report</p></td>
 <td><p></p></td>
