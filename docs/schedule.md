@@ -4,35 +4,11 @@
 This schedule is subject to change as appropriate.
 ```
 
-**Last Updated: 16 Jul 2026**
+**Last Updated: 23 Jul 2026**
 
 Reading:
 
 - Jiang, Machine Learning Fundamentals (chapter/section numbers refer to this text)
-
-```{note}
-This schedule follows Hui Jiang's *Machine Learning Fundamentals* in its own chapter/section order
-(Ch1 → Ch2.1-2.4 → Ch4 → Ch6 → Ch7 → Ch8 → Ch9 → Ch10), with Ch10 (Bayesian Decision Theory, MAP, MLE)
-taught last. We still do not cover the entire book — Ch5 (Statistical Learning Theory) and most of Ch11-15
-are skipped and left as optional reading, except the Naive Bayes case study pulled from Ch15.2.5.
-
-Lab1 (Python & LSE) is now dropped entirely, along with the Least Squares Estimation lectures dropped
-earlier — this course no longer has a dedicated least-squares/Python lab; cadets first hit least-squares
-fitting in the Linear Regression lesson (Ch6.2) and get their Python practice through HW and the Final
-Project. Removing Lab1 shifted GR1 to **L14**, one lesson earlier than the previously requested L15-L18
-window — flag if you'd like it nudged back into that range (e.g. by re-splitting one more lesson elsewhere).
-
-Dropping Lab1 freed a slot, which went to un-combining "Learning Algorithms for Neural Networks" back into
-its two components — Loss & Automatic Differentiation (Ch8.3.1-8.3.2) and SGD & Backpropagation (Ch8.3.3) —
-since Ch8.3.2 (automatic differentiation) alone is a dense 12-page section. Everything from L27 (Heuristics
-and Tricks for Optimization) onward is unchanged from the previous revision, including GR2 at L35 and the
-Final Project fixed at 6 lessons (L36-41) with Thanksgiving Break between L37 and L38.
-
-Pacing is calibrated against this course's own historical slide decks, corrected for the fact that each deck
-pairs a blank fill-in-the-blank slide with a filled-in version, plus an opening slide and an announcement slide
-that carry no new material. Counting only actual content slides (raw slide count / 2, minus 2), the historical
-median and mean are both **14 content slides per 50-minute lesson** across 28 prior lectures.
-```
 
 |Lsn|  Topic                                            | Due        | Reading
 |:-:|----------------------------------------------------|------------|-----------------
