@@ -50,13 +50,13 @@ All communication and course materials will be provided through a course and sec
 
 **Required**
 
-<a href="https://www.cambridge.org/gb/universitypress/subjects/computer-science/pattern-recognition-and-machine-learning/machine-learning-fundamentals-concise-introduction" target="_blank"> Machine Learning Fundamentals: A Concise Introduction</a>, Hui Jiang, Cambridge, 2021.
+No required textbook
 
 **Optional**
 
+<a href="https://www.cambridge.org/gb/universitypress/subjects/computer-science/pattern-recognition-and-machine-learning/machine-learning-fundamentals-concise-introduction" target="_blank"> Machine Learning Fundamentals: A Concise Introduction</a>, Hui Jiang, Cambridge, 2021. <br>
 <a href="https://mitpress.mit.edu/9780262046824/" target="_blank">Probabilistic Machine Learning: An Introduction</a>, Kevin P. Murphy, MIT Press, 2022. [Free PDF](https://github.com/probml/pml-book/releases/latest/download/book1.pdf) <br>
 <a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/" target="_blank">Pattern Recognition and Machine Learning</a>, Christopher M. Bishop, Springer, 2006. <a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf" target="_blank">Free PDF</a> <br>
-<a href="http://www.cs.cmu.edu/~tom/mlbook.html" target="_blank">Machine Learning</a>, Tom Mitchell, McGraw Hill, 1997. <a href="http://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf" target="_blank">Free PDF</a>
 
 ## Collaboration Policy
 
@@ -97,12 +97,13 @@ Assignments and due dates are included in Gradescope.
 
 All work is due as shown on Gradescope. If problems arise with graded assignments, see your instructor in advance.
 
-- The cutoff for on-time submission is 0700 on the due date.
-- Late days are counted in 24-hour periods. Submitting between 07:00:01 on the due date and 07:00:00 the next day is one day late, and so on.
-- You are given 5 grace days (self-granted extensions) which you can use to give yourself extra time without penalty. No more than 2 grace days can be used for each assignment.
+- The cutoff for on-time submission is **0700** on the due date.
+- Late days are counted in **24-hour periods**. Submitting between **07:00:01** on the due date and **07:00:00** the next day is one day late, and so on.
+- You are given **5 grace days** (self-granted extensions) which you can use to give yourself extra time without penalty. No more than **2 grace days** can be used for each assignment.
+- Grace day requests must be made at the time of submission; retroactive requests are not permitted.
 - Instructor-granted extensions are only considered after all grace days are used and only given in exceptional situations. Computer problems such as hard-drive reimaging are not considered exceptional situations and you must use grace days.
-- Late work handed in when you have run out of grace is discounted 25% for the first day late and 10% per day late thereafter.
-- Every assignment has a hard deadline; 4 calendar days past the original due date.
+- Late work handed in when you have run out of grace is discounted 20% for the first day late and 10% per day late thereafter.
+- Late work handed in when you have run out of grace is discounted 25% from the maximum score for the first day late (e.g., on a 100‑point assignment, 25 points are deducted), and 10% per day late thereafter.
 - Late submissions (penalty or not) are not accepted after the hard deadline or after the solution to the assignment is published. No late submissions (penalty or not) will be accepted for the assignments right before GRs.
 
 ## Exams and Quizzes  

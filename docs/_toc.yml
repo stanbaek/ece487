@@ -16,9 +16,14 @@ parts:
 
 - caption: Supplementary
   chapters:
-  - file: PythonBasic.md
-  - file: PythonIntermediate.md
-  - file: NumPy.md
+  - url: https://stanbaek.github.io/workshops/PythonBasic.html
+    title: Python PythonBasic
+  - url: https://stanbaek.github.io/workshops/PythonIntermediate.html
+    title: Python Containers
+  - url: https://stanbaek.github.io/workshops/NumPy.html
+    title: NumPy
+  - url: https://stanbaek.github.io/NoPointer.html
+    title: No Pointers in Python?
   - file: mle.md
   - file: sklearn.ipynb
   - file: Classification.ipynb
