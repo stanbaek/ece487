@@ -11,11 +11,11 @@ parts:
   - file: AI_policy.md
   - file: SoftwareSetup.md
   - file: faq.md
-  - url: https://stanbaek.github.io/NoPointer.html
-    title: No Pointers in Python?
 
 - caption: Supplementary
   chapters:
+  - url: https://stanbaek.github.io/NoPointer.html
+    title: No Pointers in Python?
   - url: https://stanbaek.github.io/workshops/PythonBasic.html
     title: Python PythonBasic
   - url: https://stanbaek.github.io/workshops/PythonIntermediate.html
