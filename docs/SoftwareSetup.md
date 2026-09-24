@@ -6,28 +6,25 @@
 - Install and Configure VS Code
 
 ```{note}
-Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.
+Don't worry if it doesn't work right. If everything did, you'd be out of a job.
 ```
 
 ## 💻 Procedure
 
 (CreateRepo)=
-### Create a Repository within the GitHub Classroom
+### Create Your Repository in Classroom 50
 
 1. If you don't already have a <a href="https://github.com/" target="_blank">GitHub</a> account, go ahead and create one.
-1. Once you have your account, browse to <a href="https://classroom.github.com/a/UkcATx9Y" target="_blank">ECE487 Classroom</a>.
-1. Select `Accept this assignment`.
-1. Browse to your repository. Note the URL for your repository (save this link; it is the best way to check if your repo is updated).
-1. Go to `Settings` and change your repository name to `ece487-YourLastName`, e.g., `ece487-baek`.
+1. Your instructor will post a Classroom 50 link in the ECE487 Microsoft Teams channel. Click that link and sign in with your GitHub account.
+1. Follow the prompts to join the `ECE487` organization and accept the assignment.
+1. Classroom 50 automatically creates your own private repository from the assignment template. Browse to your repository. Note the URL for your repository (save this link; it is the best way to check if your repo is updated).
+1. Your repository name is generated automatically (something like `ece487-labs-yourusername`). You are not allowed to rename it. The instructor will rename it to `ece487_YourLastName`, e.g., `ece487_baek`.
 
-```{important}
-Please name your repository as ece487-LastName. This will help instructors find your repository easily.
-```
 
 ### Install Git
 
 1. To download `Git for Windows`  go to <a href="https://git-scm.com/download/win" target="_blank">git-scm</a> and click on the link.
-1. Run the setup file and install Git with the default settings. If you have a Mac, you don’t need to do this step because Git is already installed on your computer.
+1. Run the setup file and install Git with the default settings. If you have a Mac, you don't need to do this step because Git is already installed on your computer.
 
 ### Enable SSH Connection to Your GitHub Account
 
@@ -112,32 +109,6 @@ Skip this section and go [here](CloneRepo) if you already have set up the SSH co
 
 1. Return to the Git Bash terminal. If it's closed, right-click an empty area inside the `ece487_wksp` folder and select `Git Bash Here` from the menu.
 1. Type `git remote -v` and press Enter.  You should see two lines indicating `origin` is your remote repository on GitHub for both fetching and pushing. 
-1. Add the instructor's repository as another remote source:
-
-    ```bash
-    git remote add upstream https://github.com/ECE487/ece487_ws_2025.git
-    ```
-1. Verify the upstream repository has been added by typing `git remote -v` and press Enter.  You should now see two additional lines indicating `upstream` is the original repository you forked from.
-
-    ```{image} ./figures/GitAddUpstream.gif
-    :width: 640
-    :align: center
-    ```
-    <br>
-
-1. If the instructor updates the code, you will be notified, and you will need to run `git pull upstream main` to get the latest updates.
-1. When you push or pull your code, `origin` will be used by default, which points to your own GitHub repository.
-
-    ```{image} ./figures/FetchUpstream.png
-    :width: 320
-    :align: center
-    ```
-    <br>
-
-    <center>
-    Image is sourced from <a href="https://stackoverflow.com/questions/9257533/what-is-the-difference-between-origin-and-upstream-on-github/9257901#9257901" target="_blank">Stack Overflow</a>
-    </center>
-
 
 ### Install and Configure VS Code
 
@@ -202,7 +173,7 @@ It is your responsibility to verify that your files have been successfully pushe
 Take screenshots of the following and submit them via Gradescope.  Use `Snip & Sketch` (Win+Shift+S) on Windows 10 or `Shift+CMD+4` in Mac to capture the screenshots. Save them in `png` or `jpg` format.  
 
 ```{warning}
-Do **not** take pictures of your computer screen using a mobile device or camera. Doing so will indicate a lack of understanding of sampling aliasing (covered in ECE215, ECE382 & ECE333), and you will lose 30 points. Yes, I’m serious about this.
+Do **not** take pictures of your computer screen using a mobile device or camera. Doing so will indicate a lack of understanding of sampling aliasing (covered in ECE215, ECE382, ECE333, and ECE434), and you will lose 30 points. Yes, I'm serious about this.
 ```
 
 ### Deliverable 1
