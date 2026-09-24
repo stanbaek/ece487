@@ -24,31 +24,31 @@ Reading:
 |8  | Multivariate Gaussian         |            |
 |9  | Least Squares Estimation      | HW4        |
 |10 | Least Squares Estimation      |            |
-|11 | Lab1: Python & LSE            | HW5        |
+|11 | Least Squares Estimation      | HW5        |
 |12 | Optimal Estimation            |            |
-|13 | Recursive Estimation          | HW6        |
-|14 | Kalman Filter                 |            |[Understanding KF](https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
-|15 | Kalman Filter                 | HW7        |
-|16 | Special Topic                 |            |
-|17 | Project 1                     |            |
-|18 | Project 1                     | HW8        |
-|19 | GR1 (L1-L16 & HW1-HW8)        |            |
+|13 | Recursive Estimation          |            |
+|14 | Kalman Filter                 | HW6        |[Understanding KF](https://www.youtube.com/playlist?listn8PRpmsu08pzi6EMiYnR-076Mh-q3tWr)
+|15 | Kalman Filter                 |            |
+|16 | Kalman Filter                 |            |
+|17 | Kalman Filter                 | HW8        |
+|18 | Project 1                     |            |
+|19 | GR1 (L1-L15 & HW1-HW7)        |            |
 |20 | Information Theory            | Proj1      |
 |21 | Mathematical Optimization     |            |
-|22 | Maximum Likelihood Estimate   |            |
+|22 | Maximum Likelihood Estimate   | HW9        |
 |23 | Maximum Likelihood Estimate   |            |
-|24 | Maximum a Priori              |            |
-|25 | Linear Regression             | HW10       |
-|26 | Special Topic                 | HW11       |
-|27 | Gradient Descent              |            |
-|28 | Logistic Regression           | HW11       |
+|24 | Maximum a Priori              | HW10       |
+|25 | Linear Regression             |            |
+|26 | Gradient Descent              | HW11       |
+|27 | Special Topic                 |            |
+|28 | Logistic Regression           | HW12       |
 |29 | Naive Bayes                   |            |
-|30 | Assessment & Validation       | HW12       |
+|30 | Assessment & Validation       | HW13       |
 |31 | Regularization                |            |
-|32 | SVM                           | HW13       |
+|32 | SVM                           | HW14       |
 |33 | Neural Networks               |            |
-|34 | Back propagation              | HW14       |
-|35 | Back propagation              | HW14       |
+|34 | Back propagation              |            |
+|35 | Back propagation              | HW15       |
 |36 | GR2                           |            |
 |37 | Final Project                 |            |
 |   | Thanksgiving Break            |            |
