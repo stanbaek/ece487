@@ -33,7 +33,7 @@ Reading:
 |17 | Kalman Filter                 | HW7        |
 |18 | Project 1                     |            |
 |19 | Maximum Likelihood Estimate   |            |
-|20 | GR1 (L1-L15 & HW1-HW7)        |            |
+|20 | GR1 (L1-L17 & HW1-HW7)        |            |
 |21 | Maximum Likelihood Estimate   | Proj1      |
 |22 | Maximum a Priori              |            |
 |23 | Linear Regression             | HW8        |
