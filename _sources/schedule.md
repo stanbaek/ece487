@@ -33,19 +33,19 @@ Reading:
 |17 | Kalman Filter                 | HW7        |
 |18 | Project 1                     |            |
 |19 | Maximum Likelihood Estimate   |            |
-|20 | GR1 (L1-L17 & HW1-HW7)        |            |
+|20 | GR1 (L1-L15 & HW1-HW7)        |            |
 |21 | Maximum Likelihood Estimate   | Proj1      |
-|22 | Maximum a Priori              |            |
-|23 | Linear Regression             | HW8        |
-|24 | Gradient Descent              |            |
-|25 | Special Topic                 | HW9        |
-|26 | Logistic Regression           |            |
-|27 | Naive Bayes                   | HW10       |
-|28 | Assessment & Validation       |            |
-|29 | Regularization                | HW11       |
-|30 | SVM                           |            |
-|31 | Neural Networks               | HW12       |
-|32 | Back propagation              |            |
+|22 | Maximum a Posteriori          |            |
+|23 | Linear Regression             |            |
+|24 | Gradient Descent              | HW8        |
+|25 | Special Topic                 |            |
+|26 | Logistic Regression           | HW9        |
+|27 | Naive Bayes                   |            |
+|28 | Assessment & Validation       | HW10       |
+|29 | Regularization                |            |
+|30 | SVM                           | HW11       |
+|31 | Neural Networks               |            |
+|32 | Back propagation              | HW12       |
 |33 | Back propagation              |            |
 |34 | Final Project                 | HW13       |
 |35 | GR2                           |            |
