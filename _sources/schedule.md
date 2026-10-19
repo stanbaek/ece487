@@ -38,8 +38,8 @@ Reading:
 |22 | Maximum a Posteriori          |            |
 |23 | Linear Regression             |            |
 |24 | Gradient Descent              | HW8        |
-|25 | Special Topic                 |            |
-|26 | Logistic Regression           | HW9        |
+|25 | Logistic Regression           |            |
+|26 | Special Topic                 | HW9        |
 |27 | Naive Bayes                   |            |
 |28 | Assessment & Validation       | HW10       |
 |29 | Regularization                |            |
