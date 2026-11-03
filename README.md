@@ -4,10 +4,12 @@ ECE487 Machine Learning Course Web
 ### How to install required Python packages? 
 - Open a terminal.
 - Navigate to the root folder and find requirements.txt
-- run `pip install -r requirements.txt`
+- run `pip install -r requirements.txt` for Windows machines
+- run `pip install -r requirements_linux.txt` for Linux machines
 - I recommned using a virtual environment.
 
 ### How to build and publish?
+- Run `sudo apt install ghp-import`
 - Run the following under the `docs` folder.
 - Build: `jupyter-book build --all .`  
 - Publish: `ghp-import -n -p -f _build/html` 
@@ -17,8 +19,9 @@ ECE487 Machine Learning Course Web
 - Jupyter, MyST-Markdown
 
 ### Convert Jupyter notebooks to markdown files
-- jupytext notebook.ipynb --to md
-
+- jupytext https://jupytext.readthedocs.io/en/latest/using-cli.html
+- install: pip install jupytext
+- How to use: jupytext lab2.ipynb --to md
 
 ### To remove version constraints
 
