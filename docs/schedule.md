@@ -45,11 +45,11 @@ Reading:
 |29 | Regularization                |            |
 |30 | SVM                           | HW11       |
 |31 | Neural Networks               |            |
-|32 | Back propagation              | HW12       |
+|32 | Neural Networks               | HW12       |
 |33 | Back propagation              |            |
-|34 | Final Project                 | HW13       |
-|35 | GR2                           |            |
-|36 | Final Project                 |            |
+|34 | Back propagation              | HW13       |
+|35 | Final Project                 |            |
+|36 | GR2                           |            |
 |37 | Final Project                 |            |
 |   | Thanksgiving Break            |            |
 |38 | Final Project                 |            |
